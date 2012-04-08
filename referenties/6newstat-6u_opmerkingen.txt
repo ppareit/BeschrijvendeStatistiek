@@ -1,0 +1,4 @@
+* overal Nieuwen Bosch vervangen door Mariakerke
+* standaardafwijking wordt nergens gedefinieerd, maar wordt wel gebruikt op p131 in het voorbeeld horende bij 'Grafische voorstelling'. De standaardafwijking kan misschien samen met de variantie van de steekproefwaarden worden gedefinieerd.
+* leuke link voor het voorbeeld op p133 ivm. de kijkcijfers: http://www.audimetrie.be/
+* Volkstellingen zijn reeds afgeschaft, de laatste werd op 1 maart 1991 gehouden.
