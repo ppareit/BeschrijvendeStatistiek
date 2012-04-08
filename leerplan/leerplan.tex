@@ -1,0 +1,98 @@
+%8690Billy
+
+\documentclass[11pt]{article}
+
+\textwidth 16cm \textheight 23cm \evensidemargin 0cm
+\oddsidemargin 0cm \topmargin -2cm
+\parindent 0pt
+\parskip \medskipamount
+
+
+\usepackage[dutch]{babel}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage[normalem]{ulem} % strikethrough normal text with \sout{text}
+\usepackage{cancel} % strikethrough in math mode with \cancel{text}
+
+\usepackage{subfig}
+\usepackage{graphicx}
+
+\usepackage[table]{xcolor}
+
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+
+\usepackage{color}
+\newcommand{\todo}[1]{\textcolor{red}{\##1\#}}
+\newcommand{\question}[1]{\textcolor{blue}{\##1\#}}
+
+\newcommand{\degree}{\ensuremath{^\circ}}
+
+\newtheorem{definition}{Definitie}
+
+\begin{document}
+
+\section{Beschrijvende Statistiek en Leerplan 2005-044}
+
+Dit is een analyse van het leerplan specifiek gericht op beschrijvende statistiek. Uiteraard wordt met de rest van het leerplan ook rekening gehouden worden tijdens de lessen statistiek.
+
+\subsection{Algemene doelstellingen}
+
+{\bf ET 6 De leerlingen gebruiken kennis, inzicht en vaardigheden die ze verwerven in wiskunde bij het verkennen, vertolken en verklaren van problemen uit de realiteit}
+
+In de statistiek dienen de probleemstellingen sowieso uit de realiteit te komen. De gegevens moeten altijd binnen hun context (die altijd buiten de statistiek ligt) beschouwd te worden.
+
+
+{\bf ET 47 De leerlingen staan kritisch tegenover het gebruik van statistiek in de media}
+
+Het is aangewezen de leerlingen een veelheid aan realistische voorbeelden voor te schotelen, waarbij ze kritisch leren omgaan met figuren en uitspraken in de media, in de literatuur, op het web ... Denk hierbij
+bijvoorbeeld aan het gebruik van ijking op de assen bij een grafische voorstelling.
+
+\subsection{Leerplandoelstellingen}
+
+\begin{tabular}{l|l|l|p{6cm}|p{7cm}}
+  46 & B & 3.1.1 & De leerlingen kunnen aan de hand van voorbeelden het belang van de representativiteit van een steekproef uitleggen voor het formuleren van statistische besluiten over de populatie & De leerlingen moeten weten dat statistiek een wetenschappelijke methode is voor het verzamelen, ordenen en samenvatten van gegevens en voor het trekken van conclusies uit steekproeven.\newline\newline Het is heel belangrijk dat de leerlingen weten wat de kenmerken zijn van een goede steekproef en naar welke populatie de besluiten mogen veralgemeend worden. Dit gebeurt het best aan de hand van een aantal concrete voorbeelden.\newline\newline Hierbij is het gebruik van reële gegevens (databanken, web, eigen metingen ...) heel stimulerend naar de leerlingen toe. Daarbij mag niet vergeten worden deze gegevens in hun juiste context te plaatsen (waarbij deze context altijd buiten de statistiek valt).\newline\newline Het loont zeker de moeite leerlingen zelf een steekproef te laten trekken (bijvoorbeeld via een enquête). Hierbij is het natuurlijk belangrijk je als leerkracht af te vragen hoe je omgaat met het gegeven dat elke leerling een ander resultaat verkrijgt (ondanks dezelfde opgave).\\
+\end{tabular}
+
+bv: tellen hoeveel keer de leerlingen een bal kunnen dribbelen, populatie gans de klas bestaat uit 20 leerlingen (10 die nooit voetballen, 5 die soms voetballen en 5 die veel voetballen), slechte steekproef: enkel de voetballers, goede steekproef: 2 lln die nooit voetballen, 1 lln die soms voetbalt en 1 lln die veel voetbalt.
+
+bv: vanop een brug boven de autostrade een half uur de kleuren van de auto's turven. Dit is een goede steekproef van de populatie voor auto's van vertegenwoordigers. Dit is geen goede steekproef van de populatie van stadswagens. Dit is oog geen goede steekproef van de populatie van alle auto's in België.
+
+\begin{tabular}{l|l|l|p{6cm}|p{7cm}}
+  48 & B & 3.1.2 & De leerlingen kunnen in concrete situaties absolute en relatieve frequentie en enkelvoudige en cumulatieve frequentie verwoorden, berekenen en interpreteren zowel bij individuele als gegroepeerde gegevens & De leerlingen leren aan de hand van concrete voorbeelden (reële gegevens binnen een bepaalde context) gegevens ordenen in een tabel. Het gebruik van dergelijke tabel laat voor het eerst toe de statistische gegevens een interpretatie te geven. Bij het bepalen van de klassenbreedte wordt in eerste instantie uitgegaan van het gestelde probleem.\\
+\end{tabular}
+
+\begin{tabular}{l|l|l|p{6cm}|p{7cm}}
+  50 & B & 3.1.3 & De leerlingen kunnen grafische voorstellingen gebruiken om statistische gegevens binnen een bepaalde context te interpreteren & Bij grafische voorstellingen om statistische gegevens te interpreteren wordt aan de volgende voorstellingen gedacht: staafdiagram, schijfdiagram, histogram, frequentiepolygoon, cumulatief frequentiepolygoon, boxplot.\newline\newline Het is de bedoeling de leerlingen duidelijk te maken dat niet elk type voorstelling geschikt is voor elk probleem. Ook hier zal het gekozen type afhankelijk zijn van de probleemstelling, gebruik echter ook tegenvoorbeelden (dit zijn voorstellingen waaruit weinig of niets is af
+te leiden).\\
+\end{tabular}
+
+Een tegenvoorbeeld kan bijvoorbeeld een schijfdiagram zijn met heel veel kleine stukjes van de taart. Of een cumulatief frequentiepolygoon van data met een aantal gegevens met lage frequentie en dan één gegeven met hoge frequentie.
+
+\begin{tabular}{l|l|l|p{6cm}|p{7cm}}
+  49 & B & 3.1.4 & De leerlingen kunnen de begrippen rekenkundig gemiddelde, modus, mediaan, kwartiel, variatiebreedte en standaardafwijking gebruiken om statistische gegevens binnen een bepaalde context te interpreteren &  Het gebruik van centrum- en spreidingsmaten laat toe om verschillende reeksen gegevens met elkaar te vergelijken. Een boxplot is hier een nuttig instrument.\newline\newline Het is helemaal niet de bedoeling een theoretische benadering van
+de begrippen op te bouwen. De leerlingen hoeven bovendien deze kengetallen ook niet manueel te kunnen berekenen. Dit betekent dat bij de behandeling van statistiek ICT een onmisbaar hulpmiddel is.\\
+\end{tabular}
+
+Kengetallen zijn dus nuttig om verschillende populaties met elkaar te vergelijken. Dus dribbelen van leerlingen uit het 4de jaar en uit het 3de jaar. Een kengetal kan dus gebruikt worden om te kijken of er motorische vooruitgang is bij het stijgen van de leeftijd.
+
+\begin{tabular}{l|l|l|p{6cm}|p{7cm}}
+  51 & B & 3.1.5 & De leerlingen kunnen relatieve frequentie in termen van kans interpreteren & Het begrip kans werd reeds in het eerste jaar van de eerste graad
+behandeld.\newline\newline Het begrip kans is hier duidelijk verbonden met het begrip relatieve frequentie en kan worden aangebracht met behulp van het principe van de statistische stabiliteit. \\
+\end{tabular}
+
+
+\end{document}
+
+
+\begin{tabular}{l|l|l|p{6cm}|p{7cm}}
+  46 & B & 3.1.1 & \\
+  &&&&\\&&&&\\
+\end{tabular}
+
+
+
+
+
+
