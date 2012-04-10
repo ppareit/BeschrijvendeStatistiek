@@ -170,11 +170,7 @@ hoe elk “echt” statistisch onderzoek verloopt.
 
 We starten {\it Geogebra} en kiezen 'Beeld-Rekenblad' om het rekenblad te tonen. Het algebravenster en het tekenblad mogen verborgen worden. De eerste kolom vullen we met de frequenties. Als je bijvoorbeeld $13$ rode, $9$ groene, $8$ gele, $7$ oranje, $7$ bruine en $6$ blauwe snoepjes had, dan ga je als volgt te werk. In de eerste {\bf cell} rechtsboven vul je 13 in. Deze cell noemt A1. In de cell eronder vul je $9$ in. Je gaat zo verder tot aan cell A6. De cellen A1 tot aan A6 noteren we met A1:A6 en deze wordt een {\bf lijst} genoemd.
 
-In de tweede kolom, in cell B1, vul je 
-$$
-=A1 / \mbox{Som}[A1:A6]
-$$
-in. Het gelijk aan teken '=' maakt aan Geogebra duidelijk dat wat volgt berekend moet worden. Geogebra zal in dit geval de waarde in de cell A1 delen door de som van de cellen in de lijst A1:A6. Nu doen we dit ook voor de andere cellen in de tweede kolom, waarbij dan op de juiste plaats A1 vervangen wordt.
+In de tweede kolom, in cell B1, vul je \verb$=A1 / Som[A1:A6]$ in. Het gelijk aan teken '=' maakt aan Geogebra duidelijk dat wat volgt berekend moet worden. Geogebra zal in dit geval de waarde in de cell A1 delen door de som van de cellen in de lijst A1:A6. Nu doen we dit ook voor de andere cellen in de tweede kolom, waarbij dan op de juiste plaats A1 vervangen wordt.
 
 \begin{center}
   \includegraphics[width=14cm]{gg-relatieve_frequentie.png}
@@ -210,27 +206,73 @@ Zodra je dit wat kent, kan je uit een figuur heel veel
 informatie halen. Maar je moet natuurlijk eerst weten welke
 figuur je moet maken en hoe je die moet tekenen.
 
-\subsection{Een staafdiagram}
+\subsubsection{Een staafdiagram}
 
 Je hebt in dit onderzoek een nominaal kwalitatieve veranderlijke opgemeten. Voor dit soort
 veranderlijken is het {\bf staafdiagram} de basisfiguur.
 
-\begin{wrapfigure}{r}{0.4\textwidth}
-  \vspace{-0.5cm}
-  \includegraphics[width=0.4\textwidth]{vlaamse_bevolking.png}
-\end{wrapfigure}
 Als voorbeeld zie je hier een staafdiagram
 van de Vlaamse bevolking per provincie. De
 informatie die hier wordt weergegeven, kan
 je vinden in het boekje “Vlaanderen in
 cijfers” op de website:
-\url{http://aps.vlaanderen.be/statistiek/publicaties/pdf/vic/vic2005.pdf}.
+\url{http://www4.vlaanderen.be/dar/svr/Cijfers/Pages/Excel.aspx}.
+
 De namen van de provincies zijn afgekort als:
-Antw = Antwerpen,
-O-Vl = Oost-Vlaanderen,
-W-Vl = West-Vlaanderen,
-Vl-Br = Vlaams - Brabant,
-Limb = Limburg.
+  
+\begin{minipage}{0.5\textwidth}
+  \begin{description}
+    \item[Antw] Antwerpen,
+    \item[O-Vl] Oost-Vlaanderen,
+    \item[W-Vl] West-Vlaanderen,
+    \item[Vl-Br] Vlaams - Brabant,
+    \item[Limb] Limburg.
+  \end{description}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+%  \include{tikzpictures/staafdiagram_bevolking_provincie}
+  \includegraphics[width=0.5\textwidth]{vlaamse_bevolking.png}
+\end{minipage}
+
+Om een staafdiagram te tekenen op basis van jouw frequentietabel ga je als volgt te werk:
+\begin{enumerate}
+  \item Op de x-as zet je de verschillende kleuren. Hoewel de waarden van een nominale
+veranderlijke geen natuurlijke volgorde hebben, zal je toch moeten kiezen hoe je de kleur
+ordent op de x-as. Welke kleur komt als eerste? Welke kleur komt als tweede? Waarom maak
+je die keuze?
+
+De kleuren van een snoepje hebben geen natuurlijke volgorde. We rangschikken daarom de
+bijhorende frequenties. Dat zijn getallen en die hebben wel een natuurlijke volgorde. Je kan
+bijvoorbeeld rangschikken van groot naar klein. Voor kleuren met gelijke frequenties kan je
+de onderlinge plaats zelf kiezen.
+\item Op de y-as duid je de frequentie van elke kleur aan en je tekent dan bij elke kleur een staafje
+waarvan de lengte overeenkomt met de frequentie van die kleur. Zorg ervoor dat alle staafjes
+los van elkaar staan.
+\item Voorzie de assen van de juiste naam.
+\end{enumerate}
+
+\vraag{Teken nu zo’n staafdiagram voor jouw onderzoek.}{0cm}
+\begin{center}
+\input{tikzpictures/staafdiagram_blanco}
+\end{center}
+
+Zulk staafdiagram kan ook met Geogebra gemaakt worden:
+\begin{enumerate}
+  \item Vul een rekenblad in met de frequenties.
+  \item Maak vanuit het rekenblad een lijst aan van de frequenties aan door B2:B7 te selecteren, rechts te klikken en creëer lijst te kiezen. Hernoem de nieuw aangemaakte lijst met naam "lijst 1', door deze te selecteren in het algebra venster en met het toetsenbord "frequentie" te typen.
+  \item Maak ook een lijst met posities aan. Typ hiervoor in het invoervenster\\
+  \verb$posities={10,20,30,40,50,60,70}$.
+  \item Teken nu het staafdiagram met het commando \verb$Staafdiagram[posities,frequenties,5]$
+  \item Wijzig nu de schaal van de assen door deze te verslepen.
+  \item Voeg nu tekst in om alle labels aan te vullen.
+\end{enumerate}
+
+\begin{center}
+  \includegraphics[width=14cm]{gg-staafdiagram_menms}
+\end{center}
+
+\subsubsection{Een taartdiagram}
+
 
 
 
