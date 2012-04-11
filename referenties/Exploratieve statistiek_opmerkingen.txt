@@ -1,0 +1,4 @@
+p7: website is nu: http://www4.vlaanderen.be/dar/svr/Cijfers/Pages/Excel.aspx.
+p9: figuur cirkeldiagram_electriciteit.png is beter
+p13: info op website is weg..
+p15: Wie wordt onderzocht? -> Wie of wat wordt onderzocht?
