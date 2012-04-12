@@ -27,7 +27,7 @@
 \newcommand{\todo}[1]{\textcolor{red}{\##1\#}}
 \newcommand{\question}[1]{\textcolor{blue}{\##1\#}}
 
-\newcommand{\vraag}[2]{\begin{itemize}\item {\it #1} \vspace{#2}\end{itemize}}
+\newcommand{\vraag}[2]{\begin{itemize}\item {\it #1} \vspace*{#2}\end{itemize}}
 
 \newcommand{\degree}{\ensuremath{^\circ}}
 
@@ -163,7 +163,14 @@ We gaan nu een derde kolom aan de frequentietabel toevoegen. In die kolom komt, 
 relatieve frequentie}. De relatieve frequentie is niets anders dan de frequentie gedeeld door het totale
 aantal $n$ . Je kan dit getal ook in percent uitdrukken. Als je voor “geel” een relatieve frequentie van
 0.16 vindt, dan kan je dat ook schrijven als 16\%. Hierbij rond je af op één eenheid. In woorden zeg
-je dat 16\% van jouw onderzochte snoepjes geel is.
+je dat 16\% van jouw onderzochte snoepjes geel is. De relatieve frequentie maakt het mogelijk om kansen
+te schatten die theoretisch moeilijker te bepalen zijn.
+
+\vraag{Als er in de volledige populatie, dus alle snoepjes in het vat, 6 kleuren zitten. En
+van elk kleur zijn er evenveel snoepjes. Wat is dan de kans om lukraak een geel snoepje te kiezen?}{3cm}
+
+\vraag{De relatieve frequentie voor "geel" wijkt af van de theoretische kans, verklaar dit en wanneer
+zou de relatieve frequentie dichter bij de theoretische kans moeten komen?}{3cm}
 
 Om zoveel mogelijk van je tijd te kunnen besteden aan nadenken en
 discussiëren, ga je zo weinig mogelijk tijd besteden aan slaafse
@@ -709,14 +716,18 @@ figuur geven terwijl te weinig klassen bijna niets meer tonen.
 voorbeeld en de klassenbreedte gelijk aan 5 nemen, tenzij dat voor jouw data niet zinvol is.}{0cm}
 
 \begin{center}
-  \begin{tabular}{|p{2cm}|p{2cm}|}
+  \begin{tabular}{|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
     \hline
-    Klasse & Frequentie\\
-    \hline&\\\hline&\\\hline&\\\hline&\\\hline&\\
-    \hline&\\\hline&\\\hline&\\\hline&\\\hline&\\
-    \hline&\\\hline&\\\hline&\\\hline&\\\hline&\\\hline
+    Klasse & Frequentie &&Relatieve Frequentie&\\
+    \hline&&&&\\\hline&&&&\\\hline&&&&\\\hline&&&&\\\hline&&&&\\
+    \hline&&&&\\\hline&&&&\\\hline&&&&\\\hline&&&&\\\hline&&&&\\
+    \hline&&&&\\\hline&&&&\\\hline&&&&\\\hline&&&&\\\hline&&&&\\\hline
   \end{tabular}
 \end{center}
+
+Naast de frequentie en de relatieve frequentie bestaan er ook nog de {\it cumulatieve} versies van deze frequenties. Cumulatief wil zeggen dat iets steeds toeneemt of ophoopt. In het geval van de frequentie is de {\bf cumulatieve frequentie} het aantal gegevens dat tot deze klasse en alle lagere klassen behoord. De {\bf relatieve cumulatieve frequentie} van een klasse is dan de verhouding van de cumulatieve frequentie van die klasse en het totale aantal gegevens.
+
+\vraag{Vul de frequentietabel verder aan met de cumulatieve frequentie en de relatieve cumulatieve frequentie.}{0cm}
 
 Als we enorm veel data hebben kan het berekenen van de klassen beter gebeuren door de computer. We gebruiken
 bijvoorbeeld Geogebra:
@@ -851,16 +862,18 @@ in één keer berekend worden met Geogebra. Selecteer hiervoor de lijst met data
 een lijst geven met kengetallen.
 
 De volgende zijn belangrijk:
-\begin{description}
-  \item[n] Het aantal gegevens.
-  \item[Gemiddelde] Het rekenkundig gemiddelde.
-  \item[s] De standaard afwijking.
-  \item[Min] De laagste waarde.
-  \item[Q1] Het eerste kwartiel.
-  \item[Mediaan] De mediaan.
-  \item[Q3] Het derde kwartiel.
-  \item[Max] De hoogste waarde.
-\end{description}
+\begin{center}
+  \begin{tabular}{r|l}
+    $n$ & Het aantal gegevens.\\
+    Gemiddelde & Het rekenkundig gemiddelde.\\
+    $s$ & De standaard afwijking.\\
+    Min & De laagste waarde.\\
+    Q1 & Het eerste kwartiel.\\
+    Mediaan & De mediaan.\\
+    Q3 & Het derde kwartiel.\\
+    Max & De hoogste waarde.\\
+  \end{tabular}
+\end{center}
 
 \begin{center}
   \includegraphics[width=14cm]{gg-1var_stat}
@@ -868,13 +881,14 @@ De volgende zijn belangrijk:
 
 \subsubsection{De boxplot}
 
+\begin{wrapfigure}[10]{l}{0.4\textwidth}
+  \vspace{-1cm}
+  \includegraphics[width=0.4\textwidth]{boxplot}
+\end{wrapfigure}
+
 Een goed zicht op zowel het centrum als de spreiding van je opmetingen, krijg je uit een boxplot. Dit
 is een grafiek die gebruik maakt van de begrippen minimum, maximum, mediaan, eerste kwartiel
 Q1, derde kwartiel Q3, IQR en uitschieters.
-
-\begin{wrapfigure}[11]{l}{0.3\textwidth}
-  \includegraphics[width=0.3\textwidth]{boxplot}
-\end{wrapfigure}
 
 De rechterstaart begint vanaf Q3. Dit lijnstuk gaat tot aan de grootste opmeting die kleiner of
 gelijk is aan Q3 + (1.5 IQR). Elke observatie die nog groter is, wordt als een uitschieter
@@ -891,8 +905,6 @@ eenheid.}{4cm}
 
 \vraag{Zijn er uitschieters in je dataset? Was dat te verwachten?}{3cm}
 
-
-
 In Geogebra krijg je een boxplot door in het venster van de 1-variabele statistieken {\it Boxplot} te kiezen in plaats van {\it Histogram}.
 
 \begin{center}
@@ -900,6 +912,155 @@ In Geogebra krijg je een boxplot door in het venster van de 1-variabele statisti
 \end{center}
 
 \subsection{Wat heb je gevonden? Hoever kan je gaan in je conclusie?}
+
+\subsubsection{De variabiliteit van steekproefresultaten}
+
+Je bent er nu al mee vertrouwd. Een steekproef levert toevallige resultaten op, en bij een andere
+steekproef krijg je andere resultaten. Indien je de populatie van alle leerlingen van je school in
+identieke omstandigheden de tijdsduur van één minuut zou laten schatten, dan zou het gemiddelde
+van al die schattingen niet exact samenvallen met het gemiddelde dat jij in je steekproef hebt
+gevonden. Dat is niet erg. De statistiek is er juist om je te helpen om goede uitspraken over de
+populatie te doen. Als er tenminste geen andere problemen opduiken... .
+
+In dit onderzoek heb je elke leerling aan een kleine test onderworpen. De manier waarop die test
+moet worden afgenomen heb je vooraf heel precies vastgelegd, en je hebt je aan die procedure strikt
+gehouden bij elke leerling die je hebt getest. Maar er is nog iets anders dat voor fouten kan zorgen.
+Je werkt met meetapparatuur, en is die wel goed geijkt? Als je een chronometer gebruikt die start bij
+2 in plaats van bij 0, dan heb je in al je opmetingen een systematische fout van 2 seconden. Je krijgt
+dan een vertekend beeld van de werkelijkheid.
+
+Als al je opmetingen op een systematische manier te klein (of te groot) zijn dan heb je {\bf vertekening}.
+Vertekening in metingen kan je met statistiek niet opsporen. Je moet vooraf controleren of je
+apparatuur wel juist geijkt is. Doe dit vooraleer je aan je onderzoek begint!
+
+\vraag{Soms kan je op een spitsvondige manier vertekening in opmetingen neutraliseren. Als je een
+weegschaal moet gebruiken waarvan je vermoedt dat zij systematisch een te laag gewicht
+aangeeft, hoe zou jij dan een boekentas daarop wegen, als je met die weegschaal vooraf niets
+mag doen?}{4cm}
+
+\vraag{Je moet de lengte van 20 planken meten en je doet dat met een rolmeter. Op welke manier
+zou hier vertekening kunnen optreden?}{3cm}
+
+\subsubsection{Enkelvoudig aselect, en nog veel meer}
+
+Steekproeven, waarbij je het toeval op een gecontroleerde manier zijn rol laat spelen, heten
+{\bf toevalsgestuurde steekproeven}. Zo zijn er verschillende soorten.
+
+Een eerste is de {\bf enkelvoudige aselecte steekproef} (afgekort als EAS). Dat is de basis, en die ken je
+al. Door lukraak een groepje van 40 leerlingen te trekken uit de populatie van 512 leerlingen, heeft
+elk groepje van 40 leerlingen dezelfde kans om jouw steekproef te zijn.
+
+
+Er zijn ook andere manieren om aan 40 leerlingen te komen. We bekijken er ééntje van.
+Start met een lijst van alle klassen van je school. Nummer die klassen en trek daaruit een EAS van 8
+klassen. Voor die 8 klassen vraag je de namen van de leerlingen. Per klas trek je een EAS van 5
+leerlingen. Zo heb je ook 40 leerlingen in je steekproef. Deze manier van steekproeftrekken gaat in
+stapjes, en wordt daarom “getrapt” genoemd. Je kan dit systeem natuurlijk uitbreiden. Als je 400
+leerlingen uit Vlaamse scholen wil, dan kan je bijvoorbeeld eerst lukraak 20 scholen trekken, dan in
+elke school lukraak 5 klassen, en dan in elke klas lukraak 4 leerlingen. Dit is opnieuw een voorbeeld
+van een {\bf getrapte steekproef}.
+
+\vraag{Als je voor je huidig onderzoek zo weinig mogelijk klassen wil “storen”, werk je dan met een
+EAS of met een getrapte steekproef? Waarom?}{3cm}
+
+\vraag{Jij neemt een EAS van 40 leerlingen in je school. Je leerkracht gebruikt een getrapte
+steekproef (eerst 8 klassen, dan 5 leerlingen per klas) om aan een steekproef van 40
+leerlingen te komen. Zijn dit gelijkwaardige methoden (kan je leerkracht alle groepjes van 40
+uitkomen die jij kan uitkomen en kan jij alle groepjes van 40 uitkomen die je leerkracht kan
+uitkomen)?}{5cm}
+
+\subsubsection{Een uitspraak over de populatie}
+
+Wat we in het “exploratief” onderzoek hebben gevonden is van toepassing op de dataset die we hebben
+onderzocht, en dus op alle leerlingen van de klas. Als je op een goede manier een steekproef trekt, als je je
+strikt houdt aan de procedure om de leerlingen te testen, en als je meetapparatuur goed geijkt is, dan
+kan je met statistiek verantwoorde uitspraken doen over hoe heel de school een minuut zou schatten.
+Voor deze steekproef was het gemiddelde $58.85$ seconden en de mediaan was $58$ seconden. Dat ligt
+niet ver uit elkaar, en je zou kunnen vermoeden dat het gemiddelde en de mediaan van de hele
+populatie ook wel in de buurt van $58$ seconden liggen. Waarschijnlijk is dat nog waar ook.
+
+\subsection{Kernachtige samenvatting van dit onderzoek}
+
+Je samenvatting bestaat uit twee delen
+\begin{enumerate}
+  \item De antwoorden op de contextvragen (de www-vragen),
+  \item De besluiten over het uitgevoerde onderzoek.
+\end{enumerate}
+
+Betrek ook de kengetallen in je besluit: vermeld hun getalwaarde en ga na in hoever ze een zinvolle
+karakteristiek zijn voor dit onderzoek. Vergeet ook nooit om goede grafieken te tekenen en die te
+interpreteren.
+
+\vraag{Formuleer nu de antwoorden op de contextvragen (de www-vragen).}{6cm}
+
+\vraag{Formuleer nu de besluiten over het uitgevoerde onderzoek.}{6cm}
+
+\subsection{Zelfevaluatie}
+
+In dit onderzoek heb je geleerd over:
+\begin{itemize}
+  \item getrapte steekproeven
+  \item vertekening bij opmetingen
+  \item de continu kwantitatieve veranderlijke
+  \item de frequentietabel met klassenindeling
+  \item het histogram en de boxplot
+  \item het gemiddelde en de mediaan
+  \item de standaardafwijking en de interkwartielafstand
+  \item de interpretatie van kengetallen in combinatie met grafieken
+\end{itemize}
+
+Je bent nu in staat om volgende opdrachten uit te voeren:
+\vraag{Wanneer is een numerieke veranderlijke continu? Zeg dat in je eigen woorden, en geef
+enkele voorbeelden.}{4cm}
+
+\vraag{Schrijf je een continu numerieke veranderlijke altijd op met kommagetallen? Motiveer je
+antwoord.}{4cm}
+
+\vraag{Welke eigenschap probeert de standaardafwijking te beschrijven? Zeg in woorden hoe je de
+standaardafwijking berekent. Kan je daaruit afleiden of de standaardafwijking gevoelig is
+voor uitschieters? Kan je daarvan een eenvoudig voorbeeld geven?}{8cm}
+
+\vraag{Welke eigenschap probeert de interkwartielafstand te beschrijven? Zeg in woorden wat
+kwartielen zijn en hoe je de interkwartielafstand berekent. Kan je daaruit afleiden of de
+interkwartielafstand gevoelig is voor uitschieters? Kan je daarvan een eenvoudig voorbeeld
+geven?}{8cm}
+
+\section{Projecten}
+
+Kies één van volgende projecten om zelf een onderzoek rond uit te voeren:
+
+\vraag{Je wenst als dierenarts te beginnen in een stad. Om te kunnen inschatten hoeveel
+'klanten' je zal hebben wil je weten hoeveel huisdieren er ongeveer zijn in het dorp. Je
+kan uiteraard niet bij iedereen langs gaan. Zet een onderzoek op om het totaal aantal
+huisdieren in te schatten.}{1cm}
+
+
+\vraag{Een fietsenmaker wenst voor de nieuwe collectie 20 MTB te kopen. Hij weet alleen
+niet goed welke kleuren hij zou nemen. Hij weet dat jij reeds statistiek hebt gevolgd en vraagt
+je raad. Hoe zul je dit aanpakken. Wat is de populatie, wat is een goede steekproef? Zal de
+data bestaan uit kwantitatieve of kwalitatieve gegevens?}{1cm}
+
+\vraag{De leesbaarheid van een tekst hangt ondermeer af van de lengte van de zinnen. Korte zinnen
+lezen gemakkelijker dan lange zinnen. Als je aanneemt dat zowat elke nieuwe zin met een
+hoofdletter begint, en dat er verder niet te veel afkortingen in hoofdletters voorkomen, dan is
+de verhouding van het aantal hoofdletters ten opzichte van het totale aantal letters een goede
+maat voor de lengte van de zinnen. Het is nu aan jou om voor deze werktekst een goede schatting te
+maken van de proportie hoofdletters. Hoe ga je dat doen? Is er een mogelijkheid om een getrapte
+steekproef te nemen?}{1cm}
+
+\vraag{Stel zelf een onderzoek op naar iets dat je interesseert. Bepaal eerst een goede
+onderzoeksvraag. Bepaal daarna pas de populatie en geef dan een methode om een steekproef
+te nemen.}{1cm}
+
+Kijk steeds eerst wat je wilt weten en hoe je gaat meten. Onderzoek dan de dataset en trek je
+conclusies. Geef op het einde een samenvatting van het onderzoek.
+
+\begin{thebibliography}{1}
+\bibitem{1}\label{1} Prof. dr. Herman Callaert, Hans Bekaert, Celine Goethals, Lies Provoost, Marc Vancaudenberg, \textit{Exploratieve statistiek, Werktekst voor de leerling}, Centrum voor statistiek, Universiteit Hasselt, 2005\\
+\bibitem{2}\label{2} J.-P. Daems, E. Jennekens, \textit{Argument, Algebra - Meetkunde - Driehoeksmeting}, Uitgeverij de boeck, 2003\\
+\end{thebibliography}
+
+Deze bundel is grotendeels gebaseerd op \cite{1}. Hiervoor werd toestemming verleend. Voor correcties, meer informatie of een nieuwere versie kan ik gecontacteerd worden op \href{mailto:pieter.pareit@ugent.be}{pieter.pareit@ugent.be}.
 
 
 \end{document}
@@ -912,6 +1073,17 @@ In Geogebra krijg je een boxplot door in het venster van de 1-variabele statisti
 \begin{center}
   \includegraphics[width=14cm]{gg-gegroepeerde_frequentietabel}
 \end{center}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
