@@ -1,2 +1,39 @@
 Beschrijvende statistiek voor de 2de graad
 ==========================================
+Deze werktekst voor de leerlingen volgt het leerplan 2005-044. Alles in
+het leerplan wordt behandeld. Met de leerlinen worden twee voorbeelden
+uitgewerkt. De leerlingen hebben de mogelijkheid tot het maken van een eigen
+project.
+
+Herkomst
+========
+Deze leerlingen bundel is grotendeels gebaseerd op de werkbundel:
+Exploratieve statistiek, Werktekst voor de leerling
+Statistiek voor het secundair onderwijs (Universiteit Hasselt)
+Contactpersoon: Prof. dr. Herman Callaert
+
+Er werd maar een deel van de voorbeelden gevolgd. Alles ivm. de
+GRM werd vervangen door Geogebra. Definities en uitleg werden aangevuld
+om maar één bundel te moeten hebben en niet te verwijzen naar handboeken.
+Stukjes werden toegevoegd waar nuttig. Bijvoorbeeld uitleg over
+relatieve frequentie en kans, of kengetallen.
+
+Mapinhoud
+=========
+/werktekst
+    de effectieve tekst
+/figuren
+    alle gebruikte figuren
+/ggb-bestanden
+    alle gebruikte Geogebra bestanden
+/leerplan
+    het gevolgde leerplan + analyse van het leerplan
+/referenties
+    de referenties + opmerkingen en notities
+
+
+TODO
+====
+Update sommige krantenartikels. Dus in kranten op zoek gaan naar
+staaf- en cirkeldiagrammen en daar de fouten in zoeken. Dit als
+voorbeeld gebruiken van hoe het niet moet.
