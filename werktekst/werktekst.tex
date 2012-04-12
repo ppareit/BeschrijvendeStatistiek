@@ -619,6 +619,288 @@ minuut zou laten schatten. En als steekproef zal je dan die éne leerling 40
 keren laten schatten. Zo krijg je een idee over het schattingsgedrag van die
 éne leerling.
 
+Maar je kan ook iets anders willen weten. Hoe schatten de leerlingen op je
+school, als zij één keer de kans krijgen om te schatten? Je populatie bestaat
+dan uit alle leerlingen van je school. Daaruit kan je een steekproef trekken
+van 40 leerlingen, die één keer de kans krijgen om een minuut te schatten.
+We spreken af dat je dit tweede probleem gaat onderzoeken.
+
+\vraag{Wat onderzoek je hier bij welke populatie?}{4cm}
+
+\vraag{Eigenlijk geef je een kleine opdracht aan elke leerling uit je steekproef. Is het belangrijk dat
+je vooraf vastlegt hoe die opdracht moet uitgevoerd worden? Wat is de afspraak die je maakt
+om het onderzoek correct uit te voeren? Kan de plaats of het tijdstip van ondervragen
+invloed hebben op de kwaliteit van de metingen?}{4cm}
+
+\subsubsection{De dataset: getallen en context}
+
+Je dataset bevat de geschatte tijdsduur, uitgedrukt tot op de seconde. Deze veranderlijke kan
+(minstens in theorie) oneindig veel verschillende waarden aannemen die willekeurig dicht tegen
+elkaar kunnen liggen. Een mogelijke geschatte waarde kan 54.374 seconden zijn. In dit onderzoek is
+afgesproken dat je de opmetingen afrondt tot op de seconde. Maar het is niet omdat jij met zo’n
+afronding werkt (en dus 54 seconden opschrijft) dat de echte tijd ook met sprongen verloopt.
+
+Als je te maken hebt met uitkomsten die alle mogelijke getalwaarden kunnen aannemen tussen
+bepaalde grenzen, dan spreek je over een {\bf continu kwantitatieve veranderlijke}. De
+naam “numeriek” wijst op het feit dat je echt met getallen te maken hebt, en niet met landen of
+wielersponsors. De naam “continu” wijst erop dat (minstens theoretisch) de getallen alle mogelijke
+waarden kunnen aannemen tussen bepaalde grenzen, zonder enige onderbreking.
+
+De geschatte tijdsduur van één minuut is een voorbeeld van een continu kwantitatieve veranderlijke.
+Een ander voorbeeld is het gewicht van een leerling of haar lengte.
+
+\subsection{Op speurtocht in je dataset}
+
+Om een goed zicht te krijgen op al je verzamelde gegevens, zal je de
+getallen uit de dataset samenvatten in een tabel. Je zal ook grafieken
+tekenen en kengetallen berekenen.
+
+\vraag{Schrijf alle gemeten waarden op.}{5cm}
+
+
+\subsubsection{Een frequentietabel met klassenindeling}
+
+Je beschikt nu over een groot aantal opmetingen van een continu kwantitatieve veranderlijke. In feite is
+elke geschatte tijdsduur verschillend van elke andere, maar daarvoor had je moeten meten tot op een
+miljardste van een seconde (of misschien nog preciezer!). Als elke “echte” waarde verschillend is
+van elke andere, dan komt elke “echte” waarde slechts één keer voor. Een frequentietabel zou dan
+(theoretisch) al die verschillende “echte” waarden moeten bevatten, allemaal met een frequentie
+gelijk aan één. Dat is zinloos.
+
+De tijdsmetingen die je hier hebt, worden, zoals alle continue veranderlijken, samengevat in een
+{\bf frequentietabel met klassenindeling}.
+
+\begin{center}
+  \begin{tabular}{|c|c|}
+    \hline
+    Klasse & Frequentie\\
+    \hline
+    [30;35[ & 1\\    
+    \hline
+    [35;40[ & 0\\
+    \hline
+    [40;45[ & \ldots\\ 
+    \hline
+    \ldots & \ldots\\ 
+    \hline
+  \end{tabular}
+\end{center}
+
+Voor het maken van de klassen kan je als volgt te werk gaan.
+\begin{itemize}
+  \item Start met een interval dat groot genoeg is om al je opmetingen te kunnen bevatten. Als je
+kleinste observatie 32 is en je grootste is 93, dan moet je dus minstens van 32 tot 93 gaan.
+Meestal neem je eenvoudige “ronde” getallen. Hier zou je bijvoorbeeld kunnen starten bij 30
+en eindigen bij 95 of 100.
+  \item Op dit grote interval maak je nu deelintervallen die mooi aan elkaar aansluiten en elkaar niet
+overlappen. Dat zijn je klassen. De breedte van die klassen mag je zelf kiezen en ze hoeven
+zelfs niet allemaal even breed te zijn.
+  \item Elke klasse is een “links gesloten – rechts open” interval, zoals bijvoorbeeld [30 ; 35[. De
+grenzen van een klasse heten klassengrenzen. Het midden heet klassenmidden en de
+breedte heet klassenbreedte.
+  \item Zorg ervoor dat het overgrote deel van de waarnemingen niet binnen één of twee klassen
+valt. Als richtlijn neem je tussen de 5 en de 15 klassen, maar deze richtlijn hoef je niet te
+strikt te nemen. Als je de frequentietabel gebruikt om een histogram te tekenen (zoals
+uitgelegd in volgend puntje), dan zal je ervaren dat te veel klassen dikwijls een zeer onrustige
+figuur geven terwijl te weinig klassen bijna niets meer tonen.
+\end{itemize}
+
+\vraag{Stel nu een frequentietabel op voor jouw onderzoek. Je kan je laten leiden door bovenstaand
+voorbeeld en de klassenbreedte gelijk aan 5 nemen, tenzij dat voor jouw data niet zinvol is.}{0cm}
+
+\begin{center}
+  \begin{tabular}{|p{2cm}|p{2cm}|}
+    \hline
+    Klasse & Frequentie\\
+    \hline&\\\hline&\\\hline&\\\hline&\\\hline&\\
+    \hline&\\\hline&\\\hline&\\\hline&\\\hline&\\
+    \hline&\\\hline&\\\hline&\\\hline&\\\hline&\\\hline
+  \end{tabular}
+\end{center}
+
+Als we enorm veel data hebben kan het berekenen van de klassen beter gebeuren door de computer. We gebruiken
+bijvoorbeeld Geogebra:
+\begin{enumerate}
+  \item Plaats alle data in een lijst: vul hiervoor de eerste kolom van het rekenblad met de data, selecteer deze cellen en kies {\it creëer lijst} (rechts klikken). Noem de gemaakte lijst "data" door deze te hernoemen (lijst selecteren en "data" typen).
+  \item Bereken het maximum en het minimum: voer de commando's \verb#min=Min[data]# en \verb#max=Max[data]# in.
+  \item Bereken een goede klassenbreedte, bijvoorbeeld voor $10$ klassen vinden we $$\frac{max-min}{10}=\frac{81-42}{10}=3.9\;.$$ We ronden af en nemen als klassenbreedte $4$.
+  \item Maak nu in het rekenblad een kolom voor linker- en rechter klassengrenzen. Dit gaat het snelst als je in C2 het getal $42$ plaatst. Nu is D2 gelijk aan de linker grens plus de klassenbreedte. Dus in D2 wordt \verb#=C2 + 4# geplaatst. C3 begint nu waar de vorig grens was geëindigd, plaats daar dus \verb#=D2#. Nu kunnen de correcte cellen naar beneden gesleept worden, Geogebra zal de correcte klassen creëren.
+  \item Laat nu Geogebra zelf de gegevens turven, hiervoor vul je in E2 \verb#=TelAls[C2 <= x < D2, data]# in. Er wordt in de data gekeken, en geteld hoeveel keer er een element tussen de klassengrenzen ligt.
+\end{enumerate}
+
+\begin{center}
+  \includegraphics[width=14cm]{gg-gegroepeerde_frequentietabel}
+\end{center}
+
+\subsubsection{Het histogram}
+
+Een {\bf histogram} is de meest gebruikte figuur om het globale gedrag van continu
+kwantitatieve gegevens te onderzoeken. Deze stelt de frequentieverdeling bij klassenindeling
+grafisch voor. We maken een histogram als volgt:
+
+\begin{enumerate}
+  \item Kies op de $x$-as een lengte-eenheid en breng op de $x$-as de beeldpunten van de klassengrenzen aan. Elke klasse komt dan overeen met een lijnstuk.
+  \item De klassenfrequenties worden voorgesteld met behulp van rechthoeken die de horizontale lijnstukken op de $x$ as als zijde hebben. Dan moet de verticale zijde zo zijn, dat de oppervlakte van de bijbehorende rechthoek recht evenredig is met de frequentie van een klasse. We moeten dus de hoogte van elke rechthoek berekenen en vervolgens die rechthoeken construeren, allen aan de zelfde kant van de $x$-as.
+\end{enumerate}
+
+\vraag{Teken een histogram voor de door jou opgestelde frequentietabel.}{0cm}
+
+\begin{center}
+  \input{tikzpictures/histogram_blanco}
+\end{center}
+
+{\bf Verschil tussen een staafdiagram en een histogram:}\\
+Sommigen denken dat een histogram en een staafdiagram goed op elkaar
+lijken. Dat is fout, want er zijn fundamentele verschillen. Een histogram hoort
+bij een continu kwantitatieve veranderlijke waar geen tussenstappen zijn tussen
+de “mogelijke” uitkomsten. Bij een histogram liggen de rechthoeken dus tegen
+elkaar. Bij een staafdiagram is er open ruimte tussen de staafjes. Bovendien
+kijk je bij een staafdiagram naar de hoogte en bij een histogram naar de
+oppervlakte.
+
+Met Geogebra tekenen we als volgt het histogram:
+\begin{enumerate}
+  \item Gebruik de kolom met de linkergrenzen om een lijst te creëren. Noem deze lijst {\it grenzen} door ze te selecteren en te hernoemen. De laatste grens werd nog niet toegevoegd aan de lijst, om dit te doen kan je dubbelklikken op de lijst en er achteraan nog de juiste cel aan toevoegen.
+  \item Selecteer nu de kolom met frequenties en creëer er de lijst {\it frequenties} mee.
+  \item Voer nu het commando \verb#Histogram[grenzen,frequenties]# in. Geogebra maakt nu het histogram.
+  \item Herschaal de assen, verplaats de $y$-as en vul de labels aan.
+\end{enumerate}
+
+\begin{center}
+  \includegraphics[width=14cm]{gg-histogram}
+\end{center}
+
+\subsubsection{Numerieke kenmerken}
+
+\subsubsection*{Gemiddelde en mediaan}
+
+Hoe de testpersonen de tijdsduur van 1 minuut geschat hebben is mooi weergegeven
+in het histogram. Maar wat doe je als men vraagt om al die informatie in enkele
+getallen samen te vatten?
+
+Een samenvatting in getallen (die {\bf kengetallen} worden genoemd) geeft je zelden evenveel
+informatie als een goede figuur. Maar soms kan een kengetal dienen als “typisch” resultaat. Dat is
+natuurlijk wel handig.
+
+Als eerste kenmerk wil je weten hoelang een typische proefpersoon denkt dat een minuut duurt.
+Daarom ga je op zoek naar een getal dat “het centrum” van al je resultaten weergeeft. Een
+gebruikelijk kengetal hiervoor is het {\bf gemiddelde}. Een ander kengetal voor “centrum” is de
+{\bf mediaan}.
+
+Deze kengetallen kunnen enkel berekend worden bij kwantitatieve gegevens.
+
+Bij {\bf discrete kwantitatieve gegevens} wordt het gemiddelde berekend door het quotiënt te nemen van hun som en hun aantal. De mediaan wordt berekend door de gegevens te rangschikken van klein naar groot en het middelste getal te nemen als het aantal gegevens oneven is of het gemiddelde te nemen van de middelste twee getallen als het aantal getallen even is.
+
+Een simpel voorbeeld is:
+
+\vraag{Bereken het gemiddelde van de volgende toetsresultaten: 4, 5.5, 6, 6, 6, 6.5, 7, 7, 7, 7.5, 7.5, 8, 8, 8, 8, 8.5, 8.5, 9, 9.5, 10, 10.}{3cm}
+
+\vraag{Bereken de mediaan van de volgende toetsresultaten: 4, 5.5, 6, 6, 6, 6.5, 7, 7, 7, 7.5, 7.5, 8, 8, 8, 8, 8.5, 8.5, 9, 9.5, 10, 10.}{3cm}
+
+In het vorige voorbeeld werd het gemiddelde en mediaan berekend van discrete kwantitatieve gegevens. Ons
+onderzoek bevat {\bf continue kwantitatieve gegevens} die gegroepeerd zijn in een frequentietabel. Om hiervan
+het gemiddelde te berekenen zoeken we van elke klasse het {\bf klassenmidden}, dit is de halve som van de
+ondergrens en de bovengrens van die klasse. Bijvoorbeeld van de klasse $[42, 46[$ is het klassenmidden
+$$
+\frac{42 + 46}{2}=44\;.
+$$
+
+Dit klassenmidden wordt nu vermenigvuldigd met elke frequentie. Dit noemen we het product. Alle bekomen producten worden opgeteld. Het gemiddelde is dan het quotiënt van som van de producten en de som van de frequenties.
+
+\vraag{Bereken nu het gemiddelde.}{0cm}
+\begin{center}
+  \begin{tabular}{|p{2cm}|p{3cm}|p{2cm}|p{2cm}|}
+    \hline
+    Klasse & Klassenmidden & Frequentie & Product\\
+    \hline&&&\\\hline&&&\\\hline&&&\\\hline&&&\\\hline&&&\\
+    \hline&&&\\\hline&&&\\\hline&&&\\\hline&&&\\\hline&&&\\
+    \hline&&&\\\hline&&&\\\hline&&&\\\hline&&&\\\hline&&&\\\hline
+    \multicolumn{2}{r|}{Som:} & &\\\cline{3-4}
+  \end{tabular}
+\end{center}
+
+Omdat onze gegevens gegroepeerd zijn moeten we bij het berekenden van de mediaan de gegevens ordenen van klein naar groot en kijken in welke klasse de middelste waarde zich bevind. Hiervoor hebben we dus de ruwe data nodig. Deze sorteren we van klein naar groot. De middelste waarde bij een oneven aantal gegevens bepaald de klasse waar de mediaan in ligt. Het klassenmidden is dan de mediaan. Bij een even aantal gegevens bepaald het gemiddelde van de twee middelste gegevens de klasse. De mediaan is dan ook het klassenmidden van deze klassen.
+
+\vraag{Bepaal de mediaan van ons onderzoek.}{4cm}
+
+\subsubsection*{Standaardafwijking en interkwartielafstand}
+
+Om je opmetingen te karakteriseren is het “centrum” maar een eerste stap. Een tweede karakteristiek
+is de spreiding rond dit centrum. De gebruikelijke kengetallen hiervoor zijn de standaardafwijking en
+de interkwartielafstand. Zij worden ook {\bf spreidingsmaten} genoemd.
+
+Om de spreiding van de gegevens rond het gemiddelde te berekenen, gebruik je de
+{\bf standaardafwijking} $s$. Voor de standaardafwijking bestaat een “te gekke” formule. Die ziet eruit als
+$$
+s = \sqrt{\frac{1}{n-1}\sum^n_{i=1}(x_i - \bar{x})^2}
+$$
+waarbij $n$ staat voor het aantal gegevens, $\bar{x}$ voor het gemiddelde en $x_i$ voor het $i$-de gegeven. Dit kengetal zullen we straks berekenen met software.
+
+Een andere maat voor spreiding is de lengte van het gebied waarin de middelste 50\% van de
+geordende opmetingen liggen. Dit gebied loopt van het {\bf eerste kwartiel} Q1 tot het {\bf derde kwartiel} Q3.
+De lengte van dit interval is de {\bf interkwartielafstand}, genoteerd als IQR (= InterQuartile Range).
+Als we de reeds berekende mediaan Q2 noemen, dan is Q1 te bepalen door de mediaan te nemen van de
+gegevens links van Q2 en Q3 is te bepalen door de mediaan te nemen van de gevens rechts van Q2. Ook
+dit kengetal zullen we berekenen met software.
+
+\subsubsection{Berekenen van de 1-variabele statistieken}
+
+Alle voorgaande kengetallen vatten we samen met de {\bf 1-variabele statistieken}. Deze kunnen allemaal
+in één keer berekend worden met Geogebra. Selecteer hiervoor de lijst met data en kies het icoon 
+{\it onderzoek één variabele}. Verschuif het aantal klassen naar $10$. Geogebra zal het histogram plotten
+een lijst geven met kengetallen.
+
+De volgende zijn belangrijk:
+\begin{description}
+  \item[n] Het aantal gegevens.
+  \item[Gemiddelde] Het rekenkundig gemiddelde.
+  \item[s] De standaard afwijking.
+  \item[Min] De laagste waarde.
+  \item[Q1] Het eerste kwartiel.
+  \item[Mediaan] De mediaan.
+  \item[Q3] Het derde kwartiel.
+  \item[Max] De hoogste waarde.
+\end{description}
+
+\begin{center}
+  \includegraphics[width=14cm]{gg-1var_stat}
+\end{center}
+
+\subsubsection{De boxplot}
+
+Een goed zicht op zowel het centrum als de spreiding van je opmetingen, krijg je uit een boxplot. Dit
+is een grafiek die gebruik maakt van de begrippen minimum, maximum, mediaan, eerste kwartiel
+Q1, derde kwartiel Q3, IQR en uitschieters.
+
+\begin{wrapfigure}[11]{l}{0.3\textwidth}
+  \includegraphics[width=0.3\textwidth]{boxplot}
+\end{wrapfigure}
+
+De rechterstaart begint vanaf Q3. Dit lijnstuk gaat tot aan de grootste opmeting die kleiner of
+gelijk is aan Q3 + (1.5 IQR). Elke observatie die nog groter is, wordt als een uitschieter
+beschouwd en apart aangeduid. In deze studie loopt de rechterstaart van $66$ tot $81$ en heeft
+dus een lengte van $15$. Op een analoge manier teken je de linkerstaart, links van Q1. Die
+loopt hier van $42$ tot $51.5$, wat een lengte van $9.5$ oplevert.
+De rechthoekjes duiden aan waar de middelste getallen van de dataset liggen. De
+linkerrechthoek gaat van Q1 tot Med. In dat gebied ligt het tweede kwart van de geordende
+getallen. De rechterrechthoek gaat van Me tot Q3, en daar ligt het derde kwart van deze
+getallen.
+
+\vraag{Teken nu de boxplot van het onderzoek. Vergeet de x-as niet te voorzien van de juiste getallen en de juiste
+eenheid.}{4cm}
+
+\vraag{Zijn er uitschieters in je dataset? Was dat te verwachten?}{3cm}
+
+
+
+In Geogebra krijg je een boxplot door in het venster van de 1-variabele statistieken {\it Boxplot} te kiezen in plaats van {\it Histogram}.
+
+\begin{center}
+  \includegraphics[width=14cm]{gg-boxplot}  
+\end{center}
+
+\subsection{Wat heb je gevonden? Hoever kan je gaan in je conclusie?}
+
 
 \end{document}
 
@@ -627,7 +909,9 @@ keren laten schatten. Zo krijg je een idee over het schattingsgedrag van die
   \includegraphics[width=0.3\textwidth]{figuur}
 \end{wrapfigure}
 
-
+\begin{center}
+  \includegraphics[width=14cm]{gg-gegroepeerde_frequentietabel}
+\end{center}
 
 
 
