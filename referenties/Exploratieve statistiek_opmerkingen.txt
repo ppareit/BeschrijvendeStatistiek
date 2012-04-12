@@ -2,3 +2,7 @@ p7: website is nu: http://www4.vlaanderen.be/dar/svr/Cijfers/Pages/Excel.aspx.
 p9: figuur cirkeldiagram_electriciteit.png is beter
 p13: info op website is weg..
 p15: Wie wordt onderzocht? -> Wie of wat wordt onderzocht?
+
+p52: Kan je de steekproef die je getrokken hebt vooraleer je aan het derde onderzoek begon
+gebruiken voor je huidige onderzoeksvraag? ???wat is het derde onderzoek???
+
