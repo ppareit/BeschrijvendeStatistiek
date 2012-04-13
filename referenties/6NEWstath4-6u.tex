@@ -1,0 +1,1859 @@
+
+
+
+\chapter{Statistiek} 
+{\large\em Een statiticus is iemand die, als hij met zijn hoofd in een brandende kachel steekt en met zijn voeten in een emmer ijs staat, verklaart: ``gemiddeld genomen, voel ik me lekker``.}
+\section{Beschrijvende statistiek - herhaling}
+\begin{small} 
+\begin{description}
+\item[Een populatie] is het 'grote geheel' van personen, dieren, planten of voorwerpen waarvan men iets wil onderzoeken door middel van enqu\^etes of experimenten.\\ 
+Al naar gelang de aard van de informatie onderscheiden we twee soorten data:
+
+\item[Kwalitatieve of niet-numerieke  data] zijn
+  waarnemingsgegevens die geen getallen zijn. \\ De $n$ waar\-ne\-mingsgegevens worden ingedeeld in  zogenaamde  {\bf categorie\"en}. Elke categorie krijgt een ``label''. De categorie\"en kunnen soms wel door een bepaalde code (nummer) worden weergegeven. Het aantal  categorie\"en die mogelijk kunnen voorkomen  stellen we gelijk aan $m$.
+
+ \begin{quotation}
+\item De Vlaamse bevolking waarvan men de bloedgroep wil onderzoeken is de populatie. De kwalitatieve data bevat bvb.\ 100 Vlamingen waarvan men de bloedgroep opvraagt ($n=100$).  \\De mogelijke categorie\"en bij het bloedgroepenonderzoek zijn: A, B, AB en O  ($m=4$). 
+\item De Vlaamse gezinnen met twee kinderen waarvan men de samenstelling jongen, meisje wil onderzoeken. De kwalitatieve data bestaat bvb.\ uit 8665 gezinnen met twee kinderen in het Gentse waarvan men de samenstelling opvraagt ($n=8665$).\\ De mogelijke categorie\"en bij de samenstelling van een gezin met 2 kinderen  zijn: (meisje,meisje), (meisje,jongen), (jongen,meisje), (jongen,jongen). \\Kort genoteerd: (m,m), (m,j), (j,m), (j,j) ($m=4$).
+\end{quotation} 
+
+\item[Kwantitatieve of numerieke data] zijn  waarnemingsgegevens die getallen zijn. Deze getallen zijn waarden van een toevalsveranderlijke, die we voor de populatie willen beschouwen, over het universum van het experiment. Deze toevalsveranderlijke  noemen we de \textbf{populatie-s.v.} (stochastische veranderlijke). 
+ 
+\item[Het theoretisch model van een steekproef]:\\
+Een steekproef met grootte $n$ uit een populatie met populatie-s.v.\ $X$ is een set van $n$ toevalsveranderlijken $X_1, X_2,\cdots  X_n$ die onafhankelijk zijn en dezelfde verdeling hebben als $X$.
+
+\item[Een steekproef in praktijk]:\\
+Van zodra we in praktijk een steekproef trekken, vinden we een set van  $n$ \textbf{steekproefwaarden} $r_1, r_2, \cdots r_n$ die \'e\'en van de vele realisaties is van het theoretisch model van de steekproef. Telkens we een steekproef trekken verkrijgen we andere steekproefwaarden.
+\item[Steekproefvariabiliteit] is het verschijnsel van de verschillende steekproefresultaten.
+
+\item[Discrete kwantitatieve data] zijn numerieke data die waarden zijn van een discrete populatie s.v.
+
+De  steekproefwaarden worden  gerangschikt volgens grootte en eventueel  ingedeeld in een eindig aantal {\bf klassen}. \\
+Het aantal mogelijke waarden van de toevalsveranderlijke   of het aantal klassen stellen we voor door $m$.\\  We stellen de verschillende steekproefwaarden of de klassenmiddens voor door $x_1, x_2,\ldots x_m$.
+\begin{quotation}
+\item Het experiment ``Een dobbelsteen opgooien''.\\
+De toevalsveranderlijke $X$: ``een 6 of geen 6 gooien'' ($m=2$).\\ Een  steekproef in praktijk bestaat bvb.\ uit het honderd keer opgooien van de dobbelsteen en telkens noteert men een 6 of geen 6 ($n= 100$).
+%\item Het experiment 'opgooien van een dobbelsteen'. We gooien 60 keer ($n=60$).\\
+%Toevalsveranderlijke $X$: 'het aantal ogen op de dobbelsteen'\\
+%De steekproefwaarden behoren tot een verzameling van discrete waarden, nl.\ $\{1, 2, 3, 4, 5,6\}$ ($m=6$). 
+
+%\item Het experiment 'opgooien van een dobbelsteen' \\
+%Toevalsveranderlijke $X$:'het aantal keer gooien tot we een 6 bekomen'\\
+%De  moegelijke steekproefwaarden behoren tot een verzameling van  discrete  waarden, nl.\ $\{1,2,3,\cdots\}$. Hier is $m$ in theorie oneindig groot maar in praktijk is $m$ beperkt. 
+\item Het experiment 'opgooien van twee dobbelstenen' \\
+De toevalsveranderlijke $X$: ``de som van de ogen'', neemt waarden aan die behoren tot $\{2,3,4,5,6,7,8,9,10,11,12\}$ ($m=11$). \\ 
+ Een steekproef in praktijk bestaat uit het twintig keer opgooien van twee dobbelstenen en telkens noteert men de som van de ogen ($n=20$). 
+
+\item In de eerste ronde van de wiskunde olympiade de resultaten op 150 van leerlingen van de derde graad.\\
+De toevalsveranderlijke $X$: ``het resultaat op 150'', neemt waarden aan die behoren tot $\{0,1,2,\cdots 149,150\}$ ($m=151$).\\
+Een steekproef in de praktijk bestaat uit de  scores van 11185 leerlingen van de derdegraad die in 2007 deelnamen aan de wiskunde olympiade ($n=11185$).\\
+Hier zal de data ingedeeld worden in klassen.
+
+\end{quotation}
+
+
+\item[Continue kwantitatieve data] zijn numerieke data die waarden zijn van een  continue populatie s.v.\\
+De  steekproefwaarden worden in de praktijk afgerond (afhankelijk van de nauwkeurigheid van de meettoestellen) en  worden dan in een eindig aantal {\bf klassen} ingedeeld. De {\bf klassenmiddens} stellen we voor door $x_1, x_2,\ldots,x_m$. 
+ 
+\begin{quotation}
+\item Bij jongeren tussen 15 en 18 nemen we als populatie s.v;\ ``het aantal uren TV kijken en computer spelen per dag'' die  waarden in het interval $[0,24]$.\\ Een steekproef in de praktijk bevat bvb.\ 150 leerlingen van Nieuwen Bosch tussen 15 en 18 waarvan men het aantal uren  TV kijken en computerspelen per dag opvraagt ($n= 150$).
+\item Bij achtienjarige meisjes nemen we als populatie s.v.\  de lichaamslengte die waarden aanneemt in het interval  $[100,200]$ (of een groter of kleiner interval eigen aan het experiment).\\ Een steekproef bestaat uit bvb.\ 30 achtienjarige meisjes van Nieuwen Bosch waarvan men de lengte opvraagt ($n=30$). 
+\end{quotation}
+
+
+\item[De absolute frequentie $f_i$ van steekproefwaarde $x_i$] is bij discrete data    het aantal keer dat de waarde  $x_i$ in de dataset voorkomt of bij gegroepeerde data het aantal waarden van de dataset die liggen in het interval waarvan $x_i$ het midden is. 
+\item[Relatieve frequentie $F_i$ van steekproefwaarde $x_i$] is de verhouding van de absolute frequentie van $x_i$  tot de steekproefgrootte $n$.
+$$F_i=\frac{f_i}{n}$$
+ De relatieve frequenties drukken we meestal uit in percentages.
+
+Volgende eigenschappen voor de absolute en relatieve frequenties zijn geldig:
+
+\begin{itemize}
+\item {\em De som van de absolute frequenties van de verschillende steekproefwaarden is gelijk aan de steekproefgrootte}
+
+
+\begin{equation} \label{absfreq}
+f_1+f_2+\ldots +f_m =\sum_{i=1}^mf_i=n
+\end{equation} 
+
+\item {\em De som van de relatieve frequenties van de verschillende steekproefwaarden is gelijk aan 1}
+
+
+\begin{equation}\label{relfreq}
+F_1+F_2+\ldots +F_m=\sum_{i=1}^mF_i=1
+\end{equation}
+\end{itemize}
+
+\item[De gecumuleerde absolute frequentie $cf_i$ van  $x_i$] is de som van de absolute frequenties van de verschillende steekproefwaarden  die kleiner zijn dan of gelijk aan $x_i$ mits deze geordende zijn volgens grootte.
+ \item[De gecumuleerde relatieve frequentie $CF_i$ van  $x_i$] is de gecumuleerde absolute frequentie gedeeld door de steekproefgrootte $n$. 
+\item[De drie kwartielen] zijn de getallen die we vinden als we de rij geordende waarnemingsgetallen verdelen in vier gelijke delen. 
+\item[De mediaan] is het tweede kwartiel. 
+\item[De interkwartielafstand] is de afstand tussen het eerste en derde kwartiel.
+\item[Het gemiddelde van de steekproefwaarden] is het getal dat we bekomen door elke waarde $x_i$ te
+vermenigvuldigen met zijn relatieve frequentie $F_i$ en de bekomen producten 
+op te tellen. In geval we werken met met klassen (gegroepeerde gegevens) dan nemen voor $x_i$ 
+het klassemidden.
+$$\overline{x}=\frac{f_1\cdot x_1+f_2\cdot x_2+\cdots f_m\cdot x_m}{n}=F_1\cdot x_1+F_2\cdot x_2+\cdots +F_m\cdot x_m.$$
+Met het sommatieteken:
+$$\overline{x}=\sum_{i=1}^m\frac{f_i\cdot x_i}{n}=\sum_{i=1}^mF_i\cdot x_i.$$
+  
+
+\item[De variantie van de steekproefwaarden] 
+$$s^2=\frac{1}{n-1}\left(f_1\cdot(x_1-\overline{x})^2+f_2\cdot (x_2-\overline{x})^2+\cdots +f_m\cdot (x_m-\overline{x})^2\right)$$
+Met het sommatieteken:
+$$s^2=\frac{1}{n-1}\left( \sum_{i=1}^mf_i.(x_i-\overline{x})^2\right) $$
+\item[Frequentietabel] is een tabel waarin we de verschillende steekproefwaarden geordend volgens grootte weergeven alsook  de absolute, relatieve en gecumuleerde frequenties.
+\item[Grafische voorstellingen]
+
+Voor discrete data is dat voor niet-gegroepeerde data het {\bf staafdiagram} en voor gegroepeerde data het {\bf histogram} of het {\bf stengel-en-bladdiagram}.\\
+Voor continue data is dat het {\bf histogram} of het {\bf stengel-en-bladdiagram}.\\
+De {\bf boxplot} 
+is een rechthoekige doos die getekend wordt van het eerste kwartiel tot het derde kwartiel t.o.v.\ een schaal. De lijn in de doos wijst de mediaan (tweede kwartiel) aan.
+%\newpage
+We illustreren de laatste begrippen met de wiskunderesultaten van 18 leerlingen. Deze data werd reeds gegroepeerd en de $x_i$ in de twee tabellen zijn de klassemiddens.  Met deze twee reeksen wiskunderesultaten  tonen we aan dat het rekenkundig geiddelde iets zegt over de prestaties van de leerlingen. Maar dat  alleen is niet voldoende. Het is ook belangrijk te weten hoe dicht de resultaten rond het gemiddelde liggen. Een maat voor die spreiding is de standaardafwijking. \\
+De twee reeksen resultaten hebben hetzelfde gemiddelde maar de tweede reeks  heeft een veel kleinere spreiding dan de eerste reeks.
+We tekenen de histogrammen.
+%\begin{itemize}
+%\item In de eerste reeks hebben bepaalde leerlingen schitterend gewerkt en anderen hebben  het helemaal niet goed gedaan. Misschien werden voor deze test moeilijke vragen gesteld ofwel zijn er een aantal leerlingen die goed studeren en andere die nogal aan de luie kant zijn. De groep is misschien heterogeen.
+%\item  In de tweede reeks hebben bijna alle leerlingen vrijwel een gemiddeld resultaat. Ofwel zijn de vragen van een eerder gemakkelijk niveau ofwel is de klasgroep  meer homogeen.
+%\end{itemize} 
+
+
+
+%\begin{table}[h]
+%\begin{center}
+%\begin{tabular}{|c|l|l|l|l|l|l|l|}
+%\hline
+%$x_i$   & $f_i$ &     $F_i$      &    $x_i* f_i$      &   $x_i-\overline{x}$   & $(x_i-\overline{x})^2*f_i$& $cf_i$ & $CF_i$ \\
+%\hline
+%$35$ & 2 & 0,11 & 3,89 & -27,22& 1482,10 & 2& 0,11\\
+%\hline
+%$45$ &  3& 0,17 & 7,50& -17,22 &889,81 & 5 & 0,28\\
+%\hline
+%$55$ & 3&  0,17& 9,17 & -7,22 & 154,48 & 8&0,44\\
+%\hline
+%$65$ & 4& 0,22 & 14,44 & 2,78& 30,86 & 12 &0,67\\
+%\hline
+%$75$ &  3& 0,17&  12,5 & 12,78& 489,81& 15 &0,83\\ 
+%\hline
+%$85$ &  2& 0,11 & 9,44 & 22,78  & 1037,65,65& 17& 0,94\\
+%\hline
+% $95$ &  1& 0,06 & 5,28 & 32,78  & 1074,38& 18& 1,00\\
+%\hline
+%$\sum$& $18$ & $1$ & $\overline{x}=62,22$& $0$  & $\s^2=303,59$  &  & \\
+%\hline
+ %      &     &     &            &       & $\s=17,42$   & &\\
+%\hline
+%\end{tabular}
+%\caption{Resultaten wiskunde op 100 van 18 leerlingen, eerste reeks\label{res1}}
+%\end{center}
+%\end{table}
+
+%\begin{table}[h]
+%\begin{center}
+%\begin{tabular}{|c|l|l|l|l|l|l|l|}
+%\hline
+%$x_i$   & $f_i$ &     $F_i$      &    $x_i* f_i$      &   $x_i-\overline{x}$   & %$(x_i-\overline{x})^2*f_i$& $cf_i$ & $CF_i$ \\
+%\hline
+%$35$ & 0 & 0,00 & 0,00 & -27,22& 0,00 & 2& 0,00\\
+%\hline
+%$45$ &  2& 0,11 & 5,00& -17,22 &593,21 & 2 & 0,11\\
+%\hline
+%$55$ & 5&  0,27& 15,28 & -7,22 & 260,80 & 7&0,39\\
+%\hline
+%$65$ & 8& 0,44 & 28,89 & 2,78& 61,73 & 15 &0,83\\
+%\hline
+%$75$ &  2& 0,11&  8,33 & 12,78& 326,54& 17 &0,94\\ 
+%\hline
+%$85$ &  1& 0,06 & 4,72 & 22,78  & 518,83& 18& 1,00\\
+%\hline
+% $95$ &  0& 0,00 & 0,00 & 32,78  & 0,00& 18& 1,00\\
+%\hline
+%$\sum$& $18$ & $1$ & $\overline{x}=62,22$& $0$  & $\s^2=103,59$  &  & \\
+%\hline
+%       &     &     &            &       & $\s=10,18$   & &\\
+%\hline
+%\end{tabular}
+%\caption{Resultaten wiskunde op 100 van 18 leerlingen, tweede reeks\label{res2}}
+%\end{center}
+%\end{table}
+
+%We geven de histogrammen deze twee reeksen resultaten
+%Teken de histogrammen van de wiskunderesultaten op onderstaande figuur.
+
+%\begin{figure}
+\includegraphics[height=18cm,width=16cm]{statistiek1.jpg}
+%\caption{teken de histogrammen van de wiskunderesultaten}
+%\end{figure}
+\newpage
+
+\item[Representativiteit van een steekproef] betekent dat elk element van de populatie dezelfde kans moet hebben om geselecteerd te worden voor een steekproef. Zo een steekproef noemen we een \textbf{enkelvoudige aselecte steekproef} (EAS).\\Om de elementen van een steekproef aselect te kiezen bestaan standaardprocedures.
+\begin{itemize}
+\item {\em Selectie met randomgetallen}\\
+Aan elk element van de populatie wordt een getal toegekend. De steekproef wordt tot stand gebracht door willekeurig getallen te trekken zoals in een loterij.
+\item {\em Gestratifieerde steekproef} \\
+Bij omvangrijke populaties wordt de populatie ingedeeld in een aantal homogene sub\-po\-pulaties (strata). Uit elke deelgroep of stratum wordt dan op aselecte wijze een steekproef genomen, waarbij de steekproefgrootte telkens bepaald wordt in functie van de omvang van de subpopulatie.\\
+{\em Voorbeeld:} Bij een budgetonderzoek ``waar wordt het inkomen van een gezin aan besteed?'' worden de gezinnen ingedeeld in een aantal inkomenscategorie\"en
+(laag, middelmatig en hoog). Uit elk van deze categorie\"en wordt dan een steekproef genomen waarbij het aantal geselecteerde gezinnen in verhouding staat tot de omvang van de categorie. Zo zijn we zeker dat alle inkomensklassen evenredig vertegenwoordigd zijn in de steekproef.
+\item {\em Getrapte steekproef}\\
+Hier wordt de populatie ingedeeld in deelpopulaties waarna enkele van deze subpopulaties lukraak worden uitgekozen en nog in kleinere deelpopulaties worden verdeeld.
+Zo kunnen in een grootschalige opiniepeiling in een eerste stap een aantal gemeenten geselecteerd worden, waarna uit elke gemeente een aantal wijken worden gekozen. In een derde stap kunnen vervolgens uit elke wijk \'e\'en of meerdere straten gekozen worden en tenslotte uit elke straat enkele gezinnen. Elke deelsectie kan gebeuren op basis van randomgetallen.
+\item {\em Systematische steekproef}\\
+In dit geval worden de steekproefelementen op systematische wijze geselecteerd uit de populatie. Dit betekent dat tussen twee opeenvolgende selecties steeds een min of meer gelijk aantal elementen wordt overgeslagen, of dat het tijdsinterval tussen twee selecties ongeveer gelijk is. Zo kan bijvoorbeeld om de 20 namen uit een register een naam geselecteerd worden, of kan van een continu bewegende productieband om de 10 minuten een product genomen worden om de kwaliteit ervan te controleren.
+\end{itemize}
+
+Het grootste gevaar voor de representativiteit bij vooral schriftelijke enqu\^etes is de non-respons, aangeschreven personen die nalaten het formulier in te vullen. Indien bijvoorbeeld bij een opiniepeiling slechts 1 op 5 personen het formulier terugstuurt, dan kunnen we bezwaarlijk stellen dat die groep personen nog representatief is voor de volledige populatie. Het zijn immers de meest ge\"\i nteresseerden die gemotiveerd zijn om op de enqu\^ete in te gaan en deze groep is niet representatief.
+
+
+
+
+
+
+
+\newpage
+{\em Voorbeelden:}
+\begin{itemize}
+\item Om het vakantiegedrag van de Belgische bevolking te onderzoeken, worden 6000 personen bevraagd.
+De Belgische bevolking is de populatie en de 6000 personen vormen een steekproef ($n=6000$). Men kan bijvoorbeeld vragen naar het aantal keer dat men een korte vakantie genomen heeft in 2005, of naar de bestemming van de vakantie, of naar het vervoermiddel om op vakantie te gaan. 
+\item Bij het bepalen van kijkcijfers is het technisch onmogelijk om de circa 2 500 000 Vlaamse TV-abonnees bij het onderzoek te betrekken. Daarom wordt de kijkdichtheid berekend op basis van een steekproef van een honderd abonnees.
+
+\item  Om iets te weten te komen over het rookgedrag van Vlaamse meisjes van 17 jaar, kunnen we 40 zeventienjarige meisjes van Nieuwen Bosch ondervragen over hun rookgedrag. De groep van alle zeventienjarige Vlaamse meisjes is de populatie. 
+ Deze verzameling zeventienjarige grijze muizen is een steekproef ($n=40$). Maar deze steekproef is niet representatief voor het rookgedrag van alle Vlaamse zeventienjarige meisjes.
+
+ 
+\item De dienst die verantwoordelijk is voor de kwaliteitscontrole in een firma van zuivelproducten kan moeilijk alle geproduceerde vlootjes testen op hun samenstelling. Dit zou immers de vernietiging van de productie inhouden. Noodgedwongen moet men zich beperken tot steekproeven.
+
+\item In Belgi\"e wordt om de 10 jaar een volkstelling georganiseerd, teneinde inzicht te verwerven in de huidige gezinssamenstelling, huisvesting, comfort en andere aspecten van sociologische of demografische aard. Aangezien elke Belg hierbij betrokken is, is de steekproef gelijk aan de populatie.
+
+\end{itemize}
+\end{description}
+\end{small}
+\newpage
+\section{Statistische kans} 
+
+
+
+De statistiek en de kansrekening zijn historisch gegroeid uit de kansspelen. Nu wordt ze
+op zeer veel gebieden toegepast zoals in de fysica, de biologie, de
+geneeskunde, de economische en sociale wetenschappen.
+ 
+In onze wereld doen zich situaties voor waarvan de afloop niet met
+zekerheid kan bepaald worden, maar bij herhaalde malen optreden van
+dezelfde situatie zien we een zekere wetmatigheid. 
+
+\begin{small}
+{\em Voorbeelden:}
+
+\begin{itemize}
+\item 
+
+Bij het opgooien van een dobbelsteen weten we niet vooraf welk cijfer
+we zullen verkrijgen. Per toeval krijgen we misschien een zes. Maar als
+we een dobbelsteen honderdmaal opgooien zijn we zeker dat we ongeveer
+zestien \` a zeventien keer een zes zullen verkrijgen.\\
+Dit aantal kunnen we wiskundig bepalen. Bij het opgooien van een dobbelsteen 
+hebben we zes even waarschijnlijke uitkomsten 1, 2, 3, 4, 5 en 6. 
+We zeggen dan dat we \' e\' en kans op zes hebben om een 6 te gooien. Wiskundig
+zou dit betekenen dat als we een dobbelsteen zes keer omhoog gooien de
+uitkomst 6 \' e\' en keer zal optreden. In de praktijk is dit echter niet zo.\\
+Maar hoe groter de steekproef hoe dichter het aantal keren een 6
+gooien de wiskundige voorspelling \' e\' en op zes zal benaderen (de wet van
+de grote getallen). \\
+Bij het experiment 'opgooien van \'e\'en dobbelsteen' is  $\Omega=\lbrace 1,2,3,4,5,6\rbrace$ en $N=6$. We proberen nu experimenteel de kans op een 6 te bepalen door een steekproef met grootte $n$ uit te voeren.   \\
+We zullen dit  experiment  simuleren met   DERIVE. 
+\begin{itemize}
+\item
+1 proef met de computer: we typen 
+\bderive  1+random(6)\ederive 
+de computer geeft een getal tussen 1 en 6.
+\item
+$n$ proeven met de computer: we typen
+ \bderive  vector(1+random(6)$,i,1,n$) \ederive
+de computer geeft een vector met $n$ elementen gekozen uit de elementen 1 t.e.m.\ 6. Dit is een herhalingsvariatie van 6 elementen in groepjes van $n$.
+\item 
+Het tellen van het aantal keer 6 bij $n$ proeven met de computer: we typen \bderive  dimension(select($x=6,x,$vector(1+random(6)$,i,1,n$)))\ederive 
+Omdat we de computer deze telling een aantal keer willen laten uitvoeren voor verschillende waarden van $n$, gaan we deze uitdrukking kort noteren en we programmeren 
+\bderive hoeveelkeer6($n$):=dimension(select($x=6,x,$vector(1+random(6)$,i,1,n$)))\ederive  
+Let op het aantal haakjes!
+\item 
+'hoeveelkeer6($n$)' is de frekwentie van de uitkomst 6 bij $n$ keer gooien.\\
+'hoeveelkeer6($n$)/$n$ ' is de relatieve frekwentie van de uitkomst 6 bij $n$ keer gooien en levert een getal op tussen 0 en 1.
+\item We voeren 40 steekproeven uit met grootte achtereenvolgend 5, 10, 15 enz. We noteren telkens hoeveel keer we een 6 bekomen. Zo ontstaat een rij getallen met algemene term 'hoeveelkeer6($n$)/$n$'. De rij stellen we grafisch voor.
+We typen:
+\bderive vector($[n,\mbox{hoeveelkeer}6(n)/n],n,1,5,200,5$)\ederive 
+\begin{figure}[h]
+\begin{center}
+\includegraphics[height=7cm]{experiment1.png}
+%\includegraphics[height=7cm]{test2.pdf}
+\parbox{\textwidth}{\caption{voer zelf de steekproeven uit en maak de grafische voorstelling van de relatieve frequenties}}
+\end{center}
+\end{figure}
+We zien op de grafiek dat rij convergeert naar de waarde $\frac{1}{6}=0,1666\cdots$. Vanaf een zeker rangnummer $m$ liggen de waarden binnen een voorafgekozen kleine basisomgeving van 0,1666.\\
+
+\end{itemize}
+
+Wiskundig kunnen we zeggen dat de 
+$$\P(X=6)=\lim_{n\rightarrow +\infty}\frac{f}{n}$$
+Deze limiet noemt men
+de {\bf statistische waarschijnlijkheid} van 6 bij ``het gooien van \'e\'en dobbelsteen''. 
+ De statistische waarschijnlijkheid van een toevalsveranderlijke is dus de relatieve frequentie van die toevalsveranderlijke voor een
+zeer groot aantal proeven en is een re\" eel getal  gelegen tussen 0 en 1.
+\newpage
+\item
+Het tweede experiment bestaat 5 identieke muntstukken op te gooien en te kijken hoeveel keer we munt bekomen. 
+\begin{itemize}
+\item 
+Het universum is de verzameling van  $2^5=32$ 5-tallen ($N=32$).
+De toevalsveranderlijke $X$ kan de 6 waarden 0, 1, 2, 3, 4 en 5 aannemen ($m=6$).
+\[\begin{array}{l}
+x_1=X((\k,\k,\k,\k, \k))=0\\
+x_2=X((\k,\k,\k, \k,\m))=X(( \k, \k, \k, \m, \k))=X(( \k, \k, \m, \k, \k))=\cdots=1\\
+x_3=X(( \k, \ k, \k, \m, \m))=X(( \k, \k, \m, \m, \k))=X(( \k, \m, \m, \k, \k))=\cdots=2\\
+x_4=X(( \k,  \k, \m, \m, \m))=X(( \m,\ k, \m, \m,\ k))=X(( \m, \m,\m,\k, \k))=\cdots=3\\
+x_5=X(( \m,  \m, \m,  \m, \k))=X((\m,\m,\m,\k,\m))=X((\m,\m,\k,\m,\m))=\cdots=4\\
+x_6=X((\m,\m,\m,\m,\m))=5
+\end{array}\]
+ We zien dat de 6 waarden van de toevalsveranderlijke niet even waarschijnlijk zijn. \\
+We bepalen de statistische waarschijnlijkheid van de  waarden van $X$.
+\item
+1 keer gooien met 5 identieke muntstukken: we typen: \bderive  vector(random(2)$,i,1,5$)\ederive 
+de computer geeft een 5-tal met elementen gekozen uit 0 en 1, bvb. $[1,1,0,0,0]$ (0 voor munt en 1 voor kop).\\
+ Willen we weten hoeveel keer we munt hebben dan moeten we de som maken van de elementen van het $5$-tal. We definieren\bderive  a:=vector(random(2)$,i,1,5$)\ederive Als we  \bderive $\Sigma(a_k,k,1,5)$ \ederive
+ simplifi\"eren, krijgen we een getal tussen 0 en 5. Dit is het aantal keer munt bij 1 keer gooien met 5 muntstukken.
+\item We voeren 5 steekproeven uit met grootte achtereenvolgend 6, 10, 16, 32 en 64.\\ We typen
+ \bderive  vector($\Sigma(a_k,k,1,5),i,1,n$) \label{vector}\ederive
+Als we de uitdrukking opeenvolgend  simplifi\"eren voor $n=6$, $n=10$, $n=16$, $n=32$ en $n=64$ dan verkrijgen we resp.\ een 6-tal, 10-tal, 16-tal, 32-tal en 64-tal. We geven ze opeenvolgend de namen $b6$, $b10$, $b16$, $b32$ en $b64$.\\
+Voorbeeld: $b6=[2,4,3,4,3,3,]$ en\\
+$b32=[1,1,2,4,3,2,1,2,3,2,4,2,2,4,1,4,3,4,2,4,3,3,0,3,2,1,4,3,3,3,2,2]$
+\item 
+In zo een $n$-tal tellen we  het aantal keer we 0 keer munt , 1 keer munt, 2 keer munt, 3 keer munt, 4 keer munt en 5 keer munt krijgen. \\We typen  \bderive  vector(dimension(select($x=j,x,b32$)),j,0,5) \ederive 
+Als we dit simplifi\"eren, krijgen we bijvoorbeeld het  6-tal $[1,5,10,9,7,0]$. Deze waarden kunnen we invullen in de vierde kolom van de tabel \ref{geniaal}.
+Hetzelfde doen we nu met $b6$, $b10$, $b16$ en $b64$. Daartoe brengen we de bovenstaande uitdrukking  naar de schrijflijn en vervangen we opeenvolgend $b32$ door de andere waarden van $b$. Zo kunnen we de tabel\ref{geniaal} vervolledigen.\\
+
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|r|l|l|l|l|l|}
+\hline
+$x_i$   & $f_i$ &     $f_i$      &    $f_i$      &   $f_i$   & $f_i$\\
+\hline
+$0$ &  &  &  &1
+& \\
+\hline
+$1$ &  &  & &5 & \\
+\hline
+$2$ & &  &  & 10 & \\
+\hline
+$3$ & &  &  & 9& \\
+\hline
+$4$ &  & & & 7&\\ 
+\hline
+$5$ &  &  &  &  0 & \\
+\hline
+$\sum$ & $n=6$ & $n=10$ & $n=16$ & $n=32$ & $n=64$\\
+\hline
+\end{tabular}
+\caption{turven bij het opgooien van vijf muntstukken\label{geniaal}}
+\end{center}
+\end{table}
+
+\item Tenslotte maken we een tabel waarbij we de relatieve frekwenties van de verschillende uitkomsten opschrijven voor de verschillende waarden van $n$.  Bekijk nu in  deze tabel  de evolutie van de relatieve frekwenties naarmate het aantal proeven toeneemt. In de laatste kolom staan de kansen aangegeven. 
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|r|l|l|l|l|l|l|}
+\hline
+ $x_i$  & $F_i$ &     $F_i$      &    $F_i$      &   $F_i$   &$F_i$ &$\P(X=x_i)$\\
+\hline
+$0$ & \hspace{1cm} & \hspace{1cm} & \hspace{1cm} &0,03& &0,03
+ \\
+\hline
+$1$ &  &  & &0,16 & &0,16\\
+\hline
+$2$ & &  &  & 0,31 & &0,31\\
+\hline
+$3$ & &  &  & 0,28& &0,31\\
+\hline
+$4$ &  & & & 0,22&&0,16\\ 
+\hline
+$5$ &  &  &  &  0 & &0,03\\
+\hline
+$\sum$ & $1$ & $1$ & $1$ & $1$ & $1$\\
+\hline
+\end{tabular}
+\caption{relatieve frekwenties voor de verschillende uitkomsten en de wiskundige verwachting (laatste kolom)}
+\end{center}
+\end{table}
+
+
+
+
+\end{itemize}
+
+ 
+\end{itemize}
+\end{small}
+
+
+
+
+
+%\begin{figure}[h]
+%\vspace{5cm}  
+%\special{bmp:stat2_04.bmp x=16cm y=5cm}
+%\caption{statistische waarschijnlijkheid voor ``$0\times m$'' bij het opgooien 
+%van 5 muntstukken} 
+%\end{figure}
+ 
+{\sc Opmerking}: Als de statistische waarschijnlijkheid van een bepaalde waarde van $X$  
+gelijk is aan nul dan 
+wil dat niet zeggen dat die waarde niet kan optreden. \\
+{\em Voorbeeld}:  Als we willekeurig een re\"eel getal op een gegradueerde rechte aanduiden dan is de
+ statistische kans dat we een priemgetal aanduiden gelijk aan 0. Maar toch kan het zijn dat we een priemgetal aanduiden. 
+
+
+\newpage
+\section{Verklarende statistiek}
+
+Voor statistisch onderzoek is het belangrijk om uit de resultaten van een EAS zoveel mogelijk betrouwbare besluiten te trekken over de desbetreffende  populatie.
+
+\section{Karakteristieken van een populatie}
+
+\begin{small}
+\begin{description}
+\item Het gemiddelde en de variantie zijn \textbf{karakteristieken van de populatie} die we proberen te weten te komen  door middel van een steekproef. 
+
+
+\item Het \textbf{populatiegemiddelde} met toevalsveranderlijke $X$ stellen we voor door $E(X)=\mu$.
+\item De \textbf{populatievariantie} met toevalsveranderlijke $X$  stellen we voor door $\v(X)=\sigma^2$.
+\item 
+Stel dat een set van $n$ toevalsveranderlijken $X_1, X_2, \cdots X_n$ het theoretoisch model is van een steekproef uit een populatie met populatie-s.v.\ $X$ dan is het \textbf{steekproefgemiddelde} en de \textbf{steekproefvariantie} resp.\:
+$$\overline{X}=\frac{1}{n}\sum_{i=1}^nX_i\hspace{0,5cm}\mbox{en} \hspace{0,5cm}S^2=\frac{1}{n-1}\sum_{i=1}^n(X_i-\overline{X})^2$$
+\end{description}
+\end{small}
+
+
+\subsection{Gemiddelde en variantie van het steekproefgemiddelde}
+
+Het steekproefgemiddelde $\overline{X}$ is op zichzelf een toevalsveranderlijke die normaal verdeeld is van zodra de populatie-s.v.\ normaal verdeeld is.
+\begin{stel}\label{gemst}
+Zij $X$ een normaal verdeelde populatie-s.v.\ met gemiddelde waarde $\mu$ en variantie $\sigma^2$ dan is het steekproefgemiddelde $\overline{X}$ van een steekproef $X_1, X_2, \cdots X_n$ normaal verdeeld met een gemiddelde en variantie gegeven door
+$$\E(\overline{X})=\mu$$
+$$\v(\overline{X})=\frac{\sigma^2}{n}$$
+\end{stel}
+{\em Bewijs:} 
+\begin{enumerate}
+\item $\E(X_i)=\mu$ omdat $X_i$ dezelfde verdeling heeft als $X$ en dus ook hetzelfde gemiddelde.
+$$
+\E(\overline{X})=\E(\frac{1}{n}\sum_{i=1}^nX_i)= \frac{1}{n}\sum_{i=1}^n\E(X_i)=\frac{1}{n}n\mu=\mu$$
+
+\item $\v(X_i)=\sigma^2$ omdat $X_i$ dezelfde verdeling heeft als $X$ en dus ook dezelfde variantie.
+$$\v(\overline{X})=\v(\frac{1}{n}\sum_{i=1}^nX_i)=\frac{1}{n^2}\sum_{i=1}^n\v(X_i)=\frac{1}{n^2}n\sigma^2=\frac{1}{n}\sigma^2$$
+
+\end{enumerate}
+{{\sc Opmerking:} Hoe groter de  steekproef is hoe kleiner de variantie van het steekproefgemiddelde.
+
+{\em Voorbeeld:} \label{schatter} Een populatie bestaat uit de getallen 2,3,6,8,11. Het experiment is ``het trekken van een element uit de populatie''. De populatie s.v.\ $X$ is de waarde van het getrokken element. \\
+Het populatiegemiddelde en populatievariantie zijn:
+$$\E(X)=\mu=\frac{1}{5}(2+3+6+8+11)=6$$
+$$\v(X)=\sigma^2=\frac{1}{n}((2-6)^2+(3-6)^2+(6-6)^2+(8-6)^2+11-6)^2)=10.8$$
+ Het theoretisch model van de steekproef met grootte 2 is $X_1,X_2$.\\
+Een realisatie van die steekproef is bvb.\ $6,11$.\\
+ We beschouwen nu alle mogelijke realisaties van de steekproef $X_1,X_2$ in de volgende tabel.\\ 
+\begin{tabular}{ccccccccc}
+2,2& 2,3 &  2,6 & 2,8 & 2,11 & 3,2& 3,3 &  3,6 & 3,8\\
+ 3,11 &4,2& 4,3 &  4,6 & 4,8 & 4,11 &6,2& 6,3 &  6,6\\
+ 6,8 & 6,11 &11,2& 11,3 &  11,6 & 11,8 & 11,11& &
+\end{tabular}\\
+%\newpage
+\underline{De steekproefgemiddelden $\overline{x}$}:\hfill \underline{De steekproefvarianties $s$}:\\
+\begin{tabular}{ccccccccc|}
+2& 2.5 &  4 & 5 & 6.5 & 2.5& 3 &  4.5 & 5.5\\
+ 7 & 3& 3.5 &  5 & 6 & 7.5 & 4& 4.5 &  6\\
+ 7 & 8.5 & 6.5& 7 &  8.5 & 9.5 & 11& &
+\end{tabular}
+\begin{tabular}{ccccccccc}
+0& 0.5 &  8 & 18 & 40.5 & 0.5& 0 &  4.5 & 12.5\\
+ 32 & 2& 0.5 &  2 & 8 & 24.5 & 8& 4.5 &  0\\
+ 2 & 12.5 & 40.5& 32 &  12.5 & 4.5 & 0& &
+\end{tabular}\\
+Het gemiddelde van het steekproefgemiddelde:
+$$\E(\overline{X})=\frac{1}{25}(2+2.5+4+5+\cdots +11)=6$$
+
+De variantie van het steekproefgemiddelde:
+$$\v(\overline{X})=\frac{1}{25}((2-6)^2+(2.5-6)^2+\cdots (11-6)^2)=5.4$$
+Anderzijds is $$\frac{\sigma^2}{n}=\frac{10.8}{2}=5.4=\v(\overline{X})$$
+Dit laatste is een bevestiging van de stelling \ref{gemst}.
+
+
+\subsection{Het schatten van een karakteristiek - Onvertekende schatter}
+
+Stel dat  de populatie-s.v.\ $X$  de lengte is van een kind bij de geboorte. We willen de gemiddelde geboortelengte kennen. Daartoe trekken we een steekproef met grootte 40, nl.\ $\{r_1,r_2,\cdots ,r_{40}\}$. \\
+Het gemiddelde en de variantie van die 40 lengten zijn een \textbf{schatting} van het  gemiddelde $\mu$  en de variantie $\sigma^2$ van de geboortelengte van de volledige populatie.
+$$\overline{x}=\frac{1}{40}\sum_{i=1}^{40}r_i\mbox{ en }
+s^2=\frac{1}{39}\sum_{i=1}^{40}(r_i-\overline{x})^2$$ Het steekproefgemiddelde en de steekproefvariantie zijn een \textbf{schatter} van het populatiegemiddelde $\mu$ en de populatievariantie $\sigma^2$ $$\overline{X}=\frac{1}{40}\sum_{i=1}^{40}X_i\mbox{ en } S^2=\frac{1}{39}\sum_{i=1}^{40}(X_i-\overline{X})^2$$
+
+De schatter heet \textbf{onvertekend} als het gemiddelde van de schatter samenvalt met de populatiekarakteristiek die hij schat.
+$$\E(\overline{X})=\mu$$
+$$\E(S^2)=\sigma^2$$
+\begin{stel}\label{schat}
+Zij $X$ een populatie-s.v.\ met gemiddelde waarde $\mu$ en variantie $\sigma^2$ en $X_1, X_2, \cdots X_n$  een steekproef uit die populatie dan is het steekproefgemiddelde $\overline{X}$ een onvertekende schatter van $\mu$ en de steekproefvariantie $S^2$ een onvertekende schatter van $\sigma^2$.
+\end{stel}
+{\em Bewijs:}  
+\begin{enumerate}
+\item $\E(\overline{X})=\mu$. Dit is reeds bewezen (zie stelling \ref{gemst}).
+\item We tonen aan dat $$\E(S^2)=\sigma^2$$.\\
+Voor elke toevalsveranderlijke $Y$ geldt dat (zie hfdst.\ref{hfdst3} op pagina \pageref{ongekend}).
+$$\v(Y)=\E(Y^2)-(\E(Y))^2\Longleftrightarrow \E(Y^2)=\v(Y)+(\E(Y))^2$$
+\begin{eqnarray*}
+S^2 & =& \frac{1}{n-1}\left( \sum_{i=1}^n(X_i-\overline{X})^2\right)=\frac{1}{n-1}\sum_{i=1}^n(X_i^2-2X_i\overline{X}+\overline{X}^2)\\
+&=&\frac{1}{n-1}\sum_{i=1}^nX_i^2-2\overline{X}\sum_{i=1}^nX_i+\overline{X}^2\sum_{i=1}^n1\\
+&= &\frac{1}{n-1}\left(\sum_{i=1}^nX_i^2-2\overline{X}\cdot n\cdot\overline{X}+\overline{X}^2\cdot n\right)\\
+&=&\frac{1}{n-1}\left( \sum_{i=1}^nX_i^2-n\overline{X}^2\right)
+\end{eqnarray*}
+
+\begin{eqnarray*}
+\E(S^2)& =& \frac{1}{n-1}\left(\sum_{i=1}^n\E(X_i^2)-n\cdot\E(\overline{X}^2)\right)\\
+&=& \frac{1}{n-1}\left(\sum_{i=1}^n(\v(X_i)+(\E(X_i))
+^2)-n(\v(\overline{X})+(\E(\overline{X}))^2)\right)\\
+ & = & \frac{1}{n-1}\left(\sum_{i=1}^n(\sigma^2+\mu^2)-n\frac{\sigma^2}{n}-n\mu^2\right)=\frac{1}{n-1}\left(n\sigma^2+n\mu^2-\sigma^2-n\mu^2\right)\\
+&=&\frac{1}{n-1}(n-1)\sigma^2=\sigma^2
+\end{eqnarray*}
+\end{enumerate}
+In het voorbeeld van paragraaf \ref{schatter} hebben we reeds het gemiddelde van het steekproefgemiddelde berekend en gezien dat dit gelijk is aan het populatiegemiddelde. \\Het gemiddelde van de steekproefvariantie:
+$$\E(S^2)=\frac{1}{25}(0+0.5+8+18+\cdots +4.5+0)=\frac{270}{25}=10.8$$
+Het gemiddelde van de steekproefvariantie is aldus gelijk aan de populatievariantie. 
+\newpage
+
+
+
+
+
+
+
+
+\subsection{Betrouwbaarheidsintervallen bij het schatten van het populatiegemiddelde}
+De vraag is nu: hoe nauwkeurig is de uitspraak over de gemiddelde geboortelengte. Daarom gaan we een interval aangeven waarvan we kunnen zeggen dat dit interval ''met grote kans'' het populatiegemiddelde $\mu$ bevat.\\Het ongekend steekproefgemiddelde $\mu$ ligt met een kans van  $95\%$ in het interval
+$$\left[\overline{X}-1.96\cdot \sqrt{\frac{S^2}{n}}\; ,\; \overline{X}+1.96\cdot \sqrt{\frac{S^2}{n}}\right]$$
+Als we nu een steekproef trekken en de gevonden getalwaarden invullen dan verkrijgen we een $95\%$ \textbf{betrouwbaarheidsinterval} 
+$$\left[\overline{x}-1.96\cdot \sqrt{\frac{s^2}{n}}\; ,\; \overline{x}+1.96\cdot \sqrt{\frac{s^2}{n}}\right]$$
+{\em Voorbeeld van intervalschatten}: Stel dat we voor  40 geboortelengten gevonden hebben dat $\overline{x}=50.3$ en $s^2=28$.\\
+Het $95\%$ betrouwbaarheidsinterval voor de gemiddelde geboortelengte is $[48.66,51.94]$. Dit betekent dat we   $95\%$ kans hebben dat het populatiegemiddelde gelegen is tussen $48.66$ en $51.94$.
+
+{\sc Opmerking:} 
+\begin{itemize}
+\item We kunnen evengoed een $80\%$, $90\%$, $99\%$,$\cdots$ betrouwbaarheidsinterval beschouwen. Meestal wordt het $95\%$ betrouwbaarheidsinterval gebruikt.
+\item De formules zijn enkel geldig voor een voldoende grote steekproef, nl.\ $n\geq30$.
+\end{itemize}
+
+{\footnotesize
+\begin{Opgave}\label{btrint1}
+\em Een steekproef van 65 studenten geeft een gemiddelde van 67.5\; kg en een variantie van 8.41\; kg$^2$. De massa wordt verondersteld normaal verdeeld te zijn. Bepaal een $95\%$ en $99\%$ betrouwbaarheidsinterval van het populatiegemiddelde.
+\end{Opgave}
+\begin{opgave}\label{btrint2}
+\em Door middel van een groot aantal steekproeven is men tot de vaststelling gekomen dat de levensduur van een bepaald soort gloeilampen de normale verdeling volgt met een standaardafwijking $\sigma=121$ uur. Uit een willekeurige steekproef met grootte 35 bekomt men een gemiddelde levensduur van 1100 uren. Bepaal een $95\%$ en $99\%$ betrouwbaarheidsinterval van het populatiegemiddelde.
+\end{opgave}
+\begin{opgave}\label{btrint3}
+\em Voor de gemiddelde lengte van de diameter van 10 tandwielen vond men 4.38\; cm. De variantie bedraagt 0.36 \; cm$^2$. Hoe groot is de kans dat
+ het populatiegelmiddelde gelegen is in het interval $[4.014, 4.746]$
+\end{opgave}
+\begin{opgave}\label{btrint4}
+\em De steekproefresultaten van een normaal verdeelde populatie-s.v.\ zijn $\overline{x}=235$ en $s^2=462.25$. Het interval $[215.78,254.22]$ is een $95\%$  betrouwbaarheidsinterval van het populatiegemiddelde. Hoe groot is de steekproefomvang?
+\end{opgave}
+\begin{opgave}\label{btrint5}
+\em Onderstel dat aan 36 pati\"enten een experimentele behandeling gegeven wordt van zodra de allereerste symptomen van de ziekte van Alzheimer ge\"\i ndentificeerd zijn. We meten de tijd tot progressie van de ziekte. Voor de 36 pati\"enten is de gemiddelde tijd gelijk aan 27 maanden en de standaardafwijking is gelijk aan 9 maanden. Construeer een $95\%$  betrouwbaarheidsinterval van de gemiddelde tijd tot progressie.
+\end{opgave}
+
+{\sc Oplossingen:}\;
+\ref{btrint1}: $95\%$: $[66,8;68,2]$, $99\%$: $[66,6;68,4]$;\;
+\ref{btrint2}: $95\%$: $[1059,9;1140,1]$;\; $99\%$: $[1047,3;1152,7]$; \;
+\ref{btrint3}: $94,6\%$
+\ref{btrint4}: $n=5$;
+\ref{btrint5}: $[24,1;29,9]$
+
+}
+%\newpage
+\section{Populatieproportie}
+
+\subsection{Gemiddelde en variantie van de streekproefproportie}
+In vele gevallen wordt een populatie verdeeld in twee groepen, de groep die een bepaalde eigenschap bezit  en de groep die de eigenschap niet bezit. We willen dan weten wat de verhouding is van het aantal individuen met de eigenschap tot het totaal aantal individuen in de populatie. Bijvoorbeeld  het aantal  gebuisden in een school, het aantal mannen in een volksgroep, het aantal afgekeurde stukken in een productie. De {\bf populatieproportie $\p$ van een groep} is de verhouding van het aantal in die groep tot het totaal aantal in de populatie. \\
+We beschrijven de populatie door een toevalsveranderlijke $X$ (met waarden 0 en 1) van een Bernoulli experiment met parameter $\p$, die de kans voorstelt op succes, dit is  in dit geval de kans dat een individu uit de populatie tot de beschouwde groep  behoort.\\
+Populatiegemiddelde  en populatievarantie van de populatie-s.v.\ $X$ van de Bernoulli verdeling met parameter $\p$ zijn resp.\ (zie hfdst. \ref{hfdst3} op pagina \pageref{kenber}):
+$$\mu=\E(X)=1\cdot\p+0\cdot(1-\p)=\p\mbox{ (populatieproportie)}$$
+$$\sigma^2=\v(X)=1^2\cdot \p+0^2\cdot (1-\p)-\p^2=\p-\p^2=\p(1-\p)$$
+Het steekproefgemiddelde van een steekproef $X_1,X_2,\cdots,X_n$ noemen we de steekproefproportie $$P=\frac{1}{n}\sum_{i=1}^nX_i=\frac{1}{n}(\mbox{het aantal keer succes}).$$ Als $n\p\geq 5$ en $n(1-\p)\geq 5$ is $P$ is normaal verdeeld met gemiddelde en variantie resp.\ 
+$$\E(P)=\p\hspace{0,5cm}\mbox{ en }\hspace{0,5cm}\v(P)=\frac{\sigma^2}{n}=\frac{\p(1-\p)}{n}$$
+De proportie $\p$ is meestal een onbekende parameter van de populatie. \\Als we een steekproef trekken verkrijgen we een waarde voor $P$ die we voorstellen door $\pp$.
+
+
+
+\subsection{Betrouwbaarheidsintervallen bij het schatten van een proportie}
+
+{\em Voorbeeld:} Bij de productie van lampen zijn er steeds een aantal slechte lampen.
+ Men neemt een steekproef van  150 lampen en men vindt 6 slechte lampen. Een schatting voor de steekproefproportie (aantal slechte lampen op de 150 lampen) is
+$$\pp=\frac{6}{150}=0.053$$
+Stel dat we veel steekproeven met grootte $150$ uitvoeren dan zullen we steeds een waarde krijgen voor $\pp$. 
+
+ De onbekende populatieproportie $\p$ ligt  met een kans van $95\%$  in het interval $$\left[P-1.96\cdot\sqrt{\frac{P(1-P)}{n}}\;,\; P+1.96\cdot\sqrt{\frac{P(1-P)}{n}}\right]$$ 
+Voor deze steekproef is het $95\%$ betrouwbaarheidsinterval
+$$\left[\pp-1.96\cdot\sqrt{\frac{\pp(1-\pp)}{n}}\; , \; \pp+1.96\cdot\sqrt{\frac{\pp(1-\pp)}{n}}\right]$$
+$$=[0.53-1.96\cdot 0.0183\; ,\; 0.53+1.96\cdot 0.0183]=[0.53-0.0359\; ,\; 0.53+0.0359]=[0.017\; ,\; 0.089]$$ 
+
+De foutenmarge is $0.036$. Dit betekent dat we met  $95\%$ zeker zijn dat de werkelijke proportie $\p$ niet meer dan $3.6\%$ afwijkt van de steekproefproportie 0.053.
+
+
+
+
+{\sc Opmerking:} De bovenstaande formules zijn enkel geldig als 
+\begin{itemize}
+\item de populatie minstens 10 keer groter is dan de steekproefgrootte.
+\item voor $n$ en $\p$ geldt dat $np\geq 5$ en $n(1-p)\geq 5$. Dit betekent dat voor $\p$ dicht bij 0.5 reeds kleine steekproeven volstaan en voor $\p$ dicht bij 0 of 1 grotere steekproeven nodig zijn.
+\item Aan de formule zien we dat de variantie van de steekproefproportie kleiner wordt  naarmate de steekproefgrootte $n$ groter wordt. Dit betekent dat als $n$ groot is,  de schatter $\overline{X}$  meer kans heeft om niet veel af te wijken van de werkelijke proportie $\p$. 
+\end{itemize}
+
+{\footnotesize
+\begin{Opgave}\label{pro1}
+\em Wij willen een $95\%$ betrouwbaarheidsinterval voor de proportie ratten die blaaskanker krijgen in een experiment waarbij de proefdieren een dieet krijgen dat rijk is aan sacharine. Het dieet werd toegekend aan 50 ratten en 5 ervan kregen blaaskanker.
+\end{Opgave}
+\begin{opgave}\label{pro2}
+\em Wij willen een $95\%$ betrouwbaarheidsinterval voor de proportie longkankerpati\"enten van minder dan 40\; jaar, die nog minstens 5\; jaar leven na de diagnose. Bij een steekproef van grootte 30 waren slechts 6 pati\"enten die na 5\; jaar nog in leven waren.
+\end{opgave}
+\begin{opgave}\label{prow3}
+In een bevolkingsgroep hebben $1\%$ van de mensen hooikoorts. Hoeveel lukraak gekozen personen moet men onderzoeken opdat
+\begin{enumerate}
+ \item men met meer dan $90\%$ waarschijnlijkheid
+\item men met meer dan $99\%$ waarschijnlijkheid
+\end{enumerate}
+minstens 1 persoon met hooikoorts zou vinden. 
+\end{opgave}
+{\sc Oplossingen:}
+\ref{pro1}:\; $[0,0168; 0,1831]$; \;\ref{pro1}:\;$[,057;0,343]$; \; %\ref{prow3}: $n>10$, 
+
+}
+%\newpage
+\section{Toetsen van Hypothesen}
+E\'en van de voornaamste technieken uit de verklarende statistiek is het 
+toetsen van hypothesen op basis van 
+steekproefgegevens.
+
+Bij een toetsingprobleem begint men met het maken van een onderstelling omtrent de ongekende populatiekarakteristiek of populatieproportie. Zo een onderstelling noemen we de \textbf{nulhypothese} en wordt voorgesteld door $$\H_0: \mu=\mu_0\hspace{0,5cm}\mbox{ of }\hspace{0,5cm}\H_0:\p=\p_0$$.\\ Elke hypothese verschillend van de nulhypothese wordt  een {\bf  alternatieve hypothese} genoemd en wordt voorgesteld door $\H_1$.
+
+Vervolgens zullen we een beslissing moeten nemen, nl.\ de nulhypothese verwerpen of niet verwerpen. \\
+In geval we de nulhypothese ten onrechte verwerpen, zeggen we dat we een 
+{\bf type I fout} maken.\\ Aanvaarden we echter de nulhypothese ten onrechte 
+dan maken we een {\bf type II fout}.\\
+De beslissingsregel zal geconstrueerd worden op basis van bepaalde criteria die er moeten voor zorgen dat  de  kans op een type I fout zo klein mogelijk is want een type I fout is erger dan een type II fout (afhankelijk van de aard van het vraagstuk).\\
+Het {\bf  significantieniveau} is de kans op een type I fout die we aanduiden  door $\alpha$. Meestal neemt men $\alpha$ gelijk aan $5\%$. \\De kans op een type II fout stellen we voor door $\beta$. 
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+ & $\H_0$ is juist & $\H_0$ is verkeerd\\
+ \hline
+ men verwerpt $\H_0$ & foutieve beslissing & juiste beslissing\\
+                        & type I fout  ($\alpha$ )& ($1-\beta$) \\
+\hline
+men aanvaardt $\H_0$ & juiste beslissing & foute beslissing\\
+                        &    ($1-\alpha$ )         & type II fout ($\beta$)\\
+\hline
+\end{tabular} 
+\end{center} 
+
+{\em Voorbeelden:}
+\begin{itemize}
+ \item Indien we willen nagaan of een dobbelsteen correct is, stellen  we  $$\H_0: \p=\frac{1}{6}$$
+waarbij $\p$ de kans voorstelt op het gooien van een zes. \\Een mogelijke alternatieve hypothese is:
+$$\H_0: \p\not=\frac{1}{6}$$
+Stel dat we bij 10 keer gooien geen enkele keer een 6 gooien. Op basis van die steekproef zou men geneigd zijn de nulhypohese te verwerpen en besluiten dat de dobbelsteen vals is. Dit kan echter een verkeerde beslissing zijn.
+\item In de VS moet een jury  beslissen over het al dan niet schuldig zijn van een persoon. Indien de persoon schuldig is, krijgt hij de doodstraf. De  nulhypothese is  ``de man is onschuldig''. Een type I fout wordt gemaakt indien de jury de man de doodstraf geeft terwijl hij onschuldig is.
+\end{itemize}
+
+
+\subsection{Toetsen van een hypothese over een populatiegemiddelde}
+
+{\em Voorbeelden:}
+\begin{enumerate}
+ \item Aan een bepaalde universiteit neemt men sinds jaren een intelligentietest af die normaal-verdeelde uitslagen oplevert met gemiddelde score van 115. Een administrator wil nu voor de nieuwe lichting studenten de hypothese toetsen dat het gemiddelde hetzelfde is als in de voorbije jaren. Hij neemt een steekproef met grootte 50 en vindt $\overline{x}=118$ en $s^2=98$. Welk besluit mag de administrator trekken op significatieniveau $5\%$. Zijn de studenten meer of minder intelligent dan in voorgaande jaren?
+
+{\sc Oplossing:} 
+$$\H_0: \mu=115$$
+$$\H_1:\mu\not= 115$$
+
+De populatie s.v. is ``het intelligentiequoti\"ent  van studenten'':
+$$X\sim \N(115;98)\hspace{0,5cm}\mbox{en}\hspace{0,5cm}\overline{X}\sim \N(115;\frac{98}{50})$$
+
+We kunnen op verschillende manieren toetsen om tot hetzelfde besluit te komen.
+\begin{itemize}
+ \item Het $95\%$ aanvaardingsgebied voor $\frac{\overline{X}-115}{\sqrt{\frac{98}{50}}}$ die we terugvinden op de grafiek van standaardnormale dichtheidsfunctie  is het interval $[-1,96:1,96]$. \\
+We drukken 118 uit in standaardeenheden:
+$$\frac{118-115}{\sqrt{\frac{98}{50}}}=2,14>1,96$$
+De waarde 2,14 valt buiten het aanvaardingsgebied. Daaruit kan de administrator besluiten dat de intelligentie van studenten niet meer gemiddeld 115 is. \\ Duid de waarde 2,14 aan op de onderstaande tekening. 
+
+%\begin{figure}[h!]
+\includegraphics[height=6cm]{stat4_01.jpg}
+%\special{bmp:stat4_01.bmp x=16cm y=6cm}
+%\caption{Significantieniveau van 0,05 bij een  tweezijdige proef}
+%\end{figure}
+
+\item Het $95\%$ aanvaardingsgebied voor $\overline{X}$ is
+$$\left[ 115-1,96\cdot\sqrt{\frac{98}{50}}\hspace{0,2cm};\hspace{0,2cm}\hspace{0,2cm}115+1,96\cdot\sqrt{\frac{98}{50}}\right] =[112,3;117,7]$$
+Het steekproefgemiddelde van 118 valt er net buiten. 
+
+\item Wat is de kans om, als de nulhypothese waar is, waarden te bekomen die even extreem of nog extremer zijn dan de observatie?
+$$\P(\overline{X}\geq 118)=1-\P(\overline{X}\leq 118)=0,016<0,025$$
+Deze kans noemen we de \textbf{$p$-waarde} (prob-value). Hier is de $p$-waarde kleiner dan 0,025. Dit betekent dat de observatie in het $5\%$ significantiegebied ligt. \\
+Duid de $p$-waarde 0,016 aan op de voorgaande tekening.
+\end{itemize}
+
+
+
+
+
+Omdat het verwerpingsgebied  of het significantiegebied zich op de grafiek van de dichtheidsfunctie in de twee staarten van elk 
+$2,5\%$ bevindt, zeggen we dat  we een \textbf{tweezijdige toets} hebben uitgevoerd. \\
+De {\bf kritische punten} $c$ bij significantieniveau $5\%$ zijn de grenzen van het aanvaardingsgebied.
+\begin{enumerate}
+ \item Voor de standaardnormale kansverdeling zijn dat de waarden $-1,96$ en $1,96$;
+\item voor de verdeling van het  intelligentiequoti\"ent zijn dat de waarden 112,3 en 117,7. 
+\end{enumerate}
+
+%\newpage
+\item Meting van de bloeddruk van 60 toevalig gekozen eerstejaarsstudenten levert als resultaten (in mm Hg)
+$$\sum_{i=1}^{60}x_i=7829\hspace{1cm};\hspace{1cm}\sum_{i=1}^{60}x_i^2=1035661$$
+Volgens een handboek van klinische normen is de gemiddelde bloeddruk bij deze leefdheidsgroep 122,5. Is er reden om aan te nemen dat de bloeddruk bij de eerstejaarsstudenten hoger is dan deze norm.
+
+{\sc Oplossing:} 
+$$\H_0: \mu=122,5$$
+$$\H_1:\mu>122,5$$
+
+Het steekproefgemiddelde is
+$$\overline{x}=\frac{1}{60}\sum_{i=1}^{60}x_i=\frac{7829}{60}=130,5$$
+De steekproefvariantie is
+$$s^2=\frac{1}{59}\sum_{i=1}^{60}(x_i-\overline{x})^2=\frac{1}{59}\sum_{i=1}^{60}x_i^2-\frac{60}{59}\overline{x}^2=239,10$$
+
+De populatie s.v.\ is de bloeddruk van eerstejaarsstudenten
+$$X\sim \N(122,5;239,10)\hspace{0,5cm}\mbox{en}\hspace{0,5cm}\overline{X}\sim \N(122,5;\frac{239,10}{60})=\N(122,5;3,99)$$
+
+De verschillende manieren om te toetsen:
+\begin{itemize}
+ \item Het $95\%$ aanvaardingsgebied voor $\frac{\overline{X}-122,5}{\sqrt{\frac{239,10}{60}}}$ die we terugvinden  op de grafiek van standaardnormale dichtheidsfunctie  is het interval $[-\infty;1,645]$. \\We drukken 130,5  uit in standaardeenheden:
+$$\frac{130,5-122,5}{\sqrt{\frac{239,10}{60}}}=4,00>1,645$$
+ De waarde 4 valt buiten het aanvaardingsgebied.  Duid de waarde 4 aan op de tekening. 
+
+%\begin{figure}[h!]
+\includegraphics[height=6cm]{stat4_02.jpg}
+%\vspace{6 cm}
+%\special{bmp:stat4_02.bmp x=16cm y=6cm}
+%\caption{Significantieniveau van 0,05 bij een rechts-eenzijdige toets}
+%\end{figure}
+\item Het $95\%$ aanvaardingsgebied  voor $\overline{X}$ is
+$$]-\infty\hspace{0,2cm};\hspace{0,2cm} 122,5+1,645\cdot\sqrt{\frac{239,10}{60}}]=]-\infty;125,8]$$
+Het steekproefgemiddelde van 130,5 ligt buiten het aanvaardingsgebied. 
+\item $p$-waarde = $\P(\overline{X}\geq 130,5)=1-\P(\overline{X}\leq 130,5)=0,00<0,025$.\\
+%Duid de $p$-waarde 1,00 aan op de voorgaande tekening.
+\end{itemize}
+Omdat het verwerpingsgebied  of het significantiegebied zich op de grafiek van de dichtheidsfunctie in de  staart van $5\%$ aan de rechterkant bevindt, zeggen we dat  we een \textbf{rechts eenzijdige toets} hebben uitgevoerd. \\
+Het {\bf kritische punt} $c$ bij significantieniveau $5\%$ is de grens van het aanvaardingsgebied.
+\begin{enumerate}
+ \item Voor de standaardnormale kansverdeling is dat de waarden $1,645$;
+\item voor de verdeling van de  bloeddruk is dat de waarde 125,8. 
+\end{enumerate}
+
+\item Een gynaecoloog beweert, bij de geboorte, meisjes gemiddeld kleiner zijn dan de aangegeven 51\;cm die de norm is voor de gemiddelde lengte van  meisjes bij de geboorte. Zijn collega echter verwijt hem dat zijn bewering berust op een vooroordeel en beweert dat de gemiddelde lengte wel degelijk 51\;cm is. De afdeling gynaecologie doet een steekproef van 100 meisjes. Het steekproefgemiddelde en de steekproefvariantie zijn resp.\ $\overline{x}=50,8$ en $s^2=1,6$ in cm. \\Is de gemiddelde geboortelengte van meisjes  51\;cm of zijn meisjes bij de geboorte toch gemiddeld kleiner dan 51\;cm?
+\newpage
+{\sc Oplossing:} 
+$$\H_0: \mu=51$$
+$$\H_1:\mu<51$$
+
+De populatie s.v.\ is ``de lengte van pasgeboren meisjes'':
+$$X\sim \N(51;1,6)\hspace{0,5cm}\mbox{en}\hspace{0,5cm}\overline{X}\sim \N(51;\frac{1,6}{100})$$
+De verschillende manieren om te toetsen:
+\begin{itemize}
+ \item Het $95\%$ aanvaardingsgebied  voor $\frac{\overline{X}-51}{\sqrt{\frac{1,6}{100}}}$ die we terugvinden  op de grafiek van standaardnormale dichtheidsfunctie  is het interval $[-1,645;+\infty]$. \\We drukken 50,8 uit in standaardeenheden:
+$$\frac{50,8-51}{\sqrt{\frac{1,6}{100}}}=-1,58>-1,645$$
+De waarde -1,58 valt binnen het aanvaardingsgebied. 
+\item Het $95\%$ aanvaardingsgebied voor $\overline{X}$ is
+$$[51-1,645\cdot\sqrt{\frac{1,6}{100}};+\infty]=[50,79;+\infty[$$
+Het steekproefgemiddelde van 50,8 valt  binnen het $95\%$ aanvaardingsgebied. Daaruit kan de gynaecoloog besluiten dat de gemiddelde lengte van 51\;cm nog steeds als norm geldt. 
+\item $p$-waarde = $\P(\overline{X}\leq 50,8)=0,44>0,05$
+\end{itemize}
+Omdat het verwerpingsgebied  of het significantiegebied zich op de grafiek van de dichtheidsfunctie in de  staart van $5\%$ aan de linkerkant bevindt, zeggen we dat  we een \textbf{links eenzijdige toets} hebben uitgevoerd. \\
+Het {\bf kritische punt} $c$ bij significantieniveau $5\%$ is de grens van het aanvaardingsgebied.
+\begin{enumerate}
+ \item Voor de standaardnormale kansverdeling is dat de waarden $-1,65$;
+\item voor de verdeling van de  bloeddruk is dat de waarde 50,79 
+\end{enumerate}
+\end{enumerate}
+{\footnotesize
+\begin{Opgave}\label{chol1}
+ \em Men wil het verband nagaan tussen dieet en serum cholesterol. Bij een steekproef van 23 vrouwen (30-35 jaar) wordt na een dieetkuur van 3 maanden de serum cholesterol gemeten: het gemiddelde is 176,9 mg/dl en de standaardafwijking is 28,7 mg/dl. Is dit een verbetering ten opzichte van het gemiddelde van 196 mg/dl in de algemene bevolking van vrouwen van die leeftijd? Neem aan dat serum cholesterolgehalte normaal verdeeld is.Toets op het $5\%$ significantieniveau. Bereken ook de $p$-waarde.
+\end{Opgave}
+\begin{opgave}\label{chol2}
+ \em Men wil nagaan of kinderen die binnen een straal van 5\;km van een smeltoven wonen gemiddeld slechter presteren op een gestandardiseerde IQ test. Neem aan dat OQ normaal verdeeld is en dat de algemene bevolking van twaalfjarigen het gemiddeld IQ gelijk is aan 100 en de standaardafwijking gelijk is aan 16. Een steekproef van 25 twaalfjarigen die de voorbije jaren in de nabijheid van de smeltoven gewoond hebben levert een gemiddeld IQ op van 90. Toets op het $5\%$ significantieniveau. Bereken ook de $p$-waarde.
+\end{opgave}
+
+\begin{opgave}\label{chol3}
+ \em De gemiddelde overlevingstijd na diagnose van een bepaalde hartkwaal is 2,5 jaar. Een nieuw medicament wordt gebruikt bij 50 dergelijke pati\"enten en zij worden gevolgd tot aan hun dood. men vond een gemiddelde overlevingstijd van 3,3 jaar en een standaardaking van 1,8 jaar. Heeft het gebruik van dit medicament de gemiddelde overlevingstijd verhoogd? Toets op $5\%$ significantieniveau. bereken ook de $p$-waarde.
+\end{opgave}
+
+
+
+{\sc Oplossing:} \ref{chol1}.\; $p$-waarde $= -3,19<-1,645$, kritisch punt: $186,2>176,9$, 176,9 is significant, er is een verbetering met het dieet.
+\ref{chol2}.\;$p$-waarde $= -12,50<-1,645$, kritisch punt: $99,9<90$, 90 is niet significant, er is geen daling van het gemiddeld IQ.
+\ref{chol3}.\;$p$-waarde $= 4,14>1,645$, kritisch punt: $2,92<3,3$, 3,3 is significant, het medicament heeft de gemiddelde overlevingstijd verhoogd.
+
+}
+%\newpage
+
+\subsection{Toetsen van een hypothese over \'e\'en proportie}
+
+Bij een steekproef met grootte $n$ beschouwen we de binomiaal verdeelde  toevalsveranderlijken $X$  met parameters $n$ en $\p_0$.
+ $$X\sim B(n;\p_0) \mbox{ onder }\H_0:\p=\p_0$$
+ Indien aan de voorwaarden $n\p>5$ en $n(1-\p)>5$ voldaan is, dan is  de steekproefproportie $P$ benaderd normale verdeeld.
+ $$P\sim \N(\p_0;\p_0 (1-\p_0)) \mbox{ onder } \H_0:\p=\p_0$$
+
+%\newpage
+{\em Voorbeelden:}
+\begin{enumerate}
+
+\item
+We beschouwen de decimale voorstelling van het getal $\pi$. Als nulhypothese zetten we voorop dat het het aantal even cijfers gelijk is aan het aantal oneven cijfers. Geven we  de eerste 100 
+decimale cijfers van het getal dan tellen we  48 oneven en 52 even cijfers. Het is hier duidelijk dat we de nulhypothese  kunnen aanvaarden. 
+
+\begin{eqnarray*}
+\pi & = &
+3,
+14159265358979323846626433832795028841971693993751\\
+& & 05820974944592307816406286208998628034825342117067
+\end{eqnarray*}
+
+
+Maar krijgen we enkel de eerste 14 cijfers dan zijn er slechts 4 cijfers even. 
+$$\pi= 3,14159265358979$$
+We toetsen tweezijdig.
+$$X\sim\B(14;1/2)\mbox{ onder } \H_0:\p=0,5$$ 
+$$\H_1:\p\not= 0,5$$
+
+We berekenen de $p$-waarde:\\
+$$\P(0)+\P(1)+\P(2)+\P(3)+\P(4)$$
+$$=(0,5)^{14}(1+14+91+364+1001)=\frac{1471}{2^{14}}=0,0897$$
+$p$-waarde = $0,0897>0,25$ betekent dat het steekproefresultaat van slechts 4 even cijfers op de 14 niet significant is. De nulhypothese dat er evenveel even als oneven decimalen zijn in het getal $\pi$ mag niet verworpen worden.
+
+$$\P(0)+\P(1)+\P(2)+\P(3)=\P(12)+\P(13)+\P(14)=0,02868>0,025.$$
+Hieruit besluiten we dat de uitkomsten die liggen in het significantiegebied 
+met significatieniveau $\alpha= 0,05$ de uitkomsten 0, 1, 2, 12, 13 en 14 zijn.
+
+
+
+\item Voor een loterij beweert de organisator dat de winstkans $60\%$ is. 
+Iemand 
+koopt 10 lotjes en wint hiermee slechts 3 prijzen. Heeft de organisator de 
+succeskans niet overdreven groot voorgesteld?
+
+ We toetsen links-eenzijdig.
+ $$X\sim\B(10;0,6)\mbox{ onder }\H_0:\p=0,6$$
+ $$\H_1:\p<0,6$$
+We berekenen de $p$-waarde
+\begin{eqnarray*}
+\P(0)+\P(1)+\P(2)+\P(3)&=&(0,4)^{10}+10(0,6)(0,4)^{9}+45(0,6)^2(0,4)^8\\
+                   & & +120(0,6)^3(0,4)^7=0,055
+\end{eqnarray*}                   
+$p$-waarde = $0,055>0,05$ betekent dat het steekproefresultaat van 3 prijzen op de 10
+ niet-significant is. De nulhypothese dat de winstkans $60\%$ is, kan aanvaard 
+worden.
+
+\item Van een klassiek geneesmiddel tegen griep weet men sinds lang dat 
+het $30\%$ kans op genezing biedt. Van een nieuw geneesmiddel wordt beweerd dat 
+het beter is. We proberen het geneesmiddel op 10 pati\"enten en stellen vast 
+dat er 5 genezen. Is het nieuwe nu echt beter?
+
+We toetsen rechts-eenzijdig.
+$$X\sim\B(10;0,3)\on\H_0:\p=0,3$$
+$$\H_1:\p>0,3$$
+We berekenen de $p$-waarde
+\begin{eqnarray*}
+\lefteqn{\P(5)+\P(6)+\P(7)+\P(8)+\P(9)+\P(10) =}\\ 
+ & & 252(0,3)^5(0,7)^5+210(0,3)^6(0,7)^4\\
+ & & +120(0,3)^7(0,7)^3+45(0,3)^8(0,7)^2+10(0,3)^9(0,7)+(0,3)^10\\
+& & = 0,1503 
+\end{eqnarray*}
+$p$-waarde = $0,15> 0,05$ betekent dat het steekproefresultaat van 5 genezingen op 10 
+niet-significant is. Het nieuw geneesmiddel is niet echt beter dan het klassiek
+geneesmiddel.
+
+Het is pas significant vanaf 6 genezingen want dan is\\
+$p$-waarde = $\P(6)+\P(7)+\P(8)+\P(9)+\P(10)=0,047<0,05 $
+
+\item Een bakker beweert dat zijn broden in $70\%$ van de gevallen meer 
+wegen dan 800 gram. Je wenst dit na te gaan en koopt 12 broden bij hem. 
+Na weging blijken slechts 6 broden meer dan 800 gram te wegen. Is de bewering 
+van de bakker juist?
+
+We toetsen links-eenzijdig.
+ $$X\sim\B(12;0,7)\on\H_0:\p=0,7$$
+ $$\H_1:\p<0,7$$
+We berekenen de $p$-waarde:
+\begin{eqnarray*}
+\lefteqn{\P(0)+\P(1)+\P(2)+\P(3)+\P(4)+\P(5)+\P(6)=} \\
+ & & (0,3)^{12}+12(0,3)^{11}(0,7)+66(0,3)^{10}(0,7)^2+220(0,3)^9(0,7)^3\\
+ & & +495(0,3)^8(0,7)^4+792(0,3)^7(0,7)^5+924(0,3)^6(0,7)^6\\
+ & & =0,1178
+ \end{eqnarray*}
+ 
+ $p$-waarde = $0,1178>0,05$ betekent dat het steekproefresultaat van 6 broden op de 12
+ niet-significant is. De nulhypothese dat de $70\%$ van de broden meer wegen dan 
+800 gram kan aangehouden worden.
+
+Het zal pas significant zijn als er slechts 5 broden op de 12 meer wegen dan 
+800 gram want dan is de $p$-waarde 
+$$\P(0)+\P(1)+\P(2)+\P(3)+\P(4)+\P(5)=0,0386<0,05$$
+
+
+
+\item \label{casino} Bij een dobbelspel ontdekt \leerlu\  dat er een aantal  dobbelstenen vervalst zijn. Als men gooit met een valse dobbelsteen dan is de kans op een zes gelijk aan 1/4. \leerlu\ wil het probleem snel oplossen en ze beslist dat de  leerlingen van haar klas elke dobbelsteen 10 keer moeten opgooien. Als een dobbelsteen minstens 4 keer een zes oplevert dan beslist ze dat de dobbelsteen vals is. Anders wordt de dobbelsteen als eerlijk beschouwd.
+
+De nulsituatie is dat de situatie waarin de dobbelsteen eerlijk is en de alternatieve hypothese is dat de dobbelsteen vervalst is.
+$$X\sim \B(10;1/6)\mbox{ onder } \H_0:\p=1/6$$
+$$Y\sim\\B(10;1/4)\mbox{ onder }\H_1:\p=1/4$$ 
+
+\begin{enumerate}
+\item De beslissingsregel staat vast.
+Het aanvaardingsgebied voor $X$ is $\{0,1,2,3\}$ en het verwerpinggebied is $\{4,5,6,7,8,9,10\}$. 
+
+De kans op een type I fout is de kans dat de dobbelsteen als vals wordt beschouwd, terwijl hij eerlijk is. 
+$$\alpha=\P(X\geq 4)=\sum_{i=4}^{10}\P(X=i)=0,0697$$
+Het significantieniveau is 7,0\%
+
+De kans op een type II fout is de  kans dat de dobbelsteen als eerlijk wordt beschouwd, terwijl hij eigenlijk vals is. 
+$$\beta=\P(Y\leq 3)=0,776$$
+De \textbf{power van de toets} is $1-\beta=0,224$. Dit is de kans dat we de nulhypothese verwerpen (dobbelsteen is eerlijk) als hij inderdaad vals is. 
+\item Nemen we een andere beslissingsregel, bvb.\ met  aanvaardingsgebied  $\{0,1,2\}$ en  verwerpinggebied  $\{3,4,5,6,7,8,9,10\}$. \\
+Omdat we het verwerpingsgebied groter maken, maken we de kans op een type I fout groter, de kans op een type II fout wordt kleiner  en de power van de test wordt groter. 
+De kans op een type I fout is:
+$$\alpha=\P(X\geq 3)=\sum_{i=3}^{10}\P(Y=i)=0,2248$$
+Het significantieniveau is 22,5\%
+
+De kans op een type II fout is:
+$$\beta=\P(Y\leq 2)=\sum_{i=0}^2\P(X=i)=0,5256$$
+De power van de toets is $1-\beta=0,4744$.
+\item Bepaal zelf wat er gebeurt als we i.p.v.\ minstens 4 keer een zes, minstens 5 keer een zes nemen ($\alpha=0,0156$ en $\beta=0,9219$).
+\item Bepaal zelf wat er gebeurt als we i.p.v.\ minstens 4 keer een zes, minstens 6 keer een zes nemen ($\alpha=0,0024$ en $\beta=0,9803$).
+\item Wat is de beslissingsregel  als het significantieniveau hoogstens gelijk is aan $0,05$ is. \\
+Omdat de binomiale verdeling discreet is, is het onmogelijk om voor een bepaalde beslissingsregel exact 0,05 te bekomen voor $\alpha$. We kiezen dan de beslissingsregel waarvoor $\alpha$ hoogstens 0,05 is. Dit is in geval $X\geq 5$ en $\alpha=0,0154$.
+
+\end{enumerate}
+\item Hernemen we vorig voorbeeld. \leerlv\ vindt 10 keer gooien weinig om een beslissing te nemen.  \leerlv\ geeft opdracht aan de medeleerlingen om 60 keer te gooien en de dobbelsteen als vals te beschouwen als men hierbij minstens 14 keer een zes gooit. 
+\begin{enumerate}
+\item Bepaal de kans op een type I fout, de kans op een type II fout en de power van de test.
+$$\H_0:\p=\frac{1}{6}$$
+$$\H_1:\p=\frac{1}{4}$$
+ Omdat $n\p=10\geq 5$ geldt
+$$P_0\sim \N(\frac{1}{6};\frac{1}{60}\frac{1}{6}\frac{5}{6}) $$
+ $$P_1\sim \N(\frac{1}{4};\frac{1}{60}\frac{1}{4}\frac{3}{4}) $$
+$$\alpha=\P(P_0\geq \frac{14}{60})=0,0829$$
+$$\beta=\P(P_1\leq \frac{14}{60})=0,3828$$
+$$1-\beta=0,6172$$
+\item Wat is de beslissingsregel  als het significantieniveau hoogstens gelijk is aan $0,05$ is.\\
+De toets is rechts eenzijdig. Het kritisch punt is
+$$\frac{1}{6}+1,645\cdot \frac{1}{12\sqrt{3}}=0,2458$$
+De beslissingregel ligt op 15 keer een zes gooien als we 60 keer gooien. 
+\end{enumerate}
+
+
+
+%We toetsen rechts-zijdig
+% $$X\sim \B(30;0,4)\on\H_0:p=0,4$$
+% $$\H_1:p>0,4$$
+
+%Voor $n=30$, kunnen we de binomiale verdeling benaderen door 
+%de normale verdeling met $\mu=30\cdot 0,4=12$ en $\sigma = \sqrt{12\cdot %0,6}=2,68$.
+%$$\N(12;7,2)\on\H_0:p_0=0,4$$
+%Bij de rechts-eenzijdig toets op significantieniveau $\alpha=0,05$ is  het %waar\-schijn\-lijk\-heidsgebied $]-\infty;1,64[$. 
+%We drukken 16 uit in standaardeenheden
+%$$\frac{16-12}{2,68}=1,49.$$
+%
+\end{enumerate}
+
+{\footnotesize
+\begin{Opgave}\label{thyp1}\em 
+De leerlingen van de 6des  hebben een munstuk 100 keer opgegooid en hebben 
+58 
+keer kop 
+verkregen.  Voor een onvervalst muntstuk verwachten we 50 keer kop op de 100 keer opgooien.
+\begin{enumerate}
+ \item Mag men aanvaarden dat het geldstuk onvervalst is op significantieniveau $5\%$? Toets dit op de verschillende mogelijke manieren. Ga na of je hierbij mag benaderen door de normale verdeling.
+\item Bepaal de kritisch punten.  
+\item Als je als alternatieve hypothese stelt dat de proportie 0,6 is, wat is dan de power van de test?
+\end{enumerate}
+ \end{Opgave}
+ \begin{opgave}\label{thyp2} \em Een reismaatschappij vertelt ons bij boeking dat Noorwegen een land
+is met weinig regen. De kans op regen is er 0,4 zegt hij. \leerlw\ wil dat  nagaan en vertrekt stande pede naar Noorwegen met het eerste beste vliegtuig. \leerlw\ sms-t naar huis dat  
+van de 30 dagen  er 16 dagen zijn met regen. Overdrijft de reismaatschappij?
+\end{opgave}
+\begin{opgave}
+\label{hypo1}
+ \em Een wereldbekend doelwachter heeft zich een stevige 
+reputatie opgebouwd dat hij 70\% van de strafschoppen stopt. Om hem te testen 
+worden 10 topvoetballers gevraagd een strafschop te geven. Hij stopt er slechts
+4. Is zijn reputatie wat overroepen op significantieniveau $5\%$?
+\end{opgave}
+\begin{opgave}
+\label{hypo2}
+\em Een leverancier van bloembollen beweert dat in zijn speciale mengeling van 
+tulpebollen er 1 witte is voor elke 3 rode. Je plant zo'n pakje van 20 en vindt
+volgende lente 2 witte tulpen en 18 rode. Geloof je de bewering van de 
+leverancier?
+\end{opgave}
+\begin{opgave}
+\label{hypo3}
+\em Men wil door een muntstuk 4 keer op te gooien testen of het homogeen is. 
+Men 
+wil dit doen op significantieniveau 0,05. Kan dat?
+\end{opgave}
+\begin{opgave}
+\label{hypo4}
+\em Men beweert dat de helft van de volwassen bevolking zich jaarlijks laat 
+inenten
+tegen griep. Een navraag bij 30 lukraak gekozen volwassenen leert ons dat 
+hiervan 18 inge\"ent werden. Is dit in overeenstemming met de bewering?
+\end{opgave}
+\begin{opgave}
+\label{hypo5}
+\em Iemand beweert dat $90\%$ van de mensen niet in staat is het verschil te 
+proeven 
+tussen twee soorten limonade. De fabricanten vinden dat overdreven en doen een 
+test. 
+\begin{itemize}
+\item[a.] Bij 500 lukraak gekozen personen waren er 72 die het verschil 
+proefden. Is de bewering overdreven?
+\item[b.] Wat is de conclusie voor een kleine steekproef? Stel dat bv.\ bij 10 
+lukraak gekozen personen er 3 het verschil proefden. 
+\end{itemize}
+\end{opgave}
+{\sc Oplossingen:} \ref{thyp1}.\; het muntstuk is niet vervalst;\; de kritische punten zijn 41 en 59;\; power van de toets is 0,65;\;
+\ref{thyp1}.\:
+; Uit $1,49< 1,64$ kunnen we het besluit trekken dat de 
+reismaatschappij niet overdrijft;\; \ref{hypo1}.\;$p$-waarde = $0,0473<0,05$: significant  ;\; \ref{hypo2}.\;$p$-waarde = $0,0913>0,025$ niet significant ;\;\ref{hypo3}.\; neen ;\; \ref{hypo4}.\; $p$-waarde = $0,1808>0,025$ niet significant ;\;\ref{hypo5}. (a) $p$-waarde = $0,00114<0,05$ significant,\; (b) $p$-waarde = $0,0703>0,05$ niet significant.
+}
+%$$X\sim\B(100;0,5)\on\H_0: p=\frac{50}{100}=\frac{1}{2}$$
+%We vragen ons af of de massa van het geldstuk wel homogeen is. We toetsen tweezijdig omdat de 
+%mogelijkheid bestaat dat het steekproefresultaat 
+%zowel beneden als boven de waarde 50 ligt..
+%$$H_1:p\not=0,5.$$
+
+
+ %Omwille van de grote waarde van $n$ kunnen we de binomiale verdeling het best  benaderen door de normale verdeling met $\mu=100\cdot 0,5$ en $\sigma =\sqrt{100\cdot 0,5\cdot (1-0,5)}=5$.
+%$$\B(100;0,5)\approx \N(50; 25)$$
+%Bij de tweezijdig toets op significantieniveau $\alpha=0,05$ is  het waar\-schijn\-lijk\-heidsgebied $]-1,96;1,96[$. 
+%Voor $x=58$ is $z=\frac{57,5-50}{5}=1,5<1,96$. Deze waarde ligt in het aanvaardingsgebied. 
+%$H_0$ hypothese wordt aanvaard. De massa van het muntstuk is wel degelijk als 
+%homogeen te beschouwen. 
+
+%{\em Een andere manier van werken}: met de $p$-waarde: we  berekenen  de  $p$-waarde rechtstreeks met de binomiale verdeling $X\sim \B(100;\frac{1}{2})$. 
+%\begin{eqnarray*}
+%\lefteqn{p=\P(X\geq 58)}\\
+%&=&1-\P(X\leq 57)\\
+%&=&0,067
+%\end{eqnarray*}
+%Uit $p>0,025$ besluiten we dat het resultaat niet significant is op significantieniveau $\alpha=0,05$. De nulhypothese wordt niet  verworpen. 
+%We stellen ons nog de vraag hoeveel het steekproefresultaat kan zijn 
+%opdat we de nulhypothese nog zouden kunnen aanvaarden.
+
+%Voor $z=\frac{x-50}{5}=1,96$ is $x=50\cdot Z+50=59,8$. 
+
+%Steekproefresultaten tussen de 41 en de 59 zijn niet-significant en voor deze 
+%resultaten kunnen we aanvaarden dat het muntstuk homogeen is.
+
+%Om de power van de toets te bepalen, moeten we de kans op een type II fout berekenen, dit is de kans bepalen dat men de nulhypothese aanvaardt  in geval ze niet waar is. In het geval van dit voorbeeld kunnen we als alternatieve hypothese bvb stellen $\H_1:\p=0,6$. 
+%$$Y\sim\B(100;0,6)\on\H_1:\p_1=0,6$$
+ %De kritische waarde $1,96$ stemt overeen met 58,23. \\
+%Hieruit volgt dat 
+ %$\beta=\P(Y\leq 58,23)=0,36$.\\
+%De power van deze test is $1-\beta=0,65$.\\
+%Maken we $\alpha$ kleiner dan wordt de power ook kleiner.\\
+ %Voor $\alpha=0,01$ is de kritische waarde van de normale verdeling van $Y$ gelijk aan $61,63$. \\
+%Hieruit volgt dat $\beta=\P(X\leq 68)=0,63$.
+%De power van deze test is inderdaad kleiner, nl.\ $1-\beta=0,37$.
+
+
+
+
+\newpage
+\subsection{Toetsen van een hypothese over twee proporties} 
+\subsubsection{Hypergeometrische verdeling}
+Tot hiertoe hebben we steekproeven gedaan in  
+\'e\'en enkele populatie bv.\ bij het testen van de broden van een bepaalde 
+bakker, bij het testen van een nieuw medicament.
+
+Hier gaan we steekproeven uitvoeren in twee verschillende populaties, bv.\ 
+bij het vergelijken van twee verschillende geneesmiddelen aangewend voor 
+dezelfde 
+ziekte kan men het verschil in proportie genezingen tot het aantal behandelde 
+zieken bestuderen. 
+
+
+
+
+We beschouwen een universum $V$ van $M$ elementen, waarvan er $M_1$ behoren tot een
+populatie $A$ en $M_2$ behoren tot een populatie $B$. We trekken $n$ elementen 
+uit deze $M$ zonder terugplaatsen. 
+
+We vragen ons af wat de kans is op de gebeurtenis ``$n$ elementen trekken uit 
+$M$ elementen waarvan er precies $X$ elementen behoren tot de 
+populatie $A$''. De toevalsveranderlijke $X$ heeft dan de zogenaamde {\bf hypergeometrische verdeling}. 
+$$X\sim\h(n;M_1;M)$$
+\subsubsection{Berekening van de hypergeometrische verdeling}
+Het totaal aantal mogelijkheden om $n$ elementen te kiezen uit $M$ elementen is
+$\left(\begin{array}{c}
+M\\
+n
+\end{array}
+\right)$. 
+
+Men kan $i$ elementen kiezen uit de $M_1$ elementen van $A$ op 
+$\left(\begin{array}{c}
+M_1\\
+i
+\end{array}
+\right)$ 
+manieren. 
+De $n-i$ overige elementen moeten dan gekozen worden uit de $M_2$ elementen van
+$B$ en dit kan op 
+$\left(\begin{array}{c}
+M_2\\
+n-i
+\end{array}
+\right)$ 
+manieren. 
+
+Bij elke keuze van $i$ elementen uit $A$ hoort een keuze van $n-i$ elementen uit $B$.
+
+
+Het aantal mogelijkheden dat we bij het trekken van $n$ elementen uit het universum $V$ er $i$ komen uit $A$ en $n-i$ komen uit $B$ is: 
+$$\left(\begin{array}{c}
+M_1\\
+i
+\end{array}
+\right) 
+\left(\begin{array}{c}
+M_2\\
+n-i
+\end{array}
+\right).$$
+
+De kans dat er op de $n$ elementen die komen uit $V$ 
+er $i$  komen uit  $A$ en $n-i$ komen uit $B$ of de kans dat de toevalsveranderlijke $X$ de waarde $i$ aanneemt, is:
+$$\P(X=i)=\frac{\left(\begin{array}{c}
+M_1\\
+i
+\end{array}
+\right)
+\left(\begin{array}{c}
+M_2\\
+n-i
+\end{array}
+\right)}
+{\left(\begin{array}{c}
+M\\
+n
+\end{array}
+\right)}.$$
+Met Excel kunnen we al kansen van $\h(n;M_1;M)$ berekenen. \\We schrijven 
+$$\P(X=i)=\hypo(i;n;M_1;M)$$
+
+\subsubsection{De gemiddelde waarde en variantie bij een hypergeometrische 
+verdeling}
+\begin{enumerate}
+\item \fbox{De gemiddelde waarde}
+Het bewijs steunt op  de volgende eigenschap van binomiaalco\"effici\"enten nl.\
+$$i\left(\begin{array}{c}
+M_1\\
+i
+\end{array}
+\right)=i\frac{M_1(M_1-1)!}{M_1-i)!i!}=M_1\frac{(M_1-1)!}{(M_1-1-(i-1))!(i-1)!}=M_1\left(\begin{array}{c}
+M_1-1\\
+i-1
+\end{array}
+\right)$$
+en een eigenschap 
+ van hfdst. \ref{hfdst1} in oefening nr. \ref{bin6} op pagina \pageref{bin6}.
+$$\left(\begin{array}{c}n+m\\p\end{array}\right)=\sum_{k=0}^p
+\left(\begin{array}{c}n\\p-k\end{array}\right).
+\left(\begin{array}{c}m\\k\end{array}\right)$$
+
+\begin{eqnarray*}
+\E(X) & = & \sum_{i=0}^ni
+\frac{\left(\begin{array}{c}
+M_1\\
+i
+\end{array}
+\right)
+\left(\begin{array}{c}
+M_2\\
+n-i
+\end{array}
+\right)}{
+\left(\begin{array}{c}
+M_1+M_2\\
+n
+\end{array}
+\right)
+}=
+\frac{M_1}{
+\left(\begin{array}{c}
+M_1+M_2\\
+n
+\end{array}
+\right)}
+\sum_{i=1}^n
+\left(\begin{array}{c}
+M_1-1\\
+i-1
+\end{array}
+\right)
+\left(\begin{array}{c}
+M_2\\
+n-i
+\end{array}
+\right)\\
+ & = &
+\frac{M_1}{
+\left(\begin{array}{c}
+M_1+M_2\\
+n
+\end{array}
+\right)}
+\sum_{i'=0}^{n-1}
+\left(\begin{array}{c}
+M_1-1\\
+i'
+\end{array}
+\right)
+\left(\begin{array}{c}
+M_2\\
+n-i'-1
+\end{array}
+\right)\\
+ & = &
+\frac{M_1}{
+\left(\begin{array}{c}
+M_1+M_2\\
+n
+\end{array}
+\right)}
+\left(\begin{array}{c}
+M_1+M_2-1\\
+n-1
+\end{array}
+\right)=n\frac{M_1}{M_1+M_2}=n\frac{M_1}{M}
+\end{eqnarray*}
+%\newpage
+\item \fbox{De variantie}
+Het bewijs steunt ook op  oefening \ref{bin6}  en op de volgende eigenschap van binomiaalco\"effici\"enten nl.\
+$$i(i-1)\left(\begin{array}{c}
+M_1\\
+i
+\end{array}
+\right)=i(i-1)\frac{M_1(M_1-1)(M_1-2)!}{(M_1-i)!(i!}=M_1(M_1-1)\frac{(M_1-2)!}{(M_1-2-(i-2))!(i-2)!}$$
+$$=M_1(M_1-1)\left(\begin{array}{c}
+M_1-2\\
+i-2
+\end{array}
+\right)$$ 
+\begin{eqnarray*}
+\v(X) & = & \sum_{i=0}^ni^2
+\frac{
+\left(\begin{array}{c}
+M_1\\
+i
+\end{array}
+\right)
+\left(\begin{array}{c}
+M_2\\
+n-i
+\end{array}
+\right)}{
+\left(\begin{array}{c}
+M_1+M_2\\
+n
+\end{array}
+\right)}
+-\left(n\frac{M_1}{M_1+M_2}\right)^2\\
+&=& \sum_{i=0}^n(i^2-i)
+\frac{
+\left(\begin{array}{c}
+M_1\\
+i
+\end{array}
+\right)
+\left(\begin{array}{c}
+M_2\\
+n-i
+\end{array}
+\right)}{
+\left(\begin{array}{c}
+M_1+M_2\\
+n
+\end{array}
+\right)}
++\sum_{i=0}^ni
+\frac{
+\left(\begin{array}{c}
+M_1\\
+i
+\end{array}
+\right)
+\left(\begin{array}{c}
+M_2\\
+n-i
+\end{array}
+\right)}{
+\left(\begin{array}{c}
+M_1+M_2\\
+n
+\end{array}
+\right)}\\
+ & &
+-\left(n\frac{M_1}{M_1+M_2}\right)^2\\
+& = & \frac{1}{\left(\begin{array}{c}
+M_1+M_2\\
+n
+\end{array}
+\right)}\sum_{i=2}^ni(i-1)
+\left(\begin{array}{c}
+M_1\\
+i
+\end{array}
+\right)
+\left(\begin{array}{c}
+M_2\\
+n-i
+\end{array}
+\right)
++n\frac{M_1}{M_1+M_2}\\
+ & &
+-\left(n\frac{M_1}{M_1+M_2}\right)^2\\
+ & = & \frac{M_1(M_1-1)}{
+\left(\begin{array}{c}
+M_1+M_2\\
+n
+\end{array}\right)}
+\sum_{i=2}^{n}
+\left(\begin{array}{c}
+M_1-2\\
+i-2
+\end{array}
+\right)
+\left(\begin{array}{c}
+M_2\\
+n-i
+\end{array}
+\right)
++n\frac{M_1}{M_1+M_2}\\
+& &-\left(n\frac{M_1}{M_1+M_2}\right)^2\\
+& = & \frac{M_1(M_1-1)}{
+\left(\begin{array}{c}
+M_1+M_2\\
+n
+\end{array}\right)}
+\sum_{i'=0}^{n-2}
+\left(\begin{array}{c}
+M_1-2\\
+i'
+\end{array}
+\right)
+\left(\begin{array}{c}
+M_2\\
+n-i'-2
+\end{array}
+\right)+
+n\frac{M_1}{M_1+M_2}\\
+& &-\left(n\frac{M_1}{M_1+M_2}\right)^2\\
+& = & \frac{M_1(M_1-1)}{
+\left(\begin{array}{c}
+M_1+M_2\\
+n
+\end{array}\right)}
+\left(\begin{array}{c}
+M_1+M_2-2\\
+n-2
+\end{array}
+\right)
++n\frac{M_1}{M_1+M_2}-\left(n\frac{M_1}{M_1+M_2}\right)^2\\
+& = &\frac{M_1(M_1-1)(M_1+M_2-n)!n!}{(M_1+M_2)!}\frac{(M_1+M_2-2)!}{(M_1+M_2-2-n+2)!(n-2)!}\\
+& & +n\frac{M_1}{M_1+M_2}-\left(n\frac{M_1}{M_1+M_2}\right)^2\\
+&= & \frac{M_1(M_1-1)n(n-1)}{(M_1+M_2)(M_1+M_2-1)}+n\frac{M_1}{M_1+M_2}-\left(n\frac{M_1}{M_1+M_2}\right)^2\\
+&=&\frac{n^2M_1^2+nM_1M_2-n^2M_1}{(M_1+M_2)(M_1+M_2-1)}-\left(n\frac{M_1}{M_1+M_2}\right)^2\\
+&=&
+\frac{nM_1M_2(M_1+M_2-n)}{(M_1+M_2)^2(M_1+M_2-1)}
+=n\frac{M_1}{M_1+M_2}\cdot
+\frac{M_2}{M_1+M_2}\cdot
+\frac{M-n}{M_1+M_2-1}
+\end{eqnarray*}
+
+
+
+\end{enumerate}
+
+{\sc Opmerking:}
+Bij een hypergeometrische verdeling gebeuren de $n$ trekkingen zonder 
+terugleggen. Beschouwen we de $n$ trekkingen maar met terugleggen dan is de 
+verdeling binomiaal. De kans dat we een element trekken uit de populatie $A$ is
+gelijk aan 
+$$\p = \frac{M_1}{M_1+M_2}.$$
+Hieruit volgt dat
+$$1-\p = \frac{M_2}{M_1+M_2}.$$
+De gemiddelde waarde bij $n$ trekkingen is hier
+$$\mu = n\p = n\frac{M_1}{M_1+M_2}$$
+en de standaardafwijking is
+$$\sigma = \sqrt{n\frac{M_1}{M_1+M_2}\frac{M_2}{M_1+M_2}}.$$
+De gemiddelde waarde is bij een trekking met teruglegging dezelfde 
+als bij een trekking zonder teruglegging. De standaardafwijking bij een trekking
+zonder teruglegging is 
+kleiner dan bij een trekking met teruglegging aangezien de factor
+$$\frac{M_1+M_2-n}{M_1+M_2-1}<1.$$ 
+
+
+\subsubsection{Kleine steekproef}
+We gaan hier een hypothese toetsen over twee proporties d.m.v.\ een kleine 
+steekproef. We 
+illustreren met een aantal voorbeelden.
+\begin{itemize}
+\item Men wil nagaan of een nieuw medicament het beter doet dan een klassiek 
+medicament. Hiertoe gaat men als volgt te werk: 12 pati\"enten krijgen het nieuw
+medicament en 8 pati\"enten krijgen het klassiek medicament toegediend. Na 
+verloop van tijd telt men het aantal genezingen. In de groep $A$ van het 
+nieuwe 
+medicament heeft men 7 genezingen en in de andere groep $B$ 2 genezingen.
+
+
+
+De steekproefgegevens kunnen in een vierveldentabel voorgesteld worden 
+(contingentietabel).
+
+\begin{center}
+\begin{tabular}{l|c|c|c}
+  & genezen & niet genezen & $\sum$\\
+  \hline
+$A$ & 7 & 5 & $M_1=12$\\
+  \hline
+$B$ & 2 & 6 & $M_2=8$\\
+  \hline
+$\sum$ & $n=9$ & 11 & $M=20$
+\end{tabular}
+  \end{center}
+  
+De alternatieve hypothese is dat het nieuwe medicament beter is dan
+het klassiek medicament.
+
+Als toevalsveranderlijke $X$ nemen we het aantal personen dat geneest 
+en dat tot de groep $A$ behoort. 
+$$X\sim\h(9;12;20)$$
+$\H_0$: we verwachten gemiddeld 5,4 genezingen als het nieuwe medicament niet beter is dan het klassiek 
+medicament. \\
+$\H_1$: er zijn gemiddeld meer  5,4 genezingen.\\
+$X$ varieert tussen de waarden
+1 en 9. Voor het steekproefresultaat heeft de veranderlijke $X$ de waarde 7. 
+Het toetsen van dit steekproefresultaat noemt men de {\bf exacte toets van 
+Fisher}.
+
+ 
+De kans dat er van de 9 mensen die genezen er $x$ zijn die het nieuwe 
+medicament 
+genomen hebben, is
+$$\P(X=x)=\frac{\left(\begin{array}{c}
+12\\
+x
+\end{array}
+\right)
+\left(\begin{array}{c}
+8\\
+9-x
+\end{array}
+\right)}
+{\left(\begin{array}{c}
+20\\
+9
+\end{array}
+\right)}.$$
+
+
+We berekenen de $p$-waarde:
+\begin{eqnarray*}
+\P(X\geq 7) & = &
+\P(7)+\P(8)+\P(9)\\
+& = & \frac{\left(\begin{array}{c}
+12\\
+7
+\end{array}
+\right)
+\left(\begin{array}{c}
+8\\
+2
+\end{array}
+\right)+
+\left(\begin{array}{c}
+12\\
+8
+\end{array}
+\right)
+\left(\begin{array}{c}
+8\\
+1
+\end{array}
+\right)+
+\left(\begin{array}{c}
+12\\
+9
+\end{array}
+\right)
+\left(\begin{array}{c}
+8\\
+0
+\end{array}
+\right)}
+{\left(\begin{array}{c}
+20\\
+9
+\end{array}
+\right)}\\
+ & = & 0,1569
+\end{eqnarray*}
+De toets is rechts-eenzijdig.\\
+$p$-waarde = $0,1569>0,05$ betekent dat het steekproefresultaat van 7 genezingen behoort 
+tot het waar\-schijn\-lijk\-heidsgebied van de hypergeometrische verdeling. De nulhypothese mag niet verworpen worden. Het nieuw medicament is niet significant beter. De kansen op genezing zijn voor de beide medicamenten 
+gelijk. \\
+Merk op dat de hypergeometrische verdeling niet symmetrisch is.
+
+\begin{figure}[h]\label{hyp1}
+\includegraphics[height=6cm]{stat4_03.jpg}
+%\vspace{6 cm}
+%\special{bmp:stat4_03.bmp x=16cm y=6cm}
+\caption{Hypergeometrische verdeling voor $n=9$, $M_1=12$ en $M_2=8$}
+\end{figure}
+
+ 
+
+Vanaf 8 genezingen met het nieuwe medicament zouden we de nulhypothese 
+verwerpen want dan geldt dat de $p$-waarde = $\P(X\geq 8)=0,0249<0,05.$
+
+\item  Een firma wil haar verkopers trainen. Ze verdeelt lukraak haar 
+vertegenwoordigers in twee groepen $A$ en $B$. De twee groepen worden getraind 
+met twee verschillende trainingsmethodes. Na een bepaalde tijd gaat men 
+de verkoopcijfers na.
+
+De vierveldentabel is
+
+\begin{center}
+\begin{tabular}{l|c|c|c}
+  & boven $10\%$ & beneden $10\%$  & $\sum$\\
+  \hline
+$A$ & 15 & 5 & $M_1=20$\\
+  \hline
+$B$ & 9 & 10 & $M_2=19$\\
+  \hline
+$\sum$ & $n=24$ & 15 & $M=39$
+\end{tabular}
+  \end{center}
+
+Is er een verschil in de trainingsmethodes?
+
+Als toevalsveranderlijke $X$ nemen we het aantal verkopers van groep $A$
+waarvoor het 
+verkoopcijfer stijgt met meer dan $10\%$. 
+$$X\sim\h(24;20;39)$$
+$\H_0$: we verwachten gemiddeld 12,3 verkopers waarvoor het verkoopcijfer meer dan 10\% verhoogd als de trainingsmethodes niet verschillen van elkaar.\\
+$\H_1$: het gemiddelde is niet gelijk aan 12,3.\\
+Deze toevalsveranderlijke 
+ varieert hier tussen de waarden
+5 en 20. Voor het steekproefresultaat heeft de veranderlijke $X$ de waarde 15. 
+ 
+Omdat de hypergeometrische verdeling niet symmetrisch is, nemen we als $p$-waarde bij de tweezijdige toets:
+$$2\mbox{min}\{\P(X\leq 15,\P(X\geq 15)\}$$
+$$\P(X\geq 15)=1-\P(X\leq 14)= 0,074$$
+
+
+Uit $p$-waarde = $2\cdot 0,074=0,148>0,05$ volgt dat de  trainingsmethode van groep $A$  niet significant beter is dan die van $B$.
+\end{itemize}
+
+\newpage
+\subsubsection{Grote steekproef}
+De steekproef waarbij men $n$ trekt zonder terugleggen uit $M_1+M_2$ 
+elementen geeft een resultaat die een waarde is van de stochastische 
+veranderlijke van een hypergeometrische 
+verdeling. De berekeningen worden zeer omslachtig en onuitvoerbaar
+als we te maken hebben met grote waarden van $n$, $M_1$ en $M_2$.
+
+Het is intu\"\i tief duidelijk dat als $M_1$ en $M_1+M_2=M$ zeer groot zijn het
+weinig verschil zal uitmaken of we $n$ trekkingen uitvoeren met terugleggen of 
+zonder terugleggen. Hieruit volgt dat we een hypergeometrische verdeling 
+zullen kunnen benaderen door een binomiale verdeling. Deze binomiale verdeling 
+moet dan omwille van de grote waarde van $n$ benaderd worden door een normale 
+verdeling.
+
+\begin{stel}
+Als $M=M_1+M_2\longrightarrow +\infty$ en $M_1\longrightarrow +\infty$ zodanig 
+dat $\frac{M_1}{M}\longrightarrow \p$, dan is
+$$\P(X=i)=\left(\begin{array}{c}
+n\\
+i
+\end{array}\right) \p^i (1-\p)^{n-i}.$$
+\end{stel}
+
+{\em Bewijs}
+\begin{eqnarray*}
+\lefteqn{\P(X=i) = \frac{\left(\begin{array}{c}
+M_1\\
+i
+\end{array}
+\right)
+\left(\begin{array}{c}
+M_2\\
+n-i
+\end{array}
+\right)}
+{\left(\begin{array}{c}
+M\\
+n
+\end{array}
+\right)}= \frac{\frac{M_1!}{i!(M_1-i)!}\frac{M_2!}{M_2-n+i)!(n-i)!}}
+{\frac{M!}{n!(M-n)!}}=\frac{n!}{(n-i)!i!}\frac{M_1!}{(M_1-i)!}\frac{M_2!}{M_2-n+i)!}}
+\\
+ &  & =\left(\begin{array}{c}
+n\\
+i
+\end{array}
+\right)\cdot
+(\frac{M_1}{M}\cdot\frac{M_1-1}{M-1}\cdots\frac{M_1-i+1}{M-i+1})
+(\frac{M_2}{M-i}\cdot\frac{M_2-1}{M-i-1}\cdots\frac{M_2-n+i+1}{M-n+1})\\
+ & & = 
+\left(\begin{array}{c}
+n\\
+i
+\end{array}
+\right)\cdot\p^i\cdot (1-\p)^{n-i}.
+\end{eqnarray*}
+\qed
+
+$$X\sim \h(n;M_1;M)$$
+Voor grote waarden van $M_1$ en $M$ is
+$$X\sim\B(n;\frac{M_1}{M})$$
+De populatieproportie $P$ is bijgevolg normaal verdeeld
+$$P\sim \N(\frac{M_1}{M},\frac{M_1M_2}{nM^2})$$
+\newpage
+{\em Voorbeelden}
+\begin{itemize}
+\item
+Een farmaceutisch bedrijf brengt een product $A$ tegen haaruitval op de markt. 
+Het beweert dat het beter is dan product $B$ van zijn concurrent. Bij 500 
+personen met haaruitval wordt een test uitgevoerd waarbij ze lukraak aan 
+product $A$ of aan product $B$ worden toegewezen. De resultaten stellen we voor
+in een vierveldentabel.
+
+\begin{center}
+\begin{tabular}{l|c|c|c}
+  & haaruitval gestopt & haaruitval niet gestopt & $\sum$\\
+  \hline
+product $A$ & 180 & 80 & $M_1=260$\\
+  \hline
+product $B$ & 160 & 80 & $M_2=240$\\
+  \hline
+$\sum$ & $n=340$ & 160 & 500
+\end{tabular}
+  \end{center}
+
+Is het product $A$ beter dan het product $B$?
+
+Als toevalsveranderlijke $X$ nemen we het aantal personen waarvan de 
+haaruitval stopt en het product $A$ gebruikte.
+$$X\sim\h(340;260;500)$$
+$$P\sim\N(\frac{260}{500};\frac{1}{340}\frac{260}{500}\frac{240}{500})$$
+$$\H_0: \p=\frac{260}{500}$$
+$$\H_1: \p>\frac{260}{500}$$
+
+$p$-waarde = $\P(P\geq \frac{180}{340})=1-\P(P\leq\frac{180}{340})=0,364.$
+
+De steekproef is rechts-eenzijdig.\\
+De $p$-waarde = $0,364> 0,05$ betekent dat het steekproefresultaat niet significant is op 
+significantieniveau 0,05. We aanvaarden de nulhypothese dat beide producten 
+dezelfde uitwerking hebben. Het product $A$ is niet significant beter dan 
+product 
+$B$.
+
+
+\item Een producent van kattevoeding beweert dat zijn product $A$ lever bevat 
+en 
+daardoor zeer geliefd is bij katten. Zijn concurrent beweert dat deze diertjes 
+liever rundsvlees eten en heeft dit in zijn product $B$ gestopt.
+
+De vierveldentabel is
+
+\begin{center}
+\begin{tabular}{l|c|c|c}
+  & lusten het & lusten het niet & $\sum$\\
+  \hline
+product $A$ & 120 & 60 & $M_1=180$\\
+  \hline
+product $B$ & 100 & 120 & $M_2=220$\\
+  \hline
+$\sum$ & $n=220$ & 180 & 400
+\end{tabular}
+  \end{center}
+
+We vragen ons af of er een significant verschil bestaat in de voorkeur voor 
+lever of rundsvlees bij katten.
+
+We hebben hier te doen met een tweezijdige toets.
+
+Als toevalsveranderlijke $X$ nemen we het aantal katten die het product 
+met lever lusten.
+$$X\sim\h(220;180;400)$$
+$$P\sim\N(\frac{180}{400};\frac{1}{220}\frac{180}{400}\frac{220}{400})$$
+$$\H_0: \p=\frac{180}{400}$$
+$$\H_1: \p\not=\frac{180}{400}$$
+ 
+$p$-waarde = $\P(P\geq \frac{120}{220})=1-\P(P\leq \frac{120}{220})=0,0022$
+
+De $p$-waarde = $0,0022<0,025$ betekent dat het steekproefresultaat significant is
+op 
+significantieniveau 0,05. We verwerpen de nulhypothese dat katten geen voorkeur
+hebben voor lever. 
+
+\end{itemize}
+
+{\footnotesize
+
+\begin{Opgave}
+\label{hypo6}
+\em Voor een bepaalde ziekte wordt een nieuwe therapie uitgetest tegenover de 
+oude 
+therapie. 
+Daartoe worden 30 pati\"enten lukraak toegewezen aan \'e\'en van beide 
+behandelingen. Na verloop van 4 weken telt men hoeveel pati\"enten volledig 
+genezen zijn. De vierveldentabel is
+
+\begin{center}
+\begin{tabular}{l|c|c|c}
+  & genezen & niet genezen & \\
+  \hline
+nieuw & 12 & 4 & $M_1=16$\\
+  \hline
+  oud   & 6 & 8 & $M_2=14$\\
+  \hline
+$\sum$ & $n=18$ & 12 & 30
+\end{tabular}
+  \end{center}
+
+Is de nieuwe therapie significant beter dan de oude?
+\end{Opgave}
+\begin{opgave}
+\label{hypo7}
+\em Voor het practisch rijexamen zijn er twee examinatoren $A$ en $B$. Een 
+steekproef van grootte 39 uit de personen die bij $A$ terechtkwamen levert 36 
+geslaagden. Een steekproef van grootte 16 uit degene die bij $B$ terechtkwamen 
+levert 10 geslaagden. Is de slaagkans bij $A$ groter dan bij $B$?
+\end{opgave}
+\begin{opgave}
+\label{hypo8}
+\em In een lukraak gekozen steekproef van 100 mannelijke chauffeurs waren er 
+15 met
+een ongeval. In een steekproef van grootte 81 bij de vrouwelijke chauffeurs 
+waren er 4 met een ongeval. Is er reden om aan te nemen dat de kans op een 
+ongeval groter is bij de mannen dan bij de vrouwen?
+\end{opgave}
+\begin{opgave}
+\label{hypo9}
+\em Aspirine als preventie tegen hartaanval? (Harward Medical School, 1988-89)\\
+De ``Physicians'Health Study'' is een beroemde clinische studie, uitgevoerd in 
+de tachtiger jaren bij meer dan 20000 Amerikaanse artsen (vrijwilligers). Een 
+deelaspect van deze studie was nagaan of het regelmatig gebruik van aspirine de
+kans op hartinfarct vermindert. Daartoe werden de 22071 proefpersonen lukraak 
+toegewezen aan 
+\begin{itemize}
+\item[a.] ofwel de aspirine groep (om de andere dag 1 tabletje aspirine);
+\item[b.] ofwel de placebo groep (om de andere dag 1 neptabletje).
+\end{itemize}
+Het experiment was `blind', d.w.z.\ de proefpersonen in de studie wisten niet 
+tot welke groep ze behoorden. Na ongeveer 5 jaar follow-up (1982-87) verschenen
+de eerste resultaten in de {\em The New England Journal of Medicine}. In het 
+eindrapport vinden we:
+
+\begin{center}
+\begin{tabular}{l|c|c|c}
+  & hartaanval & geen hartaanval & \\
+  \hline
+Placebo groep & 239 & 10795 & $M_1=11034$\\
+  \hline
+Aspirine groep & 139 & 10898 & $M_2=11037$\\
+  \hline
+$\sum$ & $n=378$ & 21693 & 22071
+\end{tabular}
+  \end{center}
+
+Toon aan dat de kans op hartinfarct significant groter is bij de placebo groep 
+dan bij de aspirine groep. Omwille van het spectaculair gunstig resultaat werd 
+de studie vroegtijdig gestopt om alle proefpersonen van de resultaten op de 
+hoogte te kunnen brengen.
+\end{opgave}
+%\begin{opgave}
+%\label{hypo10}
+%\em 
+%Een leverancier van onderdelen verzekert zijn kopers dat de kans $p$ 
+%op defecte 
+%onderdelen in een levering $1\%$ bedraagt. De koper gaat deze 
+%bewering na en onderzoekt $n$ onderdelen van een levering. Als er geen
+%defecte stukken gevonden 
+%worden dan neemt de koper de hypothese $H_0:p=0,01$ aan, anders 
+%keren de onderdelen terug. \\
+%Hoe groot moet $n$ minstens zijn opdat
+%\begin{itemize}
+%\item[a.] de kans op een type I fout kleiner zou zijn dan $5\%$;
+%\item[b.] de kans op een type II fout kleiner zou zijn dan $50\%$.
+%\end{itemize}
+%\end{opgave}
+
+\begin{opgave}
+\em Eenzelfde examen werd gegeven in twee klassen $A$ en $B$ van gelijk niveau. In $A$ zijn studenten 40 studenten, de gemiddelde uitslag was $74\%$ en de standaardafwijking 8; in $B$ zijn 50 studenten, de gemiddelde uitslag was $78\%$ en de standaardafwijking 7. Is het verschil in uitslag beduidend?
+\end{opgave}
+\begin{opgave}
+\em Een groothandelaar koopt een grote partij neonlampen. Hij doet voor de aankoop een eerste steekproef met 30 lampen en vindt een gemiddelde levensduur van $\overline{y}=1000$ uren en een standaardafwijking van $s_1=100$ uren. Bij levering doet hij een steekproef met 40 lampen en vindt een gemiddelde levensduur van $\overline{y}=950$ uren en een standaardafwijking van $s_2=100$ uren. Is het verschil beduidend of niet?
+\end{opgave}
+
+
+
+%{\sc Oplossingen:}
+
+%\ref{hypo1} $\P(0)+\P(1)+\P(2)+\P(3)+\P(4)=0,0473<0,05$, de reputatie is 
+%overroepen;\\
+%\ref{hypo2} $\P(0)+\P(1)+\P(2)=0,091>0,025$, ja;\\
+%\ref{hypo3} neen want alle kansen zijn groter dan 0,05;\\
+%\ref{hypo4} $z=1,095<1,96$, ja;\\
+%\ref{hybmppo5} (a) $z=-3,2795<-1,64$, ja; \\(b) $\P(0)+\P(1)+\cdots 
+%\P(7)=1-\P(8)-\P(9)-\P(10)=0,0702>0,05$, neen, niettegenstaande in verhouding het 
+%aantal mensen dat
+%het verschil proeft kleiner is dan in (a).\\
+%\ref{hypo6} $P=0,0776>0,05$, neen;\\
+%\ref{hypo7} $z=2,689>1,64$, ja;\\
+%\ref{hypo8} $z=2,189>1,64$, ja;\\
+%\ref{hypo9} $\approx 1-\phi (5,2)\ll 0,0001$;
+%\ref{hypo10} (a) $n=6$, (b) $n=69$;
+%\ref{hypo11} (a) 230 personen, (b) 459 personen.
+
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+%\newpage 
+
+
+
+\cleardoublepage
