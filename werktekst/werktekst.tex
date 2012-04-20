@@ -341,8 +341,8 @@ percentvorm erbij. Je kan natuurlijk ook de sector inkleuren met de bijhorende k
 
 Ook met Geogebra kunnen we een cirkeldiagram maken. We vertrekken vanuit het zelfde bestand als bij
 het staafdiagram. De frequentie moeten we nu omzetten naar het aantal graden dat het sector is. Maak
-hiervoor eerst het totaal van alle frequenties door in cell B9 \verb$=Som[B2:B7]$ als formule te nemen.
-Vul nu in de cel C2, naast de frequentie, het volgende als formule in: \verb#=B2 / $B$9 * 360#$\degree$.
+hiervoor eerst het totaal van alle frequenties door in cell \verb#B9# \verb$=Som[B2:B7]$ als formule te nemen.
+Vul nu in de cel \verb#C2#, naast de frequentie, het volgende als formule in: \verb#=B2 / $B$9 * 360#$\degree$.
 Je kan nu de cell rechts-onder vastnemen en verslepen, Geogebra vult nu automatisch de juiste cellnamen in.
 
 Nu we de graden hebben berekend voor de sectoren van het cirkeldiagram maken we de figuur. Creëer eerst twee punten. $A$ op $(0,0)$ en $B$ op $(0,5)$. Creëer nu een cirkel met als middelpunt $A$ en als straal $B$. Klik nu op het icoontje {\it Hoek met gegeven grootte}. Klik eerst op $B$ en dan op $A$ en als hoekgrootte geef je \verb$C2$ in. Klik nu op het icoontje {\it Cirkelsector met middelpunt door 2 punten}. Als eerste punt geef je $A$, als tweede punt geef je $B'$ en uiteindelijk als derde punt geef je $B$. Herhaal dit nu voor de andere sectoren.
@@ -370,7 +370,7 @@ In plaats van naar alle kleuren te kijken, zou je er eens je lievelingskleur kun
 bijvoorbeeld blauw. Hoeveel percent blauwe snoepjes zaten er in het eerste zakje? En hoeveel percent
 blauwe snoepjes waren er in de andere zakjes?
 
-\vraag{Noteer voor elk onderzocht zakje in je klas telkens het percent blauwe snoepjes.}{5cm}
+\vraag{Noteer voor elk onderzocht zakje telkens het percent blauwe snoepjes.}{5cm}
 
 \vraag{Als jij maar één zakje snoepjes mag onderzoeken (bijvoorbeeld het eerste) en je zou moeten raden hoeveel
 percent blauwe snoepjes er door de fabrikant gemaakt wordt (dus hoeveel percent blauwe
@@ -522,7 +522,7 @@ houden met toevallige uitkomsten en dus niet hetzelfde zijn als wiskundige bewij
 Wees dus voorzichtig bij je besluit. Als er problemen zijn opgetreden, vermeld die dan. Zo kom je
 tot een genuanceerd rapport.
 
-\vraag{Formuleer in een bondige tekst je besluiten over het uitgevoerde onderzoek.}{4cm}
+\vraag{Formuleer in een bondige tekst je besluiten over het uitgevoerde onderzoek.}{7cm}
 
 \begin{center}
   \includegraphics[width=0.3\textwidth]{MenM-snoepjes_banner}
@@ -544,7 +544,6 @@ In dit onderzoek heb je geleerd over:\\
   \item de frequentietabel bij een kwalitatieve veranderlijke
   \item het staafdiagram bij een kwalitatieve veranderlijke
   \item het taartdiagram bij een kwalitatieve veranderlijke
-  \item het staafdiagram met subgroepen.
 \end{itemize}
 
 Je bent nu in staat om de volgende opdrachten uit te voeren:
@@ -649,12 +648,12 @@ afronding werkt (en dus 54 seconden opschrijft) dat de echte tijd ook met sprong
 
 Als je te maken hebt met uitkomsten die alle mogelijke getalwaarden kunnen aannemen tussen
 bepaalde grenzen, dan spreek je over een {\bf continu kwantitatieve veranderlijke}. De
-naam “numeriek” wijst op het feit dat je echt met getallen te maken hebt, en niet met landen of
-wielersponsors. De naam “continu” wijst erop dat (minstens theoretisch) de getallen alle mogelijke
-waarden kunnen aannemen tussen bepaalde grenzen, zonder enige onderbreking.
+naam {\bf kwantitatief} wijst op het feit dat je echt met getallen te maken hebt, en niet met landen of
+wielersponsors. De naam {\bf continu} wijst erop dat (minstens theoretisch) de getallen alle mogelijke
+waarden kunnen aannemen tussen bepaalde grenzen, zonder enige onderbreking. Indien er wel onderbrekingen zouden zij, dan spreken we van een {\bf discrete kwantitatieve veranderlijke}.
 
 De geschatte tijdsduur van één minuut is een voorbeeld van een continu kwantitatieve veranderlijke.
-Een ander voorbeeld is het gewicht van een leerling of haar lengte.
+Een ander voorbeeld is het gewicht van een leerling of haar lengte.  Een voorbeeld van een discrete verdeling is deze van het aantal huisdieren dat een gezin kan hebben, hier verspringt de veranderlijke telkens met één.
 
 \subsection{Op speurtocht in je dataset}
 
@@ -682,11 +681,11 @@ De tijdsmetingen die je hier hebt, worden, zoals alle continue veranderlijken, s
     \hline
     Klasse & Frequentie\\
     \hline
-    [30;35[ & 1\\    
+    $[30;35[$ & $1$\\    
     \hline
-    [35;40[ & 0\\
+    $[35;40[$ & $0$\\
     \hline
-    [40;45[ & \ldots\\ 
+    $[40;45[$ & \ldots\\ 
     \hline
     \ldots & \ldots\\ 
     \hline
@@ -702,7 +701,7 @@ en eindigen bij 95 of 100.
   \item Op dit grote interval maak je nu deelintervallen die mooi aan elkaar aansluiten en elkaar niet
 overlappen. Dat zijn je klassen. De breedte van die klassen mag je zelf kiezen en ze hoeven
 zelfs niet allemaal even breed te zijn.
-  \item Elke klasse is een “links gesloten – rechts open” interval, zoals bijvoorbeeld [30 ; 35[. De
+  \item Elke klasse is een “links gesloten – rechts open” interval, zoals bijvoorbeeld $[30;35[$. De
 grenzen van een klasse heten klassengrenzen. Het midden heet klassenmidden en de
 breedte heet klassenbreedte.
   \item Zorg ervoor dat het overgrote deel van de waarnemingen niet binnen één of twee klassen
@@ -712,16 +711,33 @@ uitgelegd in volgend puntje), dan zal je ervaren dat te veel klassen dikwijls ee
 figuur geven terwijl te weinig klassen bijna niets meer tonen.
 \end{itemize}
 
-\vraag{Stel nu een frequentietabel op voor jouw onderzoek. Je kan je laten leiden door bovenstaand
-voorbeeld en de klassenbreedte gelijk aan 5 nemen, tenzij dat voor jouw data niet zinvol is.}{0cm}
+\begin{wrapfigure}[3]{r}{0.2\textwidth}
+  \includegraphics[width=0.2\textwidth]{turven}
+\end{wrapfigure}
 
+Als de tabel gemaakt is, dan kan het turven beginnen. {\bf Turven} is tellen door streepjes per vijf te groeperen. Dit doe je door de elementen van je dataset te overlopen en voor elk element een streepje te plaatsen bij de correcte klasse.
+
+\vraag{Stel nu een frequentietabel op voor jouw onderzoek. Je kan je laten leiden door bovenstaand
+voorbeeld en de klassenbreedte gelijk aan 5 nemen, tenzij dat voor de data niet zinvol is.}{0cm}
+
+% Met klassenmindden
+% \begin{center}
+%   \begin{tabular}{|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
+%     \hline
+%     Klasse & Klassen-midden & Frequentie &&Relatieve Frequentie&\\
+%     \hline&&&&&\\\hline&&&&&\\\hline&&&&&\\\hline&&&&&\\\hline&&&&&\\
+%     \hline&&&&&\\\hline&&&&&\\\hline&&&&&\\\hline&&&&&\\\hline&&&&&\\
+%     \hline&&&&&\\\hline&&&&&\\\hline&&&&&\\\hline&&&&&\\\hline&&&&&\\\hline
+%   \end{tabular}
+% \end{center}
+% Zonder klassenmidden
 \begin{center}
-  \begin{tabular}{|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
+  \begin{tabular}{|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
     \hline
-    Klasse & Frequentie &&Relatieve Frequentie&\\
-    \hline&&&&\\\hline&&&&\\\hline&&&&\\\hline&&&&\\\hline&&&&\\
-    \hline&&&&\\\hline&&&&\\\hline&&&&\\\hline&&&&\\\hline&&&&\\
-    \hline&&&&\\\hline&&&&\\\hline&&&&\\\hline&&&&\\\hline&&&&\\\hline
+    Klasse & Turf & Frequentie &&Relatieve Frequentie&\\
+    \hline&&&&&\\\hline&&&&&\\\hline&&&&&\\\hline&&&&&\\\hline&&&&&\\
+    \hline&&&&&\\\hline&&&&&\\\hline&&&&&\\\hline&&&&&\\\hline&&&&&\\
+    \hline&&&&&\\\hline&&&&&\\\hline&&&&&\\\hline&&&&&\\\hline&&&&&\\\hline
   \end{tabular}
 \end{center}
 
@@ -729,14 +745,13 @@ Naast de frequentie en de relatieve frequentie bestaan er ook nog de {\it cumula
 
 \vraag{Vul de frequentietabel verder aan met de cumulatieve frequentie en de relatieve cumulatieve frequentie.}{0cm}
 
-Als we enorm veel data hebben kan het berekenen van de klassen beter gebeuren door de computer. We gebruiken
-bijvoorbeeld Geogebra:
+Als we enorm veel data hebben kan het berekenen van de klassen beter gebeuren door de computer. In Geogebra doen we dit als volgt:
 \begin{enumerate}
   \item Plaats alle data in een lijst: vul hiervoor de eerste kolom van het rekenblad met de data, selecteer deze cellen en kies {\it creëer lijst} (rechts klikken). Noem de gemaakte lijst "data" door deze te hernoemen (lijst selecteren en "data" typen).
   \item Bereken het maximum en het minimum: voer de commando's \verb#min=Min[data]# en \verb#max=Max[data]# in.
   \item Bereken een goede klassenbreedte, bijvoorbeeld voor $10$ klassen vinden we $$\frac{max-min}{10}=\frac{81-42}{10}=3.9\;.$$ We ronden af en nemen als klassenbreedte $4$.
-  \item Maak nu in het rekenblad een kolom voor linker- en rechter klassengrenzen. Dit gaat het snelst als je in C2 het getal $42$ plaatst. Nu is D2 gelijk aan de linker grens plus de klassenbreedte. Dus in D2 wordt \verb#=C2 + 4# geplaatst. C3 begint nu waar de vorig grens was geëindigd, plaats daar dus \verb#=D2#. Nu kunnen de correcte cellen naar beneden gesleept worden, Geogebra zal de correcte klassen creëren.
-  \item Laat nu Geogebra zelf de gegevens turven, hiervoor vul je in E2 \verb#=TelAls[C2 <= x < D2, data]# in. Er wordt in de data gekeken, en geteld hoeveel keer er een element tussen de klassengrenzen ligt.
+  \item Maak nu in het rekenblad een kolom voor linker- en rechter klassengrenzen. Dit gaat het snelst als je in \verb#C2# het getal $42$ plaatst. Nu is \verb#D2# gelijk aan de linker grens plus de klassenbreedte. Dus in \verb#D2# wordt \verb#=C2 + 4# geplaatst. \verb#C3# begint nu waar de vorig grens was geëindigd, plaats daar dus \verb#=D2#. Nu kunnen de correcte cellen naar beneden gesleept worden, Geogebra zal de correcte klassen creëren.
+  \item Laat nu Geogebra zelf de gegevens turven, hiervoor vul je in \verb#E2# \verb#=TelAls[C2 <= x < D2, data]# in. Er wordt in de data gekeken, en geteld hoeveel keer er een element tussen de klassengrenzen ligt.
 \end{enumerate}
 
 \begin{center}
@@ -754,7 +769,7 @@ grafisch voor. We maken een histogram als volgt:
   \item De klassenfrequenties worden voorgesteld met behulp van rechthoeken die de horizontale lijnstukken op de $x$ as als zijde hebben. Dan moet de verticale zijde zo zijn, dat de oppervlakte van de bijbehorende rechthoek recht evenredig is met de frequentie van een klasse. We moeten dus de hoogte van elke rechthoek berekenen en vervolgens die rechthoeken construeren, allen aan de zelfde kant van de $x$-as.
 \end{enumerate}
 
-\vraag{Teken een histogram voor de door jou opgestelde frequentietabel.}{0cm}
+\vraag{Teken een histogram voor de opgestelde frequentietabel.}{0cm}
 
 \begin{center}
   \input{tikzpictures/histogram_blanco}
@@ -781,7 +796,7 @@ Met Geogebra tekenen we als volgt het histogram:
   \includegraphics[width=14cm]{gg-histogram}
 \end{center}
 
-\subsubsection{Numerieke kenmerken}
+\subsubsection{Numerieke kenmerken: de kengetallen}
 
 \subsubsection*{Gemiddelde en mediaan}
 
@@ -946,34 +961,6 @@ mag doen?}{4cm}
 \vraag{Je moet de lengte van 20 planken meten en je doet dat met een rolmeter. Op welke manier
 zou hier vertekening kunnen optreden?}{3cm}
 
-\subsubsection{Enkelvoudig aselect, en nog veel meer}
-
-Steekproeven, waarbij je het toeval op een gecontroleerde manier zijn rol laat spelen, heten
-{\bf toevalsgestuurde steekproeven}. Zo zijn er verschillende soorten.
-
-Een eerste is de {\bf enkelvoudige aselecte steekproef} (afgekort als EAS). Dat is de basis, en die ken je
-al. Door lukraak een groepje van 40 leerlingen te trekken uit de populatie van 512 leerlingen, heeft
-elk groepje van 40 leerlingen dezelfde kans om jouw steekproef te zijn.
-
-
-Er zijn ook andere manieren om aan 40 leerlingen te komen. We bekijken er ééntje van.
-Start met een lijst van alle klassen van je school. Nummer die klassen en trek daaruit een EAS van 8
-klassen. Voor die 8 klassen vraag je de namen van de leerlingen. Per klas trek je een EAS van 5
-leerlingen. Zo heb je ook 40 leerlingen in je steekproef. Deze manier van steekproeftrekken gaat in
-stapjes, en wordt daarom “getrapt” genoemd. Je kan dit systeem natuurlijk uitbreiden. Als je 400
-leerlingen uit Vlaamse scholen wil, dan kan je bijvoorbeeld eerst lukraak 20 scholen trekken, dan in
-elke school lukraak 5 klassen, en dan in elke klas lukraak 4 leerlingen. Dit is opnieuw een voorbeeld
-van een {\bf getrapte steekproef}.
-
-\vraag{Als je voor je huidig onderzoek zo weinig mogelijk klassen wil “storen”, werk je dan met een
-EAS of met een getrapte steekproef? Waarom?}{3cm}
-
-\vraag{Jij neemt een EAS van 40 leerlingen in je school. Je leerkracht gebruikt een getrapte
-steekproef (eerst 8 klassen, dan 5 leerlingen per klas) om aan een steekproef van 40
-leerlingen te komen. Zijn dit gelijkwaardige methoden (kan je leerkracht alle groepjes van 40
-uitkomen die jij kan uitkomen en kan jij alle groepjes van 40 uitkomen die je leerkracht kan
-uitkomen)?}{5cm}
-
 \subsubsection{Een uitspraak over de populatie}
 
 Wat we in het “exploratief” onderzoek hebben gevonden is van toepassing op de dataset die we hebben
@@ -1004,7 +991,6 @@ interpreteren.
 
 In dit onderzoek heb je geleerd over:
 \begin{itemize}
-  \item getrapte steekproeven
   \item vertekening bij opmetingen
   \item de continu kwantitatieve veranderlijke
   \item de frequentietabel met klassenindeling
@@ -1015,10 +1001,10 @@ In dit onderzoek heb je geleerd over:
 \end{itemize}
 
 Je bent nu in staat om volgende opdrachten uit te voeren:
-\vraag{Wanneer is een numerieke veranderlijke continu? Zeg dat in je eigen woorden, en geef
+\vraag{Wanneer is een kwantitative veranderlijke continu? Zeg dat in je eigen woorden, en geef
 enkele voorbeelden.}{4cm}
 
-\vraag{Schrijf je een continu numerieke veranderlijke altijd op met kommagetallen? Motiveer je
+\vraag{Schrijf je een continu kwantitative veranderlijke altijd op met kommagetallen? Motiveer je
 antwoord.}{4cm}
 
 \vraag{Welke eigenschap probeert de standaardafwijking te beschrijven? Zeg in woorden hoe je de
