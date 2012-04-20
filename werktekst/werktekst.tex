@@ -33,16 +33,18 @@
 
 \graphicspath{{../figuren/}}
 
-\title{Beschrijvende statistiek}
-\author{Pieter Pareit}
+\title{\Huge Beschrijvende statistiek}
+%\author{Pieter Pareit}
+\date{}
 
 \begin{document}
 
 \maketitle
+\vspace*{-2cm}
 
 \section{Iets statistisch onderzoeken}
 
-We wensen een statistisch onderzoek uit te voeren. Wat wil dit nu zeggen? Wel, {\it onderzoeken} is iets nauwkeurig nazien of nagaan. Een voorbeeld zou kunnen zijn: {\it Tot hoe laat mogen jongeren in het weekend uitgaan?}. De vraag die bij een onderzoek hoort noemen we de {\bf onderzoeksvraag}. Een {\it statistisch onderzoek} is dan een onderzoek die verloopt volgens de statistiek. De {\bf statistiek} is de wetenschap van het waarnemen van verschijnselen en het weergeven van de uitkomsten in getallen en figuren. In het vorig voorbeeld wil dit zeggen dat we {\it waarnemen} bij anderen tot hoe laat deze uitgaan. Deze waarnemingen gaan we dan zo goed mogelijk {\it weergeven}, dit met getallen of figuren.
+We wensen een statistisch onderzoek uit te voeren. Wat wil dit zeggen? Wel, {\it onderzoeken} is iets nauwkeurig nazien of nagaan. Een voorbeeld zou kunnen zijn: {\it Tot hoe laat mogen jongeren in het weekend uitgaan?}. De vraag die bij een onderzoek hoort noemen we de {\bf onderzoeksvraag}. Een {\it statistisch onderzoek} is dan een onderzoek die verloopt volgens de statistiek. De {\bf statistiek} is de wetenschap van het waarnemen van verschijnselen en het weergeven van de uitkomsten in getallen en figuren. In het vorig voorbeeld wil dit zeggen dat we {\it waarnemen} bij andere jongeren tot hoe laat deze uitgaan. Deze waarnemingen gaan we dan zo goed mogelijk {\it weergeven}, dit met getallen of figuren.
 
 Een onderzoek kan in vier stappen verlopen:
 \begin{enumerate}
@@ -80,7 +82,7 @@ verschillende vragen!
 
 Om goed het onderscheid te maken tussen “alle M\&M’s” en “de snoepjes in jouw zakje M\&M’s”
 gebruikt de statistiek twee verschillende woorden. Je spreekt over {\bf populatie} als je “de totale
-verzameling” bedoelt (dus alle M\&M-snoepjes). Meestal heb je geen tijd of geld om een volledige
+verzameling” bedoelt (dus alle M\&M-snoepjes in de wereld!). Meestal heb je geen tijd of geld om een volledige
 populatie te onderzoeken en daarom bekijk je enkel een klein deeltje van die populatie. Zo’n deeltje
 van een populatie wordt in de statistiek een {\bf steekproef} genoemd. De snoepjes die in je zakje
 M\&M’s zitten, zijn een heel klein deeltje van alle M\&M’s. Jouw snoepjes zijn dus een steekproef uit
@@ -166,7 +168,7 @@ bovenaan de kolom.
 
 We gaan nu een derde kolom aan de frequentietabel toevoegen. In die kolom komt, per kleur, {\bf de
 relatieve frequentie}. De relatieve frequentie is niets anders dan de frequentie gedeeld door het totale
-aantal $n$ . Je kan dit getal ook in percent uitdrukken. Als je voor “geel” een relatieve frequentie van
+aantal $n$ (de steekproefgrootte) . Je kan dit getal ook in percent uitdrukken. Als je voor “geel” een relatieve frequentie van
 0.16 vindt, dan kan je dat ook schrijven als 16\%. Hierbij rond je af op één eenheid. In woorden zeg
 je dat 16\% van jouw onderzochte snoepjes geel is. De relatieve frequentie maakt het mogelijk om kansen
 te schatten die theoretisch moeilijker te bepalen zijn.
@@ -177,14 +179,11 @@ van elk kleur zijn er evenveel snoepjes. Wat is dan de kans om lukraak een geel 
 \vraag{De relatieve frequentie voor "geel" wijkt af van de theoretische kans, verklaar dit en wanneer
 zou de relatieve frequentie dichter bij de theoretische kans moeten komen?}{3cm}
 
-Om zoveel mogelijk van je tijd te kunnen besteden aan nadenken en
-discussiëren, ga je zo weinig mogelijk tijd besteden aan slaafse
-berekeningen. We gebruiken software op een verstandige manier. Zo leer je ook
-hoe elk “echt” statistisch onderzoek verloopt.
+Waar mogelijk zullen we de berekeningen ook met de computer doen. Er zijn verschillende computer programma's die ons kunnen helpen met een statistisch onderzoek. Wij zullen steeds {\it Geogebra}\footnote{\url{http://www.geogebra.org/}} gebruiken.
 
 We starten {\it Geogebra} en kiezen 'Beeld-Rekenblad' om het rekenblad te tonen. Het algebravenster en het tekenblad mogen verborgen worden. De eerste kolom vullen we met de frequenties. Als je bijvoorbeeld $13$ rode, $9$ groene, $8$ gele, $7$ oranje, $7$ bruine en $6$ blauwe snoepjes had, dan ga je als volgt te werk. In de eerste {\bf cell} rechtsboven vul je 13 in. Deze cell noemt A1. In de cell eronder vul je $9$ in. Je gaat zo verder tot aan cell A6. De cellen A1 tot aan A6 noteren we met A1:A6 en deze wordt een {\bf lijst} genoemd.
 
-In de tweede kolom, in cell B1, vul je \verb#=A1 / Som[$A$1:A6]# in. Het gelijk aan teken '=' maakt aan Geogebra duidelijk dat wat volgt berekend moet worden. Geogebra zal in dit geval de waarde in de cell A1 delen door de som van de cellen in de lijst A1:A6. Nu doen we dit ook voor de andere cellen in de tweede kolom, waarbij dan op de juiste plaats A1 vervangen wordt.
+In de tweede kolom, in cell \verb#B1#, vul je \verb#=A1 / Som[ $A$1:$A$6 ]# in. Het gelijk aan teken '=' maakt aan Geogebra duidelijk dat wat volgt berekend moet worden. Geogebra zal in dit geval de waarde in de cell A1 delen door de som van de cellen in de lijst van cellen \verb#A1:A6#. Nu doen we dit ook voor de andere cellen in de tweede kolom, waarbij dan op de juiste plaats \verb#A1# vervangen wordt. De dollar tekentjes in \verb#Som[$A$1:$A$6]# zorgen ervoor dat de lijst van cellen \verb#A1:A6# vastgehouden wordt tijdens het automatisch invullen van de cellen als de cel versleept wordt.
 
 \begin{center}
   \includegraphics[width=14cm]{gg-relatieve_frequentie.png}
@@ -222,7 +221,7 @@ figuur je moet maken en hoe je die moet tekenen.
 
 \subsubsection*{Een staafdiagram}
 
-Je hebt in dit onderzoek een nominaal kwalitatieve veranderlijke opgemeten. Voor dit soort
+Je hebt in dit onderzoek een kwalitatieve veranderlijke opgemeten. Voor dit soort
 veranderlijken is het {\bf staafdiagram} de basisfiguur.
 
 Als voorbeeld zie je hier een staafdiagram
@@ -232,9 +231,9 @@ je vinden in het boekje “Vlaanderen in
 cijfers” op de website:
 \url{http://www4.vlaanderen.be/dar/svr/Cijfers/Pages/Excel.aspx}.
 
-De namen van de provincies zijn afgekort als:
   
 \begin{minipage}{0.5\textwidth}
+De namen van de provincies zijn afgekort als:
   \begin{description}
     \item[Antw] Antwerpen,
     \item[O-Vl] Oost-Vlaanderen,
@@ -245,21 +244,18 @@ De namen van de provincies zijn afgekort als:
 \end{minipage}
 \begin{minipage}{0.5\textwidth}
 %  \include{tikzpictures/staafdiagram_bevolking_provincie}
-  \includegraphics[width=0.5\textwidth]{vlaamse_bevolking.png}
+  \includegraphics[width=8cm]{vlaamse_bevolking.png}
 \end{minipage}
 
 Om een staafdiagram te tekenen op basis van jouw frequentietabel ga je als volgt te werk:
 \begin{enumerate}
-  \item Op de x-as zet je de verschillende kleuren. Hoewel de waarden van een nominale
-veranderlijke geen natuurlijke volgorde hebben, zal je toch moeten kiezen hoe je de kleur
-ordent op de x-as. Welke kleur komt als eerste? Welke kleur komt als tweede? Waarom maak
-je die keuze?
+  \item Op de $x$-as zet je de verschillende kleuren. Hoewel de waarden van de kwalitatieve variabele, kleur, geen natuurlijke volgorde hebben, zal je toch moeten kiezen hoe je de kleuren ordent op de $x$-as. Welke kleur komt als eerste? Welke kleur komt als tweede? Waarom maak je die keuze?
 
 De kleuren van een snoepje hebben geen natuurlijke volgorde. We rangschikken daarom de
 bijhorende frequenties. Dat zijn getallen en die hebben wel een natuurlijke volgorde. Je kan
 bijvoorbeeld rangschikken van groot naar klein. Voor kleuren met gelijke frequenties kan je
 de onderlinge plaats zelf kiezen.
-\item Op de y-as duid je de frequentie van elke kleur aan en je tekent dan bij elke kleur een staafje
+\item Op de $y$-as duid je de frequentie van elke kleur aan en je tekent dan bij elke kleur een staafje
 waarvan de lengte overeenkomt met de frequentie van die kleur. Zorg ervoor dat alle staafjes
 los van elkaar staan.
 \item Voorzie de assen van de juiste naam.
@@ -273,7 +269,7 @@ los van elkaar staan.
 Zulk staafdiagram kan ook met Geogebra gemaakt worden:
 \begin{enumerate}
   \item Vul een rekenblad in met de frequenties.
-  \item Maak vanuit het rekenblad een lijst aan van de frequenties aan door B2:B7 te selecteren, rechts te klikken en creëer lijst te kiezen. Hernoem de nieuw aangemaakte lijst met naam "lijst 1', door deze te selecteren in het algebra venster en met het toetsenbord "frequentie" te typen.
+  \item Maak vanuit het rekenblad een lijst aan van de frequenties aan door \verb#B2:B7# te selecteren, rechts te klikken en creëer lijst te kiezen. Hernoem de nieuw aangemaakte lijst met naam "lijst 1', door deze te selecteren in het algebra venster en met het toetsenbord "frequentie" te typen.
   \item Maak ook een lijst met posities aan. Typ hiervoor in het invoervenster\\
   \verb$posities={10,20,30,40,50,60,70}$.
   \item Teken nu het staafdiagram met het commando \verb$Staafdiagram[posities,frequenties,5]$
@@ -286,24 +282,24 @@ Zulk staafdiagram kan ook met Geogebra gemaakt worden:
 \end{center}
 
 \subsubsection*{Een taartdiagram}
-Misschien wil je de relatieve frequenties van de kleuren grafisch voorstellen. Dan kan je ook een
-staafdiagram tekenen, waarbij je in de y-richting staafjes tekent waarvan de lengte gelijk is aan de
+Misschien wil je de relatieve frequenties van de kleuren grafisch voorstellen. Dan kan je opnieuw een
+staafdiagram tekenen, waarbij je in de $y$-richting staafjes tekent waarvan de lengte gelijk is aan de
 relatieve frequentie.
 Maar er is ook een andere figuur die de relatieve frequentie (meestal uitgedrukt in percent) mooi
 weergeeft. Dat is het {\bf taartdiagram of cirkeldiagram}.
 
-\begin{wrapfigure}[10]{r}{0.3\textwidth}
+\begin{wrapfigure}[12]{r}{0.3\textwidth}
   \vspace{-0.3cm}
   \includegraphics[width=0.3\textwidth]{cirkeldiagram_electriciteit}
 \end{wrapfigure}
 
 Bij het tekenen van een taartdiagram verdeel je een cirkeloppervlak in stukken, juist zoals je een
-taart in stukken snijdt. Zo’n stuk heet een {\bf sector}. De totale oppervlakte van de cirkel komt overeen
+taart in stukken snijdt. Eén zo'n stuk heet een {\bf sector}. De totale oppervlakte van de cirkel komt overeen
 met de som van alle percentages en dat is 100\%.
 
 Voor een taartdiagram maken we enkele afspraken:
 \begin{itemize}
-  \item Begin bovenaan en draai naar rechts.
+  \item Begin bovenaan en draai met de wijzers van de klok mee.
   \item De grootste sector komt eerst, dan komt de tweede
 grootste, enzovoort.
 \end{itemize}
@@ -544,10 +540,10 @@ In dit onderzoek heb je geleerd over:\\
   \item het onderscheid tussen de populatie en een steekproef
   \item een enkelvoudige aselecte steekproef
   \item de structuur van een dataset (elementen, veranderlijken)
-  \item nominaal kwalitatieve veranderlijken
-  \item de frequentietabel bij een nominaal kwalitatieve veranderlijke
-  \item het staafdiagram bij een nominaal kwalitatieve veranderlijke
-  \item het taartdiagram bij een nominaal kwalitatieve veranderlijke
+  \item kwalitatieve veranderlijken
+  \item de frequentietabel bij een kwalitatieve veranderlijke
+  \item het staafdiagram bij een kwalitatieve veranderlijke
+  \item het taartdiagram bij een kwalitatieve veranderlijke
   \item het staafdiagram met subgroepen.
 \end{itemize}
 
@@ -563,12 +559,10 @@ trekken.}{3cm}
 \vraag{Leg duidelijk uit hoe een dataset eruitziet. Gebruik hiervoor een nieuw voorbeeld dat je zelf
 hebt bedacht.}{3cm}
 
-\vraag{Zeg in eigen woorden wanneer je van een kwalitatieve veranderlijke zegt dat ze nominaal is.
-Is de bloedgroep zo’n veranderlijke? Kan je zelf een nominaal kwalitatieve veranderlijke
-bedenken?}{3cm}
+\vraag{Zeg in eigen woorden wanneer je over een kwalitatieve veranderlijke spreekt. Is de bloedgroep zo’n veranderlijke? Kan je zelf een kwalitatieve veranderlijke bedenken?}{3cm}
 
-Als je opmetingen hebt van een nominaal kwalitatieve veranderlijke, dan moet je daarvoor
-een frequentietabel, een staafdiagram en een taartdiagram kunnen maken
+Als je opmetingen hebt van een kwalitatieve veranderlijke, dan moet je daarvoor
+een frequentietabel, een staafdiagram en een taartdiagram kunnen maken.
 
 Soms kom je de uitdrukking “horizontaal staafdiagram” tegen. Kijk daarvoor naar de figuur
 die je vindt in de Gazet van Antwerpen van 3 november 2004. Voor de 364 jobs die in
@@ -597,7 +591,7 @@ naar de informatie die daarin staat over het
 jaar 2003.
 
 \vraag{Is “druggebruik” daar
-behandeld als een nominaal kwalitatieve
+behandeld als een kwalitatieve
 veranderlijke? Is de tabel correct?}{4cm}
 
 Een bestaande figuur moet je juist kunnen interpreteren. Bekijk het taartdiagram over de
@@ -607,7 +601,7 @@ vrijetijdsbesteding van jongeren (De Standaard van 6-12-2000).
   \includegraphics[width=0.6\textwidth]{cirkeldiagram-vrijetijdsbesteding}
 \end{center}
 
-\vraag{Is “vrijetijdsbesteding” hier behandeld als een nominaal kwalitatieve veranderlijke? Is het taartdiagram correct getekend?}{4cm}
+\vraag{Is “vrijetijdsbesteding” hier behandeld als een kwalitatieve veranderlijke? Is het taartdiagram correct getekend?}{4cm}
 
 \section{Een statistisch onderzoek naar het schatten van de tijdsduur van 1 minuut}
 
