@@ -8,12 +8,14 @@
 
 \usepackage[dutch]{babel}
 \usepackage{graphicx}
-\usepackage{amssymb, subfigure}
+\usepackage{amssymb}
+\usepackage{subfig}
 \usepackage{amsthm}
 \usepackage[utf8]{inputenc}
 \usepackage[normalem]{ulem}
 \usepackage{color}
 \usepackage{cancel}
+\usepackage{wrapfig}
 
 \newcommand{\vraag}[1]{\begin{itemize}\item {\it #1}\end{itemize}}
 \newcommand{\degree}{\ensuremath{^\circ}}
@@ -375,9 +377,34 @@ veranderlijke met waarden: “Agora Rotogravure, Zichem”, “Gevelbekleding, T
 staafdiagram waarbij de volgorde van de staafjes bepaald is door de frequentie. Dat is goed.
 \end{frame}
 
+\begin{frame}
+\frametitle{Frequentietabel interpreteren}
+\begin{center}
+  \includegraphics[width=0.4\textwidth]{tabel-drugs}
+\end{center}
+\vraag{Is “druggebruik” behandeld als een kwalitatieve veranderlijke? Is de tabel correct?}
+\pause
+Drugs lijkt hier behandeld te zijn als een kwalitatieve veranderlijke met
+waarden: “cannabis”, “xtc”, “amfetamines”, “heroïne”, en “cocaïne”. De tabel is fout want het totaal van de percenten is 112.7\%. Dit is zeker niet te
+wijten aan afrondingsfouten, maar aan het feit dat sommige geverbaliseerden meerdere drugs namen en dus in meer dan één categorie zijn terechtgekomen.
+\end{frame}
+
+\begin{frame}
+\frametitle{Taartdiagram interpreteren}
+
+\begin{wrapfigure}[6]{r}{0.4\textwidth}
+  \includegraphics[width=0.3\textwidth]{cirkeldiagram-vrijetijdsbesteding}
+\end{wrapfigure}
+\vraag{Is “vrijetijdsbesteding” hier behandeld als een kwalitatieve veranderlijke? Is het taartdiagram correct getekend?}
+\pause
+Vrijetijdsbesteding lijkt in deze studie behandeld te zijn als een nominaal kwalitatieve veranderlijke met waarden: “TV of video kijken”, “Muziek beluisteren”, “Langs gaan bij vrienden”, enz. Het taartdiagram volgt ook de klassieke afspraak om bovenaan te beginnen en dan naar rechts te draaien, met eerst de grootste sector, dan de tweede grootste, enz. Een uitzondering hierop is de laatste sector die 9.7\% bevat en “Andere” heet. Het is logisch dat je “Andere”(wat een allegaartje is van al wat overschiet) niet tussen de andere sectoren plaatst. Het taartdiagram is echter foutief want de volledige taart moet 100\% zijn en hier is dat 270\%. Er is hier gewerkt met uitkomsten die elkaar overlappen.
+\end{frame}
 
 \end{document}
 
+\begin{frame}
+\frametitle{}
+\end{frame}
 
 
 
