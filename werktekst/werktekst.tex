@@ -17,7 +17,7 @@
 \usepackage{subfig}
 \usepackage{wrapfig}
 \usepackage{graphicx}
-
+\usepackage{etoolbox}
 \usepackage[table]{xcolor}
 
 \usepackage{pgf,tikz}
@@ -30,6 +30,19 @@
 \newcommand{\vraag}[2]{\begin{itemize}\item {\it #1} \vspace*{#2}\end{itemize}}
 
 \newcommand{\degree}{\ensuremath{^\circ}}
+
+\newcounter{menucount}\newcounter{curitem}% Counters
+\newcommand{\menuitem}{\texttt}% Menu item formatting
+\newcommand{\menusep}{\ensuremath{\rightarrow}}% Menu separator
+\newcommand{\menuend}{\relax}% Menu end
+\newcommand{\menulist}[1]{% \menulist{<menu list>}
+  \setcounter{menucount}{0}\setcounter{curitem}{0}% Reset menucount & curitem
+  \renewcommand*{\do}[1]{\stepcounter{menucount}}%
+  \menulistparser{#1}% Count menu items
+  \renewcommand*{\do}[1]{\menuitem{##1}\stepcounter{curitem}\ifnumless{\value{curitem}}{\value{menucount}}{\menusep}{\menuend}}%
+  \menulistparser{#1}% Process list
+}
+\DeclareListParser{\menulistparser}{:}% List separator is ':'
 
 \graphicspath{{../figuren/}}
 
