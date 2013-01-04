@@ -20,6 +20,9 @@
 \usepackage{etoolbox}
 \usepackage[table]{xcolor}
 
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
 \usepackage{pgf,tikz}
 \usetikzlibrary{arrows}
 
@@ -47,21 +50,24 @@
 \graphicspath{{../figuren/}}
 
 \title{\Huge Beschrijvende statistiek}
-%\author{Pieter Pareit}
-\date{}
+\author{P. Pareit}
+\date{Schooljaar 2012-2013}
 
 \begin{document}
 
 \maketitle
-\vspace*{-2cm}
+\vspace*{0cm}
+\lhead{}
+\rhead{Beschrijvende statistiek}
 
 \section{Doelstellingen}
-Je kan
+Je kan \hfill (LP 2005-069, LI 2.3.1, ET14, ET15, ET17)
 \begin{itemize}
   \item het onderscheid maken tussen een steekproef en een populatie,
   \item het gemiddelde en de mediaan berekenen van statische gegevens,
   \item de interkwartielafstand en de standaardafwijking berekenen van statistische gegevens,
   \item grafische voorstellingen maken van statistische gegevens,
+  \item ICT gebruiken bij de drie voorgaande doelstellingen,
   \item aan de hand van voorbeelden het belang uitleggen van de representativiteit van een steekproef voor het formuleren van statische besluiten over de populatie, hierbij functioneel gebruik maken van centrummaten, spreidingsmaten en grafische voorstellingen,
   \item kritisch omgaan met het gebruik van statistiek in de media.
 \end{itemize}
@@ -205,9 +211,39 @@ zou de relatieve frequentie dichter bij de theoretische kans moeten komen?}{3cm}
 
 Waar mogelijk zullen we de berekeningen ook met de computer doen. Er zijn verschillende computer programma's die ons kunnen helpen met een statistisch onderzoek. Wij zullen steeds {\it Geogebra}\footnote{\url{http://www.geogebra.org/}} gebruiken.
 
-We starten {\it Geogebra} en kiezen 'Beeld-Rekenblad' om het rekenblad te tonen. Het algebravenster en het tekenblad mogen verborgen worden. De eerste kolom vullen we met de frequenties. Als je bijvoorbeeld $13$ rode, $9$ groene, $8$ gele, $7$ oranje, $7$ bruine en $6$ blauwe snoepjes had, dan ga je als volgt te werk. In de eerste {\bf cell} rechtsboven vul je 13 in. Deze cell noemt A1. In de cell eronder vul je $9$ in. Je gaat zo verder tot aan cell A6. De cellen A1 tot aan A6 noteren we met A1:A6 en deze wordt een {\bf lijst} genoemd.
+We starten {\it Geogebra}. Toon het algebravenster en het rekenblad. Het tekenblad mag verborgen worden. Je selecteert hiervoor:
+\begin{itemize}
+  \item \menulist{Beeld:Algebravenster} Aan,
+  \item \menulist{Beeld:Rekenblad} Aan,
+  \item \menulist{Beeld:Tekenblad} Uit.
+\end{itemize}
+Het rekenblad is onze rekenruimte. Deze bevat allemaal verschillende {\bf cellen}. Deze cellen hebben een naam. De cel linksboven noemt \verb#A1#. De \verb#A# staat voor de eerste kolom. {\bf Kolommen} verdelen het rekenblad verticaal. De \verb#1# staat voor de eerste rij. {\bf Rijen} verdelen het rekenblad horizontaal.
 
-In de tweede kolom, in cell \verb#B1#, vul je \verb#=A1 / Som[ $A$1:$A$6 ]# in. Het gelijk aan teken '=' maakt aan Geogebra duidelijk dat wat volgt berekend moet worden. Geogebra zal in dit geval de waarde in de cell A1 delen door de som van de cellen in de lijst van cellen \verb#A1:A6#. Nu doen we dit ook voor de andere cellen in de tweede kolom, waarbij dan op de juiste plaats \verb#A1# vervangen wordt. De dollar tekentjes in \verb#Som[$A$1:$A$6]# zorgen ervoor dat de lijst van cellen \verb#A1:A6# vastgehouden wordt tijdens het automatisch invullen van de cellen als de cel versleept wordt.
+De eerste kolom vullen we met de frequenties. Als je bijvoorbeeld $13$ rode, $9$ groene, $8$ gele, $7$ oranje, $7$ bruine en $6$ blauwe snoepjes had, dan ga je als volgt te werk:
+\begin{itemize}
+  \item In cell \verb#A1# vul je het getal $13$ in.
+  \item In cell \verb#A2# vul je het getal $9$ in.
+  \item \ldots
+  \item In cell \verb#A6# vul je het getal $6$ in.
+\end{itemize}
+De cellen \verb#A1# tot \verb#A6# kunnen we kort noteren als \verb#A1:A6# en noemen we een {\bf lijst}.
+
+In de tweede kolom, zal je Geogebra de relatieve frequentie laten bereken. De relatieve frequentie is de frequentie gedeeld door de steekproefgrootte. We hebben dus eerst nog de steekproefgrootte nodig. We laten Geogebra dit uitrekenen door de som uit te rekenen van de lijst \verb#A1:A6# en deze waarde op te slaan in $n$:
+\begin{itemize}
+  \item Voer in het invoerveld het commando \verb#n=Som[A1:A6]# in.
+\end{itemize}
+
+In het rekenblad zal nu $n=50$ verschijnen. Vanaf nu weet Geogebra dat de steekproefgrootte $n=50$ is. Nu selecteer je de eerste cel in de tweede kolom en laat bereken je de relatieve frequentie. Je doet dit door aan Geogebra te laten weten dat eerst iets moet worden berekend, dit kan je door te beginnen met een is gelijk aan teken (\verb#=#). Geogebra moet de frequentie \verb#A1# dan delen door de steekproefgrootte \verb#n#:
+\begin{itemize}
+  \item In cell \verb#B1# vul je \verb#=A1/n# in en druk op enter.
+\end{itemize}
+
+Dezelfde berekening moet nu worden uitgevoerd voor de andere cellen in de tweede kolom. In plaats van zelf opnieuw alle waarden in te vullen kan je Geogebra dit zelf laten doen. Hiervoor moet je de berekening uit de eerste cel {\emph slepen} naar de cellen eronder:
+\begin{itemize}
+  \item Selecteer cel \verb#B1#
+  \item Click op het vierkantje rechtsonder in de cel, en blijf de muisknop ingedrukt houden terwijl je naar beneden sleept.
+  \item Laat de muisknop pas los in de cel \verb#B6#.
+\end{itemize}
 
 \begin{center}
   \includegraphics[width=14cm]{gg-relatieve_frequentie.png}
@@ -246,7 +282,7 @@ figuur je moet maken en hoe je die moet tekenen.
 \subsubsection*{Een staafdiagram}
 
 Je hebt in dit onderzoek een kwalitatieve veranderlijke opgemeten. Voor dit soort
-veranderlijken is het {\bf staafdiagram} de basisfiguur.
+veranderlijke is het {\bf staafdiagram} de basisfiguur.
 
 Als voorbeeld zie je hier een staafdiagram
 van de Vlaamse bevolking per provincie. De
@@ -291,15 +327,26 @@ los van elkaar staan.
 \end{center}
 
 Zulk staafdiagram kan ook met Geogebra gemaakt worden:
-\begin{enumerate}
-  \item Vul een rekenblad in met de frequenties.
-  \item Maak vanuit het rekenblad een lijst aan van de frequenties aan door \verb#B2:B7# te selecteren, rechts te klikken en creëer lijst te kiezen. Hernoem de nieuw aangemaakte lijst met naam "lijst 1', door deze te selecteren in het algebra venster en met het toetsenbord "frequentie" te typen.
+\begin{itemize}
+  \item Vul een rekenblad in met de frequenties, zorg dat de frequenties in de cellen van \verb#B2# tot \verb#B7# terechtkomen.
+  \item Maak vanuit het rekenblad een lijst aan van de frequenties aan door:
+  \begin{itemize}
+    \item de cellen \verb#B2:B7# te selecteren,
+    \item rechts te klikken op de geselecteerde cellen,
+    \item het menu \menulist{Creëer:Lijst} te selecteren,
+    \item de aangemaakte lijst "Lijst1" te hernoemen naar "frequentie" door:
+    \begin{itemize}
+      \item in het algebravenster recht te clicken op de nieuwe lijst, lijst1,
+      \item het menu \menulist{Naam wijzigen} te selecteren,
+      \item "frequentie" te typen in het dialoogvenster
+    \end{itemize}
+  \end{itemize}
   \item Maak ook een lijst met posities aan. Typ hiervoor in het invoervenster\\
   \verb$posities={10,20,30,40,50,60,70}$.
   \item Teken nu het staafdiagram met het commando \verb$Staafdiagram[posities,frequenties,5]$
   \item Wijzig nu de schaal van de assen door deze te verslepen.
   \item Voeg nu tekst in om alle labels aan te vullen.
-\end{enumerate}
+\end{itemize}
 
 \begin{center}
   \includegraphics[width=14cm]{gg-staafdiagram_menms}
@@ -312,11 +359,6 @@ relatieve frequentie.
 Maar er is ook een andere figuur die de relatieve frequentie (meestal uitgedrukt in percent) mooi
 weergeeft. Dat is het {\bf taartdiagram of cirkeldiagram}.
 
-\begin{wrapfigure}[12]{r}{0.3\textwidth}
-  \vspace{-0.3cm}
-  \includegraphics[width=0.3\textwidth]{cirkeldiagram_electriciteit}
-\end{wrapfigure}
-
 Bij het tekenen van een taartdiagram verdeel je een cirkeloppervlak in stukken, juist zoals je een
 taart in stukken snijdt. Eén zo'n stuk heet een {\bf sector}. De totale oppervlakte van de cirkel komt overeen
 met de som van alle percentages en dat is 100\%.
@@ -328,6 +370,10 @@ Voor een taartdiagram maken we enkele afspraken:
 grootste, enzovoort.
 \end{itemize}
 
+\begin{wrapfigure}[14]{r}{0.3\textwidth}
+  \vspace{-0.5cm}
+  \includegraphics[width=0.3\textwidth]{cirkeldiagram_electriciteit}
+\end{wrapfigure}
 Je ziet hier een voorbeeld van de marktaandelen van
 energiebevoorraders in België. Het gaat over de elektriciteit in
 het jaar 2004. Deze figuur staat in het weekblad Knack van 22
@@ -358,16 +404,25 @@ je rekenmachine.}{0cm}
 \vraag{Teken nu cirkelsectoren die overeenstemmen met de relatieve frequenties. Schrijf bij elke
 sector met welke kleur van snoepje hij overeenkomt en noteer ook de relatieve frequentie in
 percentvorm erbij. Je kan natuurlijk ook de sector inkleuren met de bijhorende kleur.}{2cm}
-
 \begin{center}
-  \input{tikzpictures/cirkeldiagram_blanco}
+\begin{tikzpicture}[scale=0.75,line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\draw(5,5) circle (5cm);
+\draw (5,5)-- (5,10);
+\end{tikzpicture}
 \end{center}
 
 Ook met Geogebra kunnen we een cirkeldiagram maken. We vertrekken vanuit het zelfde bestand als bij
 het staafdiagram. De frequentie moeten we nu omzetten naar het aantal graden dat het sector is. Maak
-hiervoor eerst het totaal van alle frequenties door in cell \verb#B9# \verb$=Som[B2:B7]$ als formule te nemen.
-Vul nu in de cel \verb#C2#, naast de frequentie, het volgende als formule in: \verb#=B2 / $B$9 * 360#$\degree$.
-Je kan nu de cell rechts-onder vastnemen en verslepen, Geogebra vult nu automatisch de juiste cellwaarden in.
+hiervoor eerst het totaal van alle frequenties, met andere woorden de steekproefgrootte $n$. We plaatsten deze nu in de cel \verb#B9#:
+\begin{itemize}
+  \item Vul in cel \verb#B9# de formule \verb$=Som[B2:B7]$ in.
+\end{itemize}
+Vul nu in de cellen naast de frequentie de relatieve frequentie in volgens een cirkel. Je moet daarvoor de frequentie delen door de steekproefgrootte, en dan vermenigvuldigen met het aantal graden die een cirkel bevat:
+\begin{itemize}
+  \item Vul in de cel \verb#C2# de formule \verb#=B2 / $B$9 * 360#$\degree$ in.
+  \item Selecteer nu opnieuw de cel \verb#C2# en sleep deze naar onder.
+\end{itemize}
+In bovenstaande hebben we een trucje gebruikt om de cel \verb#B9# vast te houden tijdens het slepen. In plaats van de code \verb#B9# hebben we voor deze cel de code \verb#$B$9# gebruikt. Hierdoor weet Geogebra dat het deze cel moet vasthouden tijdens het verslepen.
 
 Nu we de graden hebben berekend voor de sectoren van het cirkeldiagram maken we de figuur. Creëer eerst twee punten. $A$ op $(0,0)$ en $B$ op $(0,5)$. Creëer nu een cirkel met als middelpunt $A$ en als straal $B$. Klik nu op het icoontje {\it Hoek met gegeven grootte}. Klik eerst op $B$ en dan op $A$ en als hoekgrootte geef je \verb$C2$ in. Klik nu op het icoontje {\it Cirkelsector met middelpunt door 2 punten}. Als eerste punt geef je $A$, als tweede punt geef je $B'$ en uiteindelijk als derde punt geef je $B$. Herhaal dit nu voor de andere sectoren.
 
@@ -598,33 +653,28 @@ figuur getekend.
 
 \vraag{Welke veranderlijke is er genoteerd bij elke persoon die zijn job is
 kwijtgeraakt? Welk soort veranderlijke is dat? Wat zijn haar waarden? Is de figuur goed
-getekend?}{4cm}
-
-\newpage
+getekend?}{3cm}
 
 \begin{wrapfigure}[6]{r}{0.4\textwidth}
+  \vspace*{-1cm}
   \includegraphics[width=0.4\textwidth]{tabel-drugs}
 \end{wrapfigure}
-
-Als je een frequentietabel ziet, dan moet je
-die juist kunnen interpreteren. Bekijk de
-tabel over XTC en Speed (Gazet van
-Antwerpen van 20-10-2004). Kijk enkel
-naar de informatie die daarin staat over het
+Als je een frequentietabel ziet, dan moet je die juist kunnen interpreteren. Bekijk de tabel over XTC en Speed (Gazet van Antwerpen van 20-10-2004). Kijk enkel naar de informatie die daarin staat over het
 jaar 2003.
 
-\vraag{Is “druggebruik” daar
-behandeld als een kwalitatieve
-veranderlijke? Is de tabel correct?}{4cm}
+\vraag{Is “druggebruik” daar behandeld als een kwalitatieve veranderlijke? Is de tabel correct?}{4cm}
+
+\begin{wrapfigure}[6]{r}{0.5\textwidth}
+  \vspace*{-1cm}
+  \includegraphics[width=0.5\textwidth]{cirkeldiagram-vrijetijdsbesteding}
+\end{wrapfigure}
 
 Een bestaande figuur moet je juist kunnen interpreteren. Bekijk het taartdiagram over de
 vrijetijdsbesteding van jongeren (De Standaard van 6-12-2000).
 
-\begin{center}
-  \includegraphics[width=0.6\textwidth]{cirkeldiagram-vrijetijdsbesteding}
-\end{center}
-
 \vraag{Is “vrijetijdsbesteding” hier behandeld als een kwalitatieve veranderlijke? Is het taartdiagram correct getekend?}{4cm}
+
+\newpage
 
 \section{Een statistisch onderzoek naar het schatten van de tijdsduur van 1 minuut}
 
@@ -1040,6 +1090,7 @@ kwartielen zijn en hoe je de interkwartielafstand berekent. Kan je daaruit aflei
 interkwartielafstand gevoelig is voor uitschieters? Kan je daarvan een eenvoudig voorbeeld
 geven?}{8cm}
 
+\newpage
 \section{Projecten}
 
 Kies één van volgende projecten om zelf een onderzoek rond uit te voeren:
@@ -1075,7 +1126,7 @@ conclusies. Geef op het einde een samenvatting van het onderzoek.
 \bibitem{2}\label{2} J.-P. Daems, E. Jennekens, \textit{Argument, Algebra - Meetkunde - Driehoeksmeting}, Uitgeverij de boeck, 2003\\
 \end{thebibliography}
 
-Deze bundel is grotendeels gebaseerd op \cite{1}. Hiervoor werd toestemming verleend. Voor correcties, meer informatie of een nieuwere versie kan ik gecontacteerd worden op \href{mailto:pieter.pareit@ugent.be}{pieter.pareit@ugent.be}.
+%Deze bundel is grotendeels gebaseerd op \cite{1}. Hiervoor werd toestemming verleend. Voor correcties, meer informatie of een nieuwere versie kan ik gecontacteerd worden op \href{mailto:pieter.pareit@ugent.be}{pieter.pareit@ugent.be}.
 
 
 \end{document}
